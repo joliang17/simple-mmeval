@@ -1,0 +1,29 @@
+[
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "media_dir": [
+            "test_bed/apple.jpg"
+        ],
+        "response": "In this image, there are 7 whole red apples and 2 whole yellow apples. The red apples are in focus and are centered in the image, with one of them slightly missing a slice. The yellow apples, on the other hand, are slightly blurred and are placed more towards the top background of the image. The background appears to be a wooden surface, possibly a table, and the overall color scheme of the image suggests a rustic or natural setting."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "media_dir": [
+            "test_bed/e0001.png"
+        ],
+        "response": "The blue triangle fairly follows path A as the blue triangle leads to the blue triangle."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "media_dir": [
+            "test_bed/e0001.png"
+        ],
+        "response": "The path leading to the blue triangle is A\u2192B."
+    }
+]
