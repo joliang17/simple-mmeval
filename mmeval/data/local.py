@@ -1,6 +1,7 @@
 import json
 import os
 from PIL import Image
+import copy
 
 from mmeval.data.base import BaseDataset
 
@@ -28,7 +29,7 @@ class LocalJSONDataset(BaseDataset):
     def _process_sample(self, idx: int):
         
         sample = self._raw_dataset[idx]
-        
+        sample["media_dir"] = copy.deepcopy(sample["media"])
         sample["media"] = [self.load_image(f) for f in sample["media"]]
         
         return sample

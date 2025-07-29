@@ -1,0 +1,38 @@
+[
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "media_dir": [
+            "test_bed/apple.jpg"
+        ],
+        "response": "There are four apples on a brown mat, with one apple cut into pieces and another piece of fruit split open by a knife. The table is covered with brown paper or rice papers, which reflect the natural light and create an inviting atmosphere for eating."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "media_dir": [
+            "test_bed/e0001.png"
+        ],
+        "response": "The path leading to the blue triangle is through the red square. This is because it has a higher speed than the other two paths, and its turning radius is also smaller compared with those two paths."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "media_dir": [
+            "/root/yuexuanliu/simple-mmeval/test_bed/e0001.png"
+        ],
+        "response": "The path leading to the blue triangle is through the red square. This seems like a quite difficult choice, but it's worth noting that this path has more direct connections with other objects and obstacles than others."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "media_dir": [
+            "test_bed/e0001.png"
+        ],
+        "response": "The path that goes through the red square and the purple circle is reasonable. It allows you to approach the blue triangle without making any obstacles, which makes it easier for you to reach the goal. This path also has a higher success rate than other routes because it does not require much movement or exploration."
+    }
+]
