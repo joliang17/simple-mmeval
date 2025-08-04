@@ -132,6 +132,7 @@ Currently supported model series:
 |--------------|--------|---------------|
 | **Qwen2.5-VL** | Qwen2.5-VL-3B-Instruct, Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-32B-Instruct, Qwen2.5-VL-72B-Instruct | [`scripts/test_bed/qwen2d5.sh`](scripts/test_bed/qwen2d5.sh) |
 | **VideoLLaMA2** | VideoLLaMA2-7B, VideoLLaMA2-13B | [`scripts/test_bed/videollama2.sh`](scripts/test_bed/videollama2.sh) |
+| **MiniMonkey** | MiniMonkey | [`scripts/test_bed/minimonkey.sh`](scripts/test_bed/minimonkey.sh) |
 
 ## Supported Datasets
 
