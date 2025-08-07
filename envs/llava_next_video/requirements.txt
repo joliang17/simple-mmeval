@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers
+timm
+Pillow
+numpy
+pandas
+python-dotenv
+av
+protobuf
+sentencepiece
