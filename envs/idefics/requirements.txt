@@ -1,0 +1,12 @@
+transformers>=4.54.0
+torch>=2.0.0
+torchvision
+accelerate
+huggingface-hub
+tokenizers
+safetensors
+Pillow
+numpy
+requests
+datasets
+bitsandbytes 
