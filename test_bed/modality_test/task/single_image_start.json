@@ -3,7 +3,8 @@
         "id": 0,
         "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png"
         ],
@@ -15,7 +16,8 @@
         "id": 1,
         "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png"
         ],

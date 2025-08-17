@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image features a GMC truck driving on a dirt road. The truck is positioned at an angle, showcasing its front and side profile. It has a modern design with a prominent grille featuring the GMC logo in the center. The headlights are sleek and angular, complementing the overall aggressive look of the vehicle. The truck's body is painted in a dark color, possibly black or dark gray, which contrasts well with the natural surroundings.\n\nThe tires are large and appear to be off-road capable, suitable for rugged terrain. The wheels have a multi-spoke design, adding to the truck's robust appearance. The truck is equipped with a roof rack, suggesting it is designed for utility and possibly off-road activities. The background shows a desert-like landscape with rocky formations and sparse vegetation, indicating that the truck is likely being used in a challenging environment.\n\nOverall, the image emphasizes the truck's capability and design, highlighting its suitability for both on-road and off-road conditions."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image depicts a luxurious yacht speeding across a calm, expansive body of water, likely an ocean or a large lake. The yacht is predominantly white with sleek, modern design elements. It features a curved front and a streamlined hull, which suggests it is built for speed and comfort. The deck is equipped with a railing and appears to have a spacious layout, possibly including seating areas and possibly a sun deck.\n\nThe water around the yacht is a deep blue, indicating clear weather conditions. The wake created by the yacht's movement is visible, showing that it is moving at a significant speed. The sky above is mostly clear with a few scattered clouds, suggesting good weather.\n\nThe yacht has a modern and sophisticated appearance, with a focus on luxury and performance. The overall scene conveys a sense of adventure and leisure, typical of high-end yachting experiences."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The first image features a GMC truck driving on a dirt road. The truck is positioned at an angle, showcasing its front and side profile. It has a modern design with a prominent grille, sleek headlights, and a robust build. The truck's color appears to be a dark shade, possibly black or dark gray. The background includes a natural landscape with rocky formations and sparse vegetation, suggesting a rugged outdoor environment.\n\nThe second image depicts a luxury yacht speeding across the open ocean. The yacht is sleek and white, with a streamlined design that suggests speed and elegance. It is moving at a high speed, as evidenced by the wake of water trailing behind it. The ocean is calm, with only gentle waves visible, indicating that the yacht is moving at a moderate speed rather than at full throttle. The sky above is clear, suggesting good weather conditions for sailing. The overall scene conveys a sense of luxury and adventure on the water."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The first image features a luxury yacht speeding across the ocean. The yacht is sleek and modern, with a white hull and a black stripe running along its side. It has a large cabin with multiple windows, providing a clear view of the surrounding water. The yacht is moving at high speed, creating a significant wake behind it. The ocean is calm, with only small waves visible, and the sky above is clear and blue, indicating good weather conditions.\n\nThe second image shows a GMC truck driving on a dirt road. The truck is a modern model with a dark gray color and black accents. It has a robust design, with large tires suitable for off-road conditions. The truck is moving forward, kicking up dust from the road as it travels. The background features a rocky landscape with sparse vegetation, suggesting a desert or arid environment. The lighting indicates that it is either early morning or late afternoon, casting long shadows and giving the scene a warm, golden hue."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "The image you provided contains two distinct scenes, each showcasing different vehicles in their respective environments.\n\n1. **GMC Truck Scene:**\n   - The first image depicts a GMC truck driving on a dirt road. \n   - The truck is positioned at an angle, allowing a clear view of its front and side profile.\n   - It has a modern design with a sleek, aerodynamic body.\n   - The truck's headlights are on, indicating that it is either in motion or ready to drive.\n   - The vehicle features a prominent grille with the GMC logo at the center.\n   - The truck is equipped with off-road tires, suggesting it is designed for rugged terrain.\n   - The background shows a natural landscape with rocky formations and sparse vegetation, indicating a desert or arid environment.\n   - The lighting suggests it is either early morning or late afternoon, casting long shadows and giving the scene a warm, golden hue.\n\n2. **Motor Yacht Scene:**\n   - The second image shows a motor yacht speeding across a body of water.\n   - The yacht is white with black accents and appears to be moving at high speed.\n   - The water is choppy, with waves created by the yacht's movement.\n   - The sky is clear and blue, indicating good"
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "The image you provided contains two distinct scenes, each showcasing different vehicles and their environments.\n\n1. **Scene 1: Yacht**\n   - **Vehicle Type:** The vehicle in this scene is a yacht.\n   - **Description:** The yacht is white with a sleek design, featuring a large cabin and a spacious deck area. It appears to be moving at high speed on the water, as evidenced by the wake trailing behind it. The yacht has a modern and luxurious appearance, suggesting it is designed for comfort and leisure.\n   - **Environment:** The background shows a clear blue sky and calm ocean waters, indicating that the yacht is in open waters, likely during a sunny day.\n\n2. **Scene 2: GMC Pickup Truck**\n   - **Vehicle Type:** The vehicle in this scene is a GMC pickup truck.\n   - **Description:** The truck is black and is shown driving on a dirt road. It has a robust and rugged design, suitable for off-road conditions. The truck is equipped with large tires and a prominent front grille, which are characteristic features of the GMC brand. The truck is moving forward, kicking up dust from the ground, indicating it is in motion.\n   - **Environment:** The background features a rocky landscape with red rock formations, suggesting a"
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "**Image A:**\n- **Vehicle Type:** GMC Sierra 1500\n- **Color:** Dark gray or black\n- **Features:** \n  - **Front Design:** The truck has a modern, aggressive front grille with the GMC logo prominently displayed.\n  - **Headlights:** Large, rectangular headlights that are sleek and contemporary.\n  - **Side Mirrors:** Black side mirrors with integrated turn signals.\n  - **Wheels:** Black wheels with a multi-spoke design.\n  - **Body Style:** Crew cab configuration with a short bed.\n  - **Exterior:** The truck appears to be in motion on a dirt road, kicking up dust behind it.\n  - **Background:** A scenic landscape with rocky cliffs and sparse vegetation.\n\n**Image B:**\n- **Vehicle Type:** Yacht\n- **Color:** White\n- **Features:**\n  - **Design:** The yacht has a sleek, modern design with a curved hull and a large windshield.\n  - **Speed:** The yacht is moving at high speed, as evidenced by the wake of water behind it.\n  - **Deck:** The deck area is visible, featuring a railing and possibly seating or storage areas.\n  - **Background:** The yacht is on a body of water"
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "**Image A:**\n- **Subject:** A white yacht\n- **Details:**\n  - The yacht is moving at high speed on calm blue waters.\n  - It has a sleek, modern design with a curved front and a large windshield.\n  - The yacht's hull is streamlined, creating a small wake behind it.\n  - There are no visible people or other objects in the water around the yacht.\n  - The sky above is clear with a light blue hue, indicating good weather conditions.\n\n**Image B:**\n- **Subject:** A black GMC truck\n- **Details:**\n  - The truck is driving on a dirt road.\n  - It appears to be in motion, as evidenced by the dust being kicked up from its tires.\n  - The truck has a robust build, with a prominent grille and large headlights.\n  - The GMC logo is clearly visible on the front of the truck.\n  - The background features a rocky landscape with sparse vegetation, suggesting a rugged outdoor environment."
+    }
+]
