@@ -1,5 +1,6 @@
-import json
 import os
+import re
+import json
 from PIL import Image
 import copy
 
@@ -27,11 +28,15 @@ class LocalJSONDataset(BaseDataset):
         return data_list
     
     def _process_sample(self, idx: int):
-        
         sample = self._raw_dataset[idx]
-        sample["media_dir"] = copy.deepcopy(sample["media"])
-        sample["media"] = [self.load_image(f) for f in sample["media"]]
+        placeholder_list = re.findall(r"<(?:video|image)>", sample["prompt"])
+        assert len(placeholder_list) == len(sample["media"]), "Number of media placeholders does not match number of media files"
         
+        sample["media"] = [
+            self.load_image(f) if placeholder == "<image>" else f
+            for placeholder, f in zip(placeholder_list, sample["media"])
+        ]
+
         return sample
     
 

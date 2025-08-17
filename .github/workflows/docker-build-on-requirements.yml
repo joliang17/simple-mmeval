@@ -1,13 +1,12 @@
-# .github/workflows/docker-build-on-requirements.yml
 name: Build Docker on Requirements Change
 
 on:
   push:
     paths:
-      - '**/requirements.txt'
+      - '**/*_requirements.txt'
   pull_request:
     paths:
-      - '**/requirements.txt'
+      - '**/*_requirements.txt'
 
 jobs:
   detect-changes:
@@ -21,12 +20,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Find changed requirements.txt files
+      - name: Find changed *_requirements.txt files
         id: find-requirements
         uses: tj-actions/changed-files@v40
         with:
           files: |
-            **/requirements.txt
+            **/*_requirements.txt
 
       - name: Set matrix for changed files
         id: set-matrix
@@ -34,7 +33,6 @@ jobs:
         run: |
           files="${{ steps.find-requirements.outputs.all_changed_files }}"
           
-          # Convert space-separated files to JSON array
           matrix_json="["
           first=true
           for file in $files; do
@@ -49,7 +47,6 @@ jobs:
           
           echo "matrix={\"requirements-file\":$matrix_json}" >> $GITHUB_OUTPUT
           echo "Matrix: {\"requirements-file\":$matrix_json}"
-          
           echo "Changed requirements files:"
           for file in $files; do
             echo "  - $file"
@@ -72,19 +69,18 @@ jobs:
         run: |
           REQ_FILE="${{ matrix.requirements-file }}"
           DIR_NAME=$(dirname "$REQ_FILE")
+          BASE_NAME=$(basename "$REQ_FILE")
           
-          # Create tag from path: replace slashes with dashes, handle root directory
-          if [ "$DIR_NAME" = "." ]; then
-            TAG_NAME="root"
-          else
-            TAG_NAME=$(echo "$DIR_NAME" | sed 's/\//-/g')
-          fi
+          # Extract prefix before "_requirements.txt"
+          PREFIX_NAME=$(echo "$BASE_NAME" | sed 's/_requirements\.txt$//')
           
           echo "requirements-file=$REQ_FILE" >> $GITHUB_OUTPUT
           echo "dir-name=$DIR_NAME" >> $GITHUB_OUTPUT
-          echo "tag-name=$TAG_NAME" >> $GITHUB_OUTPUT
-          echo "Building for requirements file: $REQ_FILE in directory: $DIR_NAME"
-          echo "Docker tag will be: $TAG_NAME"
+          echo "tag-name=$PREFIX_NAME" >> $GITHUB_OUTPUT
+          
+          echo "Building for requirements file: $REQ_FILE"
+          echo "Directory: $DIR_NAME"
+          echo "Docker tag will be: $PREFIX_NAME"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -99,30 +95,27 @@ jobs:
       - name: Create Dockerfile
         run: |
           DIR_NAME="${{ steps.get-req-info.outputs.dir-name }}"
+          REQ_FILE="${{ steps.get-req-info.outputs.requirements-file }}"
           
-          # Create Dockerfile in the same directory as requirements.txt
-          cat > "$DIR_NAME/Dockerfile" << 'EOF'
+          cat > "$DIR_NAME/Dockerfile" << EOF
           FROM mmevaluation/simple-mmeval:base-runtime-nvcc
 
-          # Set working directory
           WORKDIR /app
 
-          # Copy requirements file
-          COPY requirements.txt .
+          COPY $(basename "$REQ_FILE") requirements.txt
 
-          # Upgrade pip and install requirements
-          RUN pip install --no-cache-dir --upgrade pip && \
+          # Switch to Python 3.10 via conda
+          RUN conda install -y python=3.10 && \
+              conda init bash && \
+              pip install --no-cache-dir --upgrade pip && \
               pip install --no-cache-dir -r requirements.txt
 
-          # Copy the rest of the application (if needed)
-          # COPY . .
-
-          # Default command (can be overridden)
           CMD ["python", "--version"]
           EOF
           
           echo "Created Dockerfile in $DIR_NAME/"
           cat "$DIR_NAME/Dockerfile"
+
 
       - name: Generate Docker metadata
         id: meta
@@ -148,18 +141,12 @@ jobs:
           DIR_NAME="${{ steps.get-req-info.outputs.dir-name }}"
           TAG_NAME="${{ steps.get-req-info.outputs.tag-name }}"
           
-          # Build locally for PR testing
           docker build -t "test-image-$TAG_NAME" "$DIR_NAME/"
-          
-          # Test that the image runs and Python is installed
           docker run --rm "test-image-$TAG_NAME" python --version
-          
-          # Test that pip packages are installed
           docker run --rm "test-image-$TAG_NAME" pip list
 
       - name: Clean up
         if: always()
         run: |
           DIR_NAME="${{ steps.get-req-info.outputs.dir-name }}"
-          # Remove the generated Dockerfile
           rm -f "$DIR_NAME/Dockerfile"

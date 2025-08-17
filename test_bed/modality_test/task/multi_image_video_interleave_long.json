@@ -3,7 +3,8 @@
         "id": 0,
         "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png"
         ],
@@ -15,7 +16,8 @@
         "id": 1,
         "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png"
         ],
@@ -27,7 +29,8 @@
         "id": 2,
         "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
@@ -40,7 +43,8 @@
         "id": 3,
         "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
@@ -53,7 +57,8 @@
         "id": 4,
         "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
@@ -66,7 +71,8 @@
         "id": 5,
         "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
@@ -77,543 +83,534 @@
     },
     {
         "id": 6,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 7,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 8,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "sun.mp4"
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 9,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
-            "cat.mp4"
+            "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 10,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
-            "cat.mp4"
+            "cat.mp4",
+            "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 11,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "sun.mp4"
+            "sun.mp4",
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 12,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4",
-            "boat.png"
+            "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 13,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4",
-            "truck.png"
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 14,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "truck.png",
+            "cat.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 15,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png"
+            "sun.mp4",
+            "truck.png"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 16,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
-            "boat.png"
+            "boat.png",
+            "sun.mp4"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 17,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "truck.png"
+            "cat.mp4",
+            "boat.png"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 18,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
-            "boat.png"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 19,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "truck.png"
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 20,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 21,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 22,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "sun.mp4"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 23,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
-            "cat.mp4"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 24,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
-            "cat.mp4"
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 25,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
-            "sun.mp4"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 26,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "boat.png"
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 27,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
-            "truck.png"
+            "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 28,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "cat.mp4",
+            "sun.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 29,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png"
+            "sun.mp4",
+            "cat.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 30,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
-            "boat.png"
+            "cat.mp4",
+            "sun.mp4"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 31,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "truck.png"
+            "sun.mp4",
+            "cat.mp4"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 32,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
-            "boat.png"
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 33,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
+            "sun.mp4",
             "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 34,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "boat.png",
+            "sun.mp4"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 35,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "cat.mp4",
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 36,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "sun.mp4"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 37,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
-            "cat.mp4"
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 38,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
-            "cat.mp4"
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 39,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
-            "sun.mp4"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 40,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
+            "truck.png",
             "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 41,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
+            "boat.png",
             "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 42,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 43,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 44,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "truck.png",
-            "boat.png"
-        ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
-        "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 45,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "boat.png",
-            "truck.png"
-        ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
-        "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 46,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "truck.png",
-            "boat.png"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 47,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "boat.png",
-            "truck.png"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 48,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -622,10 +619,11 @@
         "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 49,
+        "id": 45,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -634,10 +632,11 @@
         "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 50,
+        "id": 46,
         "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4",
             "sun.mp4"
@@ -647,10 +646,11 @@
         "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 51,
+        "id": 47,
         "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4",
             "cat.mp4"
@@ -660,74 +660,108 @@
         "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 52,
+        "id": 48,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "cat.mp4",
+            "sun.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 49,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "sun.mp4",
+            "cat.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 50,
         "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "cat.mp4"
         ],
         "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality."
+    },
+    {
+        "id": 51,
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "sun.mp4",
+            "truck.png"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality."
+    },
+    {
+        "id": 52,
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "boat.png",
+            "sun.mp4"
+        ],
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "hint": "",
         "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 53,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "sun.mp4"
+            "cat.mp4",
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "hint": "",
         "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 54,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "boat.png"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 55,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "sun.mp4",
-            "truck.png"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
-        "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
-    },
-    {
-        "id": 56,
         "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
-        "media": [
-            "truck.png"
-        ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
-        "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 57,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
-        "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png"
         ],
@@ -736,10 +770,11 @@
         "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 58,
+        "id": 56,
         "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
@@ -749,10 +784,11 @@
         "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 59,
+        "id": 57,
         "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
@@ -762,10 +798,11 @@
         "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 60,
+        "id": 58,
         "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
@@ -775,15 +812,44 @@
         "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 61,
+        "id": 59,
         "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
         ],
         "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 60,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "truck.png",
+            "boat.png"
+        ],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 61,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "boat.png",
+            "truck.png"
+        ],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
         "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
@@ -791,7 +857,8 @@
         "id": 62,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -803,7 +870,8 @@
         "id": 63,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -815,7 +883,8 @@
         "id": 64,
         "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4",
             "sun.mp4"
@@ -828,7 +897,8 @@
         "id": 65,
         "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4",
             "cat.mp4"
@@ -839,9 +909,38 @@
     },
     {
         "id": 66,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "cat.mp4",
+            "sun.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 67,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "sun.mp4",
+            "cat.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 68,
         "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "cat.mp4"
@@ -851,36 +950,11 @@
         "comment": "Test 'multi image video interleave' modality."
     },
     {
-        "id": 67,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "boat.png",
-            "sun.mp4"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
-        "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
-    },
-    {
-        "id": 68,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "cat.mp4",
-            "boat.png"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
-        "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
-    },
-    {
         "id": 69,
         "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4",
             "truck.png"
@@ -891,224 +965,326 @@
     },
     {
         "id": 70,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "boat.png",
+            "sun.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 71,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
+            "cat.mp4",
             "boat.png"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 72,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
-            "boat.png"
+            "truck.png"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 73,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
-            "truck.png"
+            "boat.png"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 74,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 75,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 76,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 77,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 78,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
-            "sun.mp4"
+            "truck.png",
+            "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 79,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
-            "cat.mp4"
+            "boat.png",
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 80,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png",
             "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 81,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png",
             "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 82,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4",
-            "boat.png"
+            "sun.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 83,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4",
-            "truck.png"
+            "cat.mp4"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 84,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "cat.mp4",
+            "sun.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 85,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png"
+            "sun.mp4",
+            "cat.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 86,
-        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
-            "boat.png"
+            "cat.mp4"
         ],
-        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
         "hint": "",
-        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 87,
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "sun.mp4",
+            "truck.png"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality."
+    },
+    {
+        "id": 88,
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "boat.png",
+            "sun.mp4"
+        ],
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality."
+    },
+    {
+        "id": 89,
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "cat.mp4",
+            "boat.png"
+        ],
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality."
+    },
+    {
+        "id": 90,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "truck.png"
+        ],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 91,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "boat.png"
+        ],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 92,
         "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
+        "media": [
+            "truck.png",
+            "boat.png"
+        ],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
+    },
+    {
+        "id": 93,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
             "truck.png"
@@ -1118,10 +1294,11 @@
         "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
-        "id": 88,
+        "id": 94,
         "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "truck.png",
             "boat.png"
@@ -1129,144 +1306,73 @@
         "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
         "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 89,
-        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "boat.png",
-            "truck.png"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
-        "hint": "",
-        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 90,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "cat.mp4"
-        ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
-        "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 91,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "sun.mp4"
-        ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
-        "hint": "",
-        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 92,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "cat.mp4",
-            "sun.mp4"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
-        "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 93,
-        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "sun.mp4",
-            "cat.mp4"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
-        "hint": "",
-        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this."
-    },
-    {
-        "id": 94,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
-        "answer": "",
-        "choices": {},
-        "media": [
-            "truck.png",
-            "cat.mp4"
-        ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
-        "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
     },
     {
         "id": 95,
-        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "boat.png",
-            "sun.mp4"
+            "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 96,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4",
+            "truck.png",
             "boat.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 97,
-        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4",
+            "boat.png",
             "truck.png"
         ],
-        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
         "hint": "",
-        "comment": "Test 'multi image video interleave' modality."
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 98,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "truck.png"
+            "cat.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     },
     {
         "id": 99,
-        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "boat.png"
+            "sun.mp4"
         ],
-        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
         "hint": "",
-        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this."
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this."
     }
 ]

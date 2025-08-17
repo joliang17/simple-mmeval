@@ -46,8 +46,8 @@ if __name__ == "__main__":
                         cache.update(data)
                     elif isinstance(data, list):
                         for item in data:
-                            if isinstance(item, dict) and "id" in item:
-                                cache[item["id"]] = item
+                            if isinstance(item, dict) and "eval-id" in item:
+                                cache[item["eval-id"]] = item
                 # delete the file
                 os.remove(fpath)
             except Exception as e:

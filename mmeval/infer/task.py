@@ -27,8 +27,8 @@ class Task:
                         prev_cache.update(data)
                     elif isinstance(data, list):
                         for item in data:
-                            if isinstance(item, dict) and "id" in item:
-                                prev_cache[item["id"]] = item
+                            if isinstance(item, dict) and "eval-id" in item:
+                                prev_cache[item["eval-id"]] = item
         except Exception as e:
             print(f"Warning: Failed to load cache file {fpath}: {e}")
             

@@ -1,9 +1,36 @@
 [
     {
         "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "truck.png"
+        ],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "boat.png"
+        ],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
+    },
+    {
+        "id": 2,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -12,10 +39,11 @@
         "comment": "Test 'single video start' modality."
     },
     {
-        "id": 1,
+        "id": 3,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
