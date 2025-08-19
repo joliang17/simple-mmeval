@@ -1,0 +1,20 @@
+[
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "response": "The path that leads to the blue triangle is the one that starts at the red cube and goes to the green cube, then to the purple cube, and finally to the blue triangle."
+    },
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "response": "A pile of red apples sitting on a wooden table."
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "response": "The path that leads to the blue triangle is the one that starts at the red cube and goes to the green cube, then to the purple cube, and finally to the blue triangle."
+    }
+]

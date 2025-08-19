@@ -1,0 +1,38 @@
+[
+    {
+        "question": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?\nA. Path A\nB. Path B",
+        "choices": [
+            "A. Path A",
+            "B. Path B"
+        ],
+        "answer": "A. Path A",
+        "id": "1",
+        "eval-id": 0,
+        "score": [
+            -4.90625,
+            -6.25
+        ],
+        "response": "A. Path A"
+    },
+    {
+        "question": "<image>\nWhich of the following statements is true about the image?",
+        "prompt": "<image>\nWhich of the following statements is true about the image?\nA. The image shows red apples.\nB. The image shows a green apple on a wooden table.\nC. The image shows a yellow apple in a fruit basket.\nD. The image shows only one apple with a bite taken out of it.",
+        "choices": [
+            "A. The image shows red apples.",
+            "B. The image shows a green apple on a wooden table.",
+            "C. The image shows a yellow apple in a fruit basket.",
+            "D. The image shows only one apple with a bite taken out of it."
+        ],
+        "answer": "A. The image shows red apples.",
+        "id": "2",
+        "eval-id": 1,
+        "score": [
+            -1.921875,
+            -1.5234375,
+            -1.28125,
+            -1.1953125
+        ],
+        "response": "D. The image shows only one apple with a bite taken out of it."
+    }
+]

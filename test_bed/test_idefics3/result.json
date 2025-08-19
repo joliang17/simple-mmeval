@@ -1,0 +1,20 @@
+[
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "response": "None."
+    },
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "response": "The image depicts a group of apples placed on a textured, light brown surface, possibly a piece of burlap or a similar fabric. The apples are predominantly red, with some exhibiting a mix of red and yellow hues, indicating they might be a variety like Gala or Fuji. The apples are of varying sizes, with some appearing larger and more round, while others are smaller and more elongated. \n\nThe apples are arranged in a somewhat scattered manner, with one apple cut in half, revealing the crisp, white interior. The cut apple is positioned in the foreground, providing a clear view of the fruit's texture and the contrast between the"
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "response": "None."
+    }
+]
