@@ -2,7 +2,6 @@ import os
 import re
 import json
 from PIL import Image
-import copy
 
 from mmeval.data.base import BaseDataset
 
