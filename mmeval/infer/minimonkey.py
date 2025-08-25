@@ -12,22 +12,22 @@ from mmeval.utils.argparser import parse_args, parse_model_kwargs, parse_gen_kwa
 
 class TaskRunner(Task):
     def __init__(self, args):
-        super().__init__(args)
         self.args = args
         self.dtype = getattr(args, "dtype") or torch.bfloat16
         self.default_model_kwargs = {"device_map": "auto"}
-        self.default_gen_kwargs = {"max_new_tokens": 512, "do_sample": False}
+        self.default_gen_kwargs = {"max_new_tokens": 512, "do_sample": False, "low_cpu_mem_usage": True}
         self.model_kwargs = parse_model_kwargs(args, self.default_model_kwargs)
         self.gen_kwargs = parse_gen_kwargs(args, self.default_gen_kwargs)
+
+        super().__init__(args)
     
     def load_model(self, args):
-        self.model_name_or_path = f"mx262/{args.model_name_or_path}"
         self.model = AutoModel.from_pretrained(
-            self.model_name_or_path,
-            torch_dtype=torch.bfloat16,
-            low_cpu_mem_usage=True,
-            trust_remote_code=True).eval().cuda()
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name_or_path, trust_remote_code=True, use_fast=False)
+            args.model_name_or_path,
+            torch_dtype=self.dtype,
+            trust_remote_code=True,
+            **self.model_kwargs).eval().cuda()
+        self.tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, trust_remote_code=True, use_fast=False)
 
     def run_sample(self, sample:dict):
 
@@ -42,10 +42,10 @@ class TaskRunner(Task):
         return ori_sample
     
     def _generate_response(self, data):
-        # We construct dict from params to keep same with sample code: https://github.com/Yuliang-Liu/Monkey/blob/main/project/mini_monkey/demo.py
-        generation_config = dict(do_sample=self.gen_kwargs.do_sample, max_new_tokens=self.gen_kwargs.max_new_tokens)
+        # keep same with sample code: https://github.com/Yuliang-Liu/Monkey/blob/main/project/mini_monkey/demo.py
+        generation_config = dict(do_sample=self.gen_kwargs["do_sample"], max_new_tokens=self.gen_kwargs["max_new_tokens"])
 
-        # pixel_values/ target_aspect_ratio/ question information extract via parse_input
+        # pixel_values/ target_aspect_ratio/ question information extract in "parse_input" function
         response, history = self.model.chat(self.tokenizer, data["pixel_values"], data["target_aspect_ratio"], data["question"], generation_config, history=None, return_history=True)
 
         return response

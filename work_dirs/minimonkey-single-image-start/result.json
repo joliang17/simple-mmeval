@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image depicts a large, sleek white yacht cruising on the ocean. The yacht is moving at a high speed, creating a significant wake behind it. The wake is a white, foamy trail that indicates the boat's powerful movement. The yacht is positioned in the center of the image, with its bow pointing towards the left side of the frame. The hull of the yacht is white, and it has a black stripe running along its side. The boat has a large, open deck area with several windows and railings, suggesting it is designed for comfort and leisure. The ocean around the yacht is calm, with a clear blue sky above. The water is a deep blue color, and the horizon is visible in the distance, indicating that the yacht is far from land. The overall scene is one of luxury and freedom, with the yacht cutting through the water with ease."
+    },
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image depicts a GMC pickup truck in motion on a dirt road. The vehicle is a modern, rugged truck with a robust build, featuring a prominent GMC logo on the front grille. The truck is equipped with a set of black alloy wheels that add to its rugged appearance. The tires are large and appear to be designed for off-road conditions, suggesting that the truck is capable of handling rough terrain. The truck is in motion, kicking up a cloud of dust behind it, indicating that it is moving at a moderate speed. The background shows a desert landscape with rocky terrain, further emphasizing the truck's off-road capabilities. The overall scene conveys a sense of adventure and capability, highlighting the truck's performance and ruggedness."
+    }
+]
