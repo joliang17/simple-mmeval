@@ -23,7 +23,7 @@ series_infer_env_mapping = {
         "infer_file": "blip2_flan_t5.py",
     }, 
     "minimonkey": {
-        "env": "/root/yuexuanliu/simple-mmeval/envs/minimonkey",
+        "env": os.path.join(env_dir, "minimonkey"),
         "infer_file": "minimonkey.py",
     }
 }

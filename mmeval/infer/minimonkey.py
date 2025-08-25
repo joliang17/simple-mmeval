@@ -8,13 +8,17 @@ from torchvision.transforms.functional import InterpolationMode
 
 from mmeval.infer.task import Task
 from mmeval.utils import constants
-from mmeval.utils.argparser import parse_args
+from mmeval.utils.argparser import parse_args, parse_model_kwargs, parse_gen_kwargs
 
 class TaskRunner(Task):
     def __init__(self, args):
         super().__init__(args)
         self.args = args
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.dtype = getattr(args, "dtype") or torch.bfloat16
+        self.default_model_kwargs = {"device_map": "auto"}
+        self.default_gen_kwargs = {"max_new_tokens": 512, "do_sample": False}
+        self.model_kwargs = parse_model_kwargs(args, self.default_model_kwargs)
+        self.gen_kwargs = parse_gen_kwargs(args, self.default_gen_kwargs)
     
     def load_model(self, args):
         self.model_name_or_path = f"mx262/{args.model_name_or_path}"
@@ -38,7 +42,10 @@ class TaskRunner(Task):
         return ori_sample
     
     def _generate_response(self, data):
-        generation_config = dict(do_sample=self.args.do_sample, max_new_tokens=self.args.max_new_tokens)
+        # We construct dict from params to keep same with sample code: https://github.com/Yuliang-Liu/Monkey/blob/main/project/mini_monkey/demo.py
+        generation_config = dict(do_sample=self.gen_kwargs.do_sample, max_new_tokens=self.gen_kwargs.max_new_tokens)
+
+        # pixel_values/ target_aspect_ratio/ question information extract via parse_input
         response, history = self.model.chat(self.tokenizer, data["pixel_values"], data["target_aspect_ratio"], data["question"], generation_config, history=None, return_history=True)
 
         return response
