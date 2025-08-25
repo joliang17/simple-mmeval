@@ -24,7 +24,7 @@ series_infer_env_mapping = {
         "infer_file": "blip2_flan_t5.py",
     }, 
     "visualglm": {
-        "env": "/root/yuexuanliu/simple-mmeval/envs/visualglm/",
+        "env": os.path.join(env_dir, "visualglm"),
         "infer_file": "visualglm.py",
     }
 }
