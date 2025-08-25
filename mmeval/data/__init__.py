@@ -1,5 +1,6 @@
 from .local import LocalJSONDataset
 from .evalkit import load_evalkit_dataset
+from .mmeval_hf import MMEvalHFDataset
 
 
 def load_dataset(args):
@@ -17,5 +18,7 @@ def load_dataset(args):
         return load_evalkit_dataset(args)
     elif args.dataset.startswith("evalkit@"):
         return load_evalkit_dataset(args)
+    elif args.dataset.startswith("mmeval_hf@"):
+        return MMEvalHFDataset(args)
     else:
         raise ValueError(f"Unsupported dataset specification: {args.dataset}") 

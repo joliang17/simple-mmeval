@@ -97,7 +97,7 @@ class TaskRunner(Task):
     def parse_input(self, sample:dict):
         question = sample["prompt"]
         # extract placeholder
-        placeholders = re.findall(r'<[^>]*>', question)
+        placeholders = re.findall(r'<(?:image|video)>', question)
         assert len(placeholders) == 1, f"VideoLLaMA2 supports one image or video, but got {len(placeholder)}"
         
         placeholder = placeholders[0]

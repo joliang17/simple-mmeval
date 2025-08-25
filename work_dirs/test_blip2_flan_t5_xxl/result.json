@@ -1,0 +1,20 @@
+[
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "response": "a group of red apples on a burlap cloth"
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "response": "the path with the purple cube on the left"
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "response": "the path with the purple cube on the left"
+    }
+]
