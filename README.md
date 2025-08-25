@@ -132,7 +132,9 @@ Currently supported model series:
 |--------------|--------|---------------|
 | **Qwen2.5-VL** | Qwen2.5-VL-3B-Instruct, Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-32B-Instruct, Qwen2.5-VL-72B-Instruct | [`scripts/test_bed/qwen2d5.sh`](scripts/test_bed/qwen2d5.sh) |
 | **VideoLLaMA2** | VideoLLaMA2-7B, VideoLLaMA2-13B | [`scripts/test_bed/videollama2.sh`](scripts/test_bed/videollama2.sh) |
-| **Idefics** | idefics-9b-instruct, idefics-80b-instruct, Idefics2-8b, Idefics3-8B-Llama3 | [`scripts/test_bed/idefics.sh`](scripts/test_bed/idefics.sh) |
+| **Idefics1** | idefics-9b-instruct, idefics-80b-instruct | [`scripts/test_bed/idefics1-multi-image-interleave.sh`](scripts/test_bed/idefics1-multi-image-interleave.sh) |
+| **Idefics2** | Idefics2-8b | [`scripts/test_bed/idefics2-multi-image-interleave.sh`](scripts/test_bed/idefics2-multi-image-interleave.sh) |
+| **Idefics3** | Idefics3-8B-Llama3 | [`scripts/test_bed/idefics3-multi-image-interleave.sh`](scripts/test_bed/idefics3-multi-image-interleave.sh) |
 
 ## Supported Datasets
 
