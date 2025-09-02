@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "user\n\n Please provide a detailed description of the contents shown in the image.\nassistant\nThe image shows a GMC pickup truck driving on a dirt road with a backdrop of rocky cliffs. The truck is silver in color with black rims and a black grille. The GMC logo is prominently displayed on the grille. The truck appears to be in motion, as there is a cloud of dust rising from the tires. The sky is clear and blue, indicating a sunny day. The overall scene suggests an off-road adventure or exploration."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "user\n\n Please provide a detailed description of the contents shown in the image.\nassistant\nThe image shows a white speedboat with a blue stripe on the side, moving at high speed on a body of water. The boat is leaving a trail of white water behind it, indicating its speed. The sky is clear and blue, and the water is a deep blue-green color. The boat has a large cabin with large windows, and there are several people visible inside the cabin. The boat is equipped with a large outboard motor on the back, and there are several life jackets hanging on the side of the boat. The boat is designed for speed and luxury, and it appears to be a high-end recreational vessel."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "user\n\n Please provide a detailed description of the contents shown in the two images.\nassistant\nThe first image shows a GMC pickup truck driving on a dirt road with a backdrop of rocky cliffs. The truck is silver in color with black rims and appears to be in motion, as there is dust being kicked up by the tires. The GMC logo is prominently displayed on the front grille of the truck.\n\nThe second image shows a white speedboat with a blue stripe on the side, cutting through the water at high speed. The boat is sleek and modern, with a large outboard motor on the back. The water is splashing up behind the boat, indicating its speed. The sky is clear and blue, and the water is a deep blue-green color."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "user\n\n Please provide a detailed description of the contents shown in the two images.\nassistant\nThe first image shows a white speedboat with a blue stripe on the side, moving at high speed on a body of water. The boat is leaving a trail of white water behind it, indicating its speed. The sky is clear and blue, and the water is calm. The boat has a large cabin with large windows, and there is a small deck at the front with a railing. The boat appears to be a luxury vessel, designed for high-speed travel and comfort.\n\nThe second image shows a silver GMC pickup truck driving on a dirt road with a rocky cliff in the background. The truck is kicking up dust as it moves, and the road appears to be rough and uneven. The truck has a large front grille with the GMC logo, and it has a four-door cab with a short bed. The truck is equipped with off-road tires and appears to be designed for rugged terrain. The sky is clear and blue, and the landscape is arid and rocky."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "user\n\nPlease provide a detailed description of the contents shown in \n and \n.\nassistant\nThe image shows a GMC pickup truck driving on a dirt road with a backdrop of rocky cliffs. The truck is silver in color with black rims and appears to be in motion, as evidenced by the dust being kicked up by the tires. The GMC logo is prominently displayed on the front grille of the truck. The overall scene suggests an off-road adventure or exploration in a rugged terrain."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "user\n\nPlease provide a detailed description of the contents shown in \n and \n.\nassistant\nThe image shows a white speedboat with a sleek design, cutting through the blue ocean water at high speed. The boat is leaving a trail of white foam behind it, indicating its speed and power. The sky is clear and blue, suggesting a sunny day. The boat has a large cabin with large windows, and there are several people visible inside the cabin, enjoying the ride. The boat is equipped with a large outboard engine, which is likely responsible for its impressive speed. The overall impression is of a luxurious and high-performance vessel, designed for speed and comfort."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "user\n\nGiven the Image A \n and Image B \n. Please provide a detailed description of the contents shown in each image.\nassistant\nImage A shows a GMC pickup truck driving on a dirt road with a backdrop of rocky cliffs. The truck is silver in color with black rims and appears to be in motion, as evidenced by the dust being kicked up by the tires. The GMC logo is prominently displayed on the front grille of the truck.\n\nImage B shows a white speedboat with a blue stripe on the side, cutting through the water at high speed. The boat is sleek and modern in design, with a large outboard motor on the back. The water is splashing up behind the boat, indicating its speed and power. The sky is clear and blue, suggesting a sunny day."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "user\n\nGiven the Image A \n and Image B \n. Please provide a detailed description of the contents shown in each image.\nassistant\nImage A shows a large white yacht speeding across a body of water. The yacht has a sleek design with a curved bow and a flat stern. It has multiple decks with large windows and a spacious aft deck with a seating area. The yacht is leaving a trail of white water behind it, indicating its high speed. The sky is clear and blue, and the water is a deep blue-green color.\n\nImage B shows a silver GMC pickup truck driving on a dirt road. The truck has a large front grille with the GMC logo in the center, and it has a muscular design with a high ground clearance. The truck is kicking up dust as it drives, and the background shows a rocky landscape with red and orange rocks. The sky is clear and blue, and the sun is shining brightly."
+    }
+]

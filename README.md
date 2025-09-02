@@ -128,6 +128,18 @@ Separate worker outputs are merged into a single result file, abstracting parall
 
 Currently supported model series:
 
+| Model Series   | Models                                                                                                                                           | Usage Example |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Qwen2.5-VL** | Qwen2.5-VL-3B-Instruct, Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-32B-Instruct, Qwen2.5-VL-72B-Instruct                                                  | [`scripts/test_bed/qwen2d5.sh`](scripts/test_bed/qwen2d5.sh) |
+| **VideoLLaMA2**| VideoLLaMA2-7B, VideoLLaMA2-13B                                                                                                                  | [`scripts/test_bed/videollama2.sh`](scripts/test_bed/videollama2.sh) |
+| **BLIP2-FLAN-T5** | Salesforce/blip2-flan-t5-xl, Salesforce/blip2-flan-t5-xxl                                                                                     | [`scripts/test_bed/blip2-flan-t5-xl.sh`](scripts/test_bed/blip2-flan-t5-xl.sh) |
+| **LLaVA**      | llava-1.5-7b-hf, llava-1.5-13b-hf                                                                                                                | [`scripts/test_bed/llava-single-image-start.sh`](scripts/test_bed/llava-single-image-start.sh) |
+| **LLaVA-Next** | llava-v1.6-mistral-7b-hf, llava-v1.6-vicuna-7b-hf, llava-v1.6-vicuna-13b-hf, llava-v1.6-34b-hf, llama3-llava-next-8b-hf, llava-next-72b-hf, llava-next-110b-hf | [`scripts/test_bed/llava-next-multi-image-interleave.sh`](scripts/test_bed/llava-next-multi-image-interleave.sh) |
+| **GLM-4V**     | glm-4v-9b                                                                                                                                         | [`scripts/test_bed/glm-4v-single-image-start.sh`](scripts/test_bed/glm-4v-single-image-start.sh) |
+| **Ovis1.5**    | Ovis1.5-Llama3-8B, Ovis1.5-Gemma2-9B                                                                                                             | [`scripts/test_bed/ovis1d5-single-image-start.sh`](scripts/test_bed/ovis1d5-single-image-start.sh) |
+| **Ovis1.6**    | Ovis1.6-Llama3.2-3B, Ovis1.6-Gemma2-9B, Ovis1.6-Gemma2-27B                                                                                                            | [`scripts/test_bed/ovis1d6-multi-image-start.sh`](scripts/test_bed/ovis1d6-multi-image-start.sh) |
+| **Moondream1** | vikhyatk/moondream1 | [`scripts/test_bed/moondream1.sh`](scripts/test_bed/moondream1.sh) |
+| **Moondream2** | vikhyatk/moondream2                                                                                                                         | [`scripts/test_bed/moondream2.sh`](scripts/test_bed/moondream2.sh) |
 | Model Series | Models | Usage Example |
 |--------------|--------|---------------|
 | **Qwen2.5-VL** | Qwen2.5-VL-3B-Instruct, Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-32B-Instruct, Qwen2.5-VL-72B-Instruct | [`scripts/test_bed/qwen2d5.sh`](scripts/test_bed/qwen2d5.sh) |

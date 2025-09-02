@@ -1,0 +1,6 @@
+transformers==4.51.3 
+torch
+torchvision
+accelerate
+qwen-vl-utils[decord]
+pandas

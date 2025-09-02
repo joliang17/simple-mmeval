@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image features a grey truck driving through a desert landscape. The truck is a pickup, with a flatbed trailer attached to it. It appears to be making a sharp turn on a dirt road, kicking up dust in its wake. The surrounding environment is barren, with no visible vegetation or signs of life. The truck is the main focus of the scene, occupying a significant portion of the image from the left to the right."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image features a large white boat speeding across a vast body of water, likely the ocean. The boat is leaving a wake behind it, indicating that it is moving quickly through the water. The scene is captured in a dynamic stance, with the boat taking up a significant portion of the image. The water appears to be calm, allowing the boat to glide smoothly across the surface."
+    }
+]

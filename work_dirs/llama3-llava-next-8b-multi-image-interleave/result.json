@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "user\n\n\n Please provide a detailed description of the contents shown in the image.assistant\n\n\nThe image shows a modern pickup truck in motion on a dirt road. The truck is a GMC (General Motors Company) vehicle, as indicated by the GMC logo on the front grille. It appears to be a mid-size pickup truck with a four-door crew cab configuration, featuring a chrome grille, large, aggressive headlights, and a set of five-spoke alloy wheels. The truck is equipped with a bed cover, and the side mirrors are visible, suggesting it is designed for off-road use or rugged terrain. The vehicle is captured in a dynamic pose, with the front wheels lifted off the ground, indicating movement or acceleration. The background is a desert-like landscape with rocky terrain and a clear sky, which suggests the photo was taken in a remote or arid environment. The image is a photograph with a focus on the vehicle, and it is taken from a perspective that emphasizes the truck's design and capabilities."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "user\n\n\n Please provide a detailed description of the contents shown in the image.assistant\n\n\nThe image shows a motorboat in motion on a body of water, likely the ocean or a large lake, given the open water and the horizon line. The boat is white with black and red accents, and it appears to be a speedboat or a yacht, given its size and design. The boat is angled slightly to the left of the frame, suggesting it is moving at a high speed, as indicated by the wake it is creating behind it. The wake is white and frothy, indicating the boat is moving quickly through the water.\n\nThe sky is clear with a few clouds, and the water is a deep blue, suggesting it might be a sunny day. There are no visible texts or distinctive markings on the boat that provide additional information about the make or model of the boat. The image is a photograph with a focus on the boat, capturing the motion and the surrounding environment. The style of the image is realistic, with natural lighting and colors that convey a sense of speed and movement."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "user\n\n\n Please provide a detailed description of the contents shown in the two images.assistant\n\n\nThe image you've provided appears to be a composite of two different scenes. The top half of the image shows a GMC truck driving on a dirt road with a dust cloud behind it, indicating motion. The truck is a modern, off-road vehicle with a robust design, featuring a prominent grille with the GMC logo, large, rugged tires, and a high ground clearance. The vehicle is angled slightly to the left, and the background is a clear sky with a hint of mountains in the distance.\n\nThe bottom half of the image shows a white speedboat on the water, creating a wake behind it. The boat is a powerboat with a sleek design, featuring a cabin with a windshield and a bow area. The hull of the boat is white, and there is a black stripe running along the side. The water appears calm, and the sky is clear, suggesting a sunny day.\n\nThe two images are not related to each other; they depict two different modes of transportation and environments. The GMC truck is on land, and the speedboat is on water."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "user\n\n\n Please provide a detailed description of the contents shown in the two images.assistant\n\n\n\nThe image you've provided appears to be a screenshot or a thumbnail from a video, as indicated by the aspect ratio and the way the image is cropped. It shows a GMC (General Motors Corporation) truck driving on a sandy surface, likely a beach or a desert, given the presence of sand and the clear sky. The truck is a modern, off-road vehicle with a robust design, featuring a high ground clearance and large, aggressive tires. The GMC logo is prominently displayed on the front grille, and the vehicle has a matte black finish with chrome accents.\n\nThe truck is in motion, as evidenced by the sand being kicked up by its wheels, and the vehicle's body is angled slightly to the left, suggesting a turn or a slight change in direction. The lighting suggests it might be either early morning or late afternoon, given the soft shadows and the warm glow of the sunlight.\n\nThe image is a high-resolution photograph with a focus on the vehicle, capturing the details of the truck's design and the surrounding environment. The composition of the image is dynamic, with the truck positioned in the center, drawing the viewer's attention to the vehicle and its immediate surroundings."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "user\n\n\nPlease provide a detailed description of the contents shown in \n and \n.assistant\n\n\nThe image shows a GMC (General Motors Corporation) branded boat in motion on a body of water. The boat is a speedboat, characterized by its sleek design, with a white hull and a black stripe running along its side. The GMC logo is prominently displayed on the front of the boat. The boat is equipped with a bowrider, which is a type of boat that has an open bow area for seating and a closed cabin for protection from the elements.\n\nThe boat is moving at a high speed, as indicated by the wake it is creating behind it. The wake is white and frothy, suggesting the boat is moving at a significant speed. The water around the boat is calm, and the boat is positioned in the center of the image, drawing the viewer's attention to it.\n\nThe background of the image features a clear blue sky and a calm sea, which contrasts with the dynamic movement of the boat. The overall scene suggests a day of leisure or sport, possibly a day of boating or water sports. The image is a photograph with a focus on the boat, capturing the motion and the surrounding environment."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "user\n\n\nPlease provide a detailed description of the contents shown in \n and \n.assistant\n\n\n\nThe image shows a GMC (General Motors Corporation) truck driving on a sandy beach. The truck is a modern, off-road vehicle with a robust design, featuring a high ground clearance and large, rugged tires. It has a prominent grille with the GMC logo in the center, and the headlights are angular and narrow. The vehicle is painted in a metallic color, possibly silver or light gray, and the body has a matte finish. The truck is equipped with a roll bar, which is a safety feature designed to protect occupants in case of a rollover. The vehicle is in motion, as evidenced by the sand being kicked up by the tires, and the water is visible in the background, suggesting that the beach is near a body of water. The image is a photograph with a focus on the vehicle, capturing the action and the environment around it."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "user\n\n\nGiven the Image A \n and Image B \n. Please provide a detailed description of the contents shown in each image.assistant\n\n\nImage A:\nThe image shows a GMC (General Motors Corporation) branded vehicle, specifically a GMC Sierra pickup truck, in motion on a dirt road. The truck is angled slightly to the left of the frame, with its front end leading towards the right side of the image. The vehicle is equipped with a set of off-road tires, which are visible on the wheels, and the suspension appears to be lifted, suggesting it is designed for off-road use. The truck's body is painted in a metallic finish, and the GMC logo is prominently displayed on the front grille. The truck is kicking up a cloud of dust as it moves, indicating that it is driving at a speed that causes the tires to spin and the road to be disturbed. The background is blurred, but it seems to be a natural landscape with vegetation and possibly a body of water in the distance. The lighting suggests it could be either early morning or late afternoon, given the soft shadows and the angle of the sunlight.\n\nImage B:\nThe image shows a boat on the water. The boat is a speedboat, characterized by its sleek design, a pointed nose, and a V-shaped hull that is typical for high-performance boats. The boat is white with black accents and has a black stripe running along its side. The GMC logo is visible on the side of the boat, indicating that it is a GMC-branded speedboat. The boat is in motion, as evidenced by the wake it is creating behind it. The water appears calm, and the sky is clear, suggesting good weather conditions for boating. The boat is the central focus of the image, and the water and sky fill the rest of the frame, providing a sense of openness and freedom."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "user\n\n\nGiven the Image A \n and Image B \n. Please provide a detailed description of the contents shown in each image.assistant\n\n\n\nImage A:\nThe image shows a GMC (General Motors Corporation) truck driving on a sandy surface, likely a beach or desert. The truck is a modern, off-road vehicle with a robust design, featuring a high ground clearance and large, rugged tires. It has a prominent grille with the GMC logo in the center, and the headlights are angular and narrow. The vehicle's body is painted in a metallic color, and the side mirrors are large and black. The truck is angled slightly to the left, and the motion blur suggests it is moving at a moderate speed. The background is a clear sky with a few clouds, and the terrain is flat with no visible vegetation, indicating a remote or arid environment.\n\nImage B:\nThe image is a close-up of the front end of the same GMC truck as seen in Image A. The focus is on the front grille, which is large and has a prominent GMC logo in the center. The headlights are angular and narrow, and the front bumper appears to be made of a durable material, possibly plastic or metal, with a rugged design. The truck's body is painted in a metallic color, and the side mirrors are large and black. The image does not provide any additional context or background details, so the focus is solely on the vehicle's front end."
+    }
+]

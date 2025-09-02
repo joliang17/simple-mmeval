@@ -56,7 +56,12 @@ if __name__ == "__main__":
        json.dump(cache, open(os.path.join(tmp_dir, "prev_run_cache.json"), "w"))
 
     # Initialize GPU pool and task list
-    available_gpus = list(range(total_gpus))
+    cvd = os.environ.get("CUDA_VISIBLE_DEVICES", "").strip()
+    if cvd:
+        available_gpus = [int(x.strip()) for x in cvd.split(",") if x.strip()]
+    else:
+        available_gpus = list(range(total_gpus))
+        
     running_tasks = []
     next_rank = 0
     ###################################################################################################

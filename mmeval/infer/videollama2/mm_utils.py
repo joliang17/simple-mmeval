@@ -90,7 +90,10 @@ def create_photo_grid(arr, rows=None, cols=None):
 
 
 def process_image(image_path, processor, aspect_ratio='pad'):
-    image = Image.open(image_path).convert('RGB')
+    if isinstance(image_path, Image.Image):
+        image = image_path
+    else:
+        image = Image.open(image_path).convert('RGB')
 
     images = [np.array(image)]
 
