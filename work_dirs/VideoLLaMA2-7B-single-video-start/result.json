@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet.",
+        "eval-id": 0,
+        "response": "The image captures a moment in a desert landscape, where a gray GMC truck is in motion. The truck, with its black grille and black wheels, is driving on a dirt road. The GMC logo, a symbol of the brand's identity, is prominently displayed on the front grille. The truck is moving towards the right side of the image, suggesting a journey in progress. The backdrop of the image is a rocky cliff, adding a sense of ruggedness to the scene. The truck's position in the center of the image draws the viewer's attention, emphasizing its importance in the scene. The image does not contain any discernible text. The relative position of the truck and the cliff suggests that the truck is some distance away from the cliff. The image does not provide any information about the number of objects or their actions beyond what has been described. The image is a realistic representation of a scene, and all descriptions are based on the visible content of the image."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet.",
+        "eval-id": 1,
+        "response": "The image captures a moment of exhilaration and freedom on the open sea. Dominating the scene is a sleek, white yacht, its curved bow cutting through the water with ease. The yacht is in motion, moving from left to right, leaving behind a large wake that disrupts the otherwise calm ocean surface.\n\nThe yacht is well-equipped, boasting a spacious deck and a cabin, suggesting it's designed for both speed and comfort. The deck is unoccupied, adding a sense of solitude to the scene.\n\nThe ocean itself is a deep blue, its vastness stretching out to meet the horizon. Above, the sky is a lighter shade of blue, dotted with a few clouds, providing a serene backdrop to the dynamic action of the yacht.\n\nOverall, the image conveys a sense of adventure and tranquility, capturing the essence of a journey on the open sea."
+    },
+    {
+        "id": 2,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality.",
+        "eval-id": 2,
+        "response": "In the video, we see a cat walking through a field of green grass. The cat is orange and white in color and has a long tail. It walks in a straight line, occasionally looking around. The grass is tall and green, and there are no other animals or objects visible in the video."
+    },
+    {
+        "id": 3,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality.",
+        "eval-id": 3,
+        "response": "The video captures the breathtaking beauty of a sunrise or sunset over a mountain range. The sun is seen rising or setting behind the mountains, casting a warm, orange glow across the sky. The clouds are illuminated by the sun's rays, creating a stunning visual display. The video showcases the sun at different stages of its ascent or descent, with varying degrees of brightness and color intensity. The mountains remain a constant presence in the background, their silhouettes adding depth and dimension to the scene. The video is a testament to the awe-inspiring power of nature and the serene beauty of a sunrise or sunset."
+    }
+]

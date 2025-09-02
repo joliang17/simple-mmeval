@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "[INST]  \n Please provide a detailed description of the contents shown in the image. [/INST] The image shows a GMC pickup truck in motion on a dirt road. The truck is a modern model with a sleek design, featuring a prominent front grille with the GMC logo in the center. The vehicle has a chrome grille, black side mirrors, and black wheels with a multi-spoke design. The truck is equipped with a four-door crew cab configuration, and the windows are tinted.\n\nThe truck is kicking up a cloud of dust as it moves, indicating that the road is unpaved and possibly dry. The background of the image reveals a rugged landscape with rocky terrain and a clear sky, suggesting that the photo was taken during the day in a desert-like environment. The lighting in the image is bright, with the sun casting shadows on the ground, which adds to the dynamic feel of the scene. "
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "[INST]  \n Please provide a detailed description of the contents shown in the image. [/INST] The image shows a high-speed motor yacht cutting through the water. The yacht is predominantly white with a dark blue stripe running along its side. It has a sleek, modern design with a large, open deck area at the rear, which is likely used for relaxation or entertaining guests. The bow of the yacht is visible, and it appears to be equipped with a radar dome and other navigation equipment.\n\nThe yacht is moving at a high speed, as evidenced by the wake it is creating, which is white and frothy, indicating that the water is being displaced by the boat's movement. The wake is trailing behind the yacht, suggesting that the boat is moving forward.\n\nThe background of the image shows a clear sky and calm ocean, with no other vessels or landmarks visible. The water is a deep blue, and the horizon is visible in the distance. The image is taken from a perspective that is slightly above the yacht, providing a view of the boat's profile and the wake it is creating.\n\nThere are no visible texts or branding on the yacht, and the image is a standard photograph with no apparent filters or artistic manipulations. The style of the image is realistic, capturing the yacht in its natural environment. "
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "[INST]  \n \n Please provide a detailed description of the contents shown in the two images. [/INST] The image shows a high-performance off-road vehicle, which appears to be a GMC Hummer EV, driving on a sandy surface with a body of water in the background. The vehicle is equipped with large, black off-road tires and has a distinctive, angular design with a prominent front grille and a raised suspension. The color scheme of the vehicle is a combination of white and black, with the GMC logo prominently displayed on the front grille. The vehicle is kicking up a significant amount of sand as it moves, indicating its powerful acceleration and off-road capabilities. The background features a clear sky and a calm body of water, suggesting a desert or coastal environment. The image is a still from a video, as indicated by the play button overlay. "
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "[INST]  \n \n Please provide a detailed description of the contents shown in the two images. [/INST] The image shows a GMC Hummer H3, a mid-size SUV, in motion on a body of water. The vehicle is equipped with large off-road tires and is kicking up a spray of water as it moves, indicating speed. The Hummer is painted in a metallic silver color and features the GMC logo prominently on the front grille. The vehicle is designed with a boxy shape, typical of the Hummer lineup, and has a robust, utilitarian appearance. The background suggests a clear day with a blue sky and a calm water surface, which could be a lake or a sheltered bay. The image is a still from a video, as indicated by the play button overlay. "
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "[INST]  \n \nPlease provide a detailed description of the contents shown in  and . [/INST] The image shows a high-performance off-road vehicle, specifically a GMC Hummer H3, driving on a sandy surface with a body of water in the background. The vehicle is equipped with large, black off-road tires, which are typical for such vehicles to handle rough terrain. The Hummer H3 is a mid-size SUV known for its robustness and off-road capabilities.\n\nThe vehicle is painted in a metallic silver color, and it features a prominent front grille with the GMC logo in the center. The headlights are large and angular, which is characteristic of the Hummer design. The side mirrors are also large, providing a good field of view for the driver.\n\nThe Hummer H3 is equipped with a sunroof, which is open, allowing natural light to enter the cabin. The vehicle is in motion, as indicated by the spray of sand being kicked up by its wheels.\n\nThe background of the image shows a clear sky and a calm body of water, suggesting that the location might be near a coastline or a large lake. The overall setting appears to be a desert or a similar arid environment, which is consistent with the vehicle's off-road capabilities. "
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "[INST]  \n \nPlease provide a detailed description of the contents shown in  and . [/INST] The image shows a GMC Hummer H3, a mid-size SUV, in motion on a body of water. The vehicle is equipped with a snorkel, which is a tube that extends above the vehicle's roofline, allowing it to pass through water without the risk of water entering the engine compartment. The Hummer is kicking up a significant amount of water spray, indicating that it is moving at a high speed. The vehicle's design is rugged and utilitarian, with a boxy shape and a high ground clearance, which is typical for off-road vehicles. The GMC logo is prominently displayed on the front grille. The background features a clear sky and a calm sea, suggesting that the photo was taken during the day under good weather conditions. The image is likely used for promotional or advertising purposes, showcasing the vehicle's off-road capabilities. "
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "[INST]  \n \nGiven the Image A  and Image B . Please provide a detailed description of the contents shown in each image. [/INST] Image A:\nThe image shows a large, off-road capable vehicle, which appears to be a GMC Hummer H3. It is a four-door SUV with a boxy design, characterized by its robust and rugged appearance. The vehicle is painted in a metallic silver color and features a prominent front grille with the GMC logo in the center. The headlights are angular and have a modern design. The vehicle is equipped with large, black off-road tires that are partially covered in a layer of dust, suggesting it has been driving on a rough terrain. The background of the image is a desert-like environment with sand dunes and a clear blue sky.\n\nImage B:\nThe image is a close-up of the front of the same vehicle, the GMC Hummer H3. It is captured in motion, as evidenced by the motion blur on the tires and the dust being kicked up by the vehicle. The vehicle is positioned at an angle to the camera, allowing a clear view of the front grille, headlights, and part of the hood. The background is still the desert landscape, but the focus is more on the vehicle itself. The image captures the vehicle's off-road capabilities and the dusty conditions it is driving in. "
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "[INST]  \n \nGiven the Image A  and Image B . Please provide a detailed description of the contents shown in each image. [/INST] Image A:\nThe image shows a high-performance off-road vehicle, specifically a GMC Hummer H3, driving on a sandy surface. The vehicle is angled to the left, with its front wheels lifted off the ground, indicating that it is in motion and possibly navigating a challenging terrain. The sand is kicked up behind the vehicle, suggesting that it is moving at a high speed or that the sand is loose and easily disturbed. The vehicle's design features a boxy shape with a prominent front grille, and it has a robust and rugged appearance, which is typical for off-road vehicles. The GMC logo is visible on the front grille. The sky is clear and blue, indicating fair weather conditions.\n\nImage B:\nThis image is a close-up of the front of the same GMC Hummer H3. It shows the vehicle's grille and the front part of the hood. The vehicle's design is characterized by a large, angular grille with the GMC logo prominently displayed in the center. The headlights are visible, and the vehicle's front bumper is also part of the image. The vehicle appears to be stationary, as there is no motion blur or sand being kicked up. The focus is on the vehicle's design and features, rather than the action of driving. The sky is still visible in the background, but it is less prominent in this image. "
+    }
+]

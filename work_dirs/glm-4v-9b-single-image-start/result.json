@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image features a GMC truck in a dynamic outdoor setting. The truck is in motion, kicking up a trail of dust, suggesting it is driving on a rough, possibly unpaved terrain. The truck has a four-door crew cab design, which typically provides more interior space for passengers, especially in the rear cabin.\n\nThe GMC truck has a robust and muscular appearance, with a high-mounted grille that features the GMC logo prominently in red. The grille has a black mesh design, and the headlights are sleek and angular, with LED technology, which is common in modern vehicles for their efficiency and brightness.\n\nThe truck's body is painted in a metallic finish, which gives it a rugged and durable look. The side mirrors are large and angular, matching the overall aggressive styling of the vehicle. The GMC truck also has black wheel arch extensions that complement its off-road capability.\n\nThe GMC truck's wheels are large and appear to be off-road tires, which are designed to handle rough terrain and provide better traction. The tires are black, matching the overall dark color scheme of the truck.\n\nThe background of the image is a natural landscape with rocky hills and sparse vegetation, which suggests that the truck is in a remote or wilderness area. The lighting in the image is bright, indicating it could be taken during the daytime. The overall impression is one of adventure and the capability of the vehicle to traverse challenging terrains. <|endoftext|>"
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image depicts a sleek, white yacht cutting through the calm blue waters of the sea. The yacht is captured from an aerial perspective, with the bow leading the way and the stern trailing behind, leaving a frothy wake in its wake. The wake is a clear indication of the yacht's forward momentum and speed.\n\nThe yacht's design is modern and streamlined, with a low profile that suggests it is built for high performance. The superstructure is minimal, with a radar dome atop the flybridge, which is a common feature on luxury yachts for navigation and communication purposes. The flybridge also appears to have seating or lounging areas, which are often found on such vessels for relaxation and socializing.\n\nThe yacht's hull is white, which is a common color choice for boats as it reflects sunlight and can help in maintaining a cooler interior temperature. The water around the yacht is a deep blue, indicating that the sea is calm and clear, which is ideal for boating activities.\n\nThe sky above is a soft, pale blue, with no clouds visible, suggesting that the weather is fair and perfect for a day on the water. The horizon is faintly visible in the distance, with a landmass that could be an island or a coastline, adding to the scenic beauty of the setting.\n\nOverall, the image conveys a sense of luxury, leisure, and the freedom of the open sea. The yacht appears to be in pristine condition, suggesting that it is well-maintained and likely used by those who value opulence and the pleasure of maritime adventures. <|endoftext|>"
+    }
+]
