@@ -5,6 +5,6 @@ python mmeval/run.py \
     --dataset local@json \
     --out_dir work_dirs/visualglm-6b-single-image-start_long \
     --img_dir test_bed/modality_test/media/448 \
-    --model_name_or_path visualglm-6b \
+    --model_name_or_path mmeval/infer/visualglm_6b \
     --gpu_per_parallel 1 \
     --parallel_per_task 4

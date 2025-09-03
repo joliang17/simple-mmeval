@@ -20,13 +20,11 @@ class TaskRunner(Task):
         super().__init__(args)
 
     def load_model(self, args):
-        model_dir = os.path.join(os.path.abspath("mmeval/infer"), args.model_name_or_path)
-        weight_dir = os.path.join(os.path.abspath("/models"), args.model_name_or_path)
+        self.tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, trust_remote_code=True, local_files_only=True)
+        self.config = AutoConfig.from_pretrained(args.model_name_or_path, trust_remote_code=True, local_files_only=True)
 
-        self.tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True, local_files_only=True)
-        self.config = AutoConfig.from_pretrained(model_dir, trust_remote_code=True, local_files_only=True)
         self.model = ChatGLMForConditionalGenerationWithImage.from_pretrained(
-            weight_dir,
+            "/models/visualglm_6b",
             local_files_only=True,
             config=self.config,
             **self.model_kwargs).half().cuda()
