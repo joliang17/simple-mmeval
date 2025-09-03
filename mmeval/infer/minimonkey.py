@@ -55,15 +55,13 @@ class TaskRunner(Task):
 
         question = sample["prompt"]
         # extract placeholder
-        placeholders = re.findall(r'<[^>]*>', question)
-        assert len(placeholders) == 1, f"VideoLLaMA2 supports one image or video, but got {len(placeholder)}"
+        placeholders = re.findall(r'<(?:image|video)>', question)
+        assert len(placeholders) == 1 and placeholders[0] == constants.image, f"Minimonkey supports one image, but got {len(placeholder)}"
         placeholder = placeholders[0]
-        modality = "image" if placeholder == constants.image else "video"
 
         # remove the placeholder in the question
         question = question.replace(placeholder, "").strip()
         parsed_sample["question"] = question
-        parsed_sample["modality"] = modality
 
         image = sample["media"][0]
         pixel_values, target_aspect_ratio = self.transform_image(image, min_num=4, max_num=12)

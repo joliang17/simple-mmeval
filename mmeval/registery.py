@@ -61,10 +61,7 @@ series_infer_env_mapping = {
     "moondream2": {
         "env": os.path.join(env_dir, "moondream2"),
         "infer_file": "moondream2.py",
-    }
-}
-
-    }, 
+    },
     "minimonkey": {
         "env": os.path.join(env_dir, "minimonkey"),
         "infer_file": "minimonkey.py",
