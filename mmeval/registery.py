@@ -14,7 +14,7 @@ series_mapping = {
     "blip2_flan_t5": ["blip2-flan-t5-xl", "blip2-flan-t5-xxl"],
     "moondream1": ["moondream1"],
     "moondream2": ["moondream2"],
-    "visualglm": ["visualglm-6b"]
+    "visualglm": ["visualglm_6b"]
 }
 
 series_infer_env_mapping = {
@@ -61,10 +61,7 @@ series_infer_env_mapping = {
     "moondream2": {
         "env": os.path.join(env_dir, "moondream2"),
         "infer_file": "moondream2.py",
-    }
-}
-
-    }, 
+    },
     "visualglm": {
         "env": os.path.join(env_dir, "visualglm"),
         "infer_file": "visualglm.py",

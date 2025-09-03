@@ -4,7 +4,6 @@ import torch
 import os
 from transformers import AutoTokenizer, AutoConfig
 from mmeval.infer.task import Task
-from mmeval.utils import constants
 from mmeval.utils.argparser import parse_args, parse_model_kwargs, parse_gen_kwargs
 
 from visualglm_6b.modeling_chatglm import ChatGLMForConditionalGenerationWithImage
@@ -21,8 +20,8 @@ class TaskRunner(Task):
         super().__init__(args)
 
     def load_model(self, args):
-        model_dir = os.path.join(os.path.abspath("mmeval/infer"), args.model_name_or_path.replace("-", "_"))
-        weight_dir = os.path.join(os.path.abspath("/models"), args.model_name_or_path.replace("-", "_"))
+        model_dir = os.path.join(os.path.abspath("mmeval/infer"), args.model_name_or_path)
+        weight_dir = os.path.join(os.path.abspath("/models"), args.model_name_or_path)
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True, local_files_only=True)
         self.config = AutoConfig.from_pretrained(model_dir, trust_remote_code=True, local_files_only=True)
@@ -34,7 +33,7 @@ class TaskRunner(Task):
 
     def run_sample(self, sample: dict):
         ori_sample = copy.deepcopy(sample)
-        question, modality = self.parse_input(sample)
+        question = self.parse_input(sample)
 
         if not self.args.score_target:
             ori_sample["response"] = self._generate_response(question, sample["media"], None)
@@ -53,16 +52,14 @@ class TaskRunner(Task):
     def parse_input(self, sample:dict):
         question = sample["prompt"]
         # extract placeholder
-        placeholders = re.findall(r'<[^>]*>', question)
-        assert len(placeholders) == 1, f"VideoLLaMA2 supports one image or video, but got {len(placeholder)}"
-        
+        placeholders = re.findall(r'<(?:image|video)>', question)
+        assert len(placeholders) == 1, f"VisualGLM supports one image, but got {len(placeholder)}"
         placeholder = placeholders[0]
-        modality = "image" if placeholder == constants.image else "video"
 
         # remove the placeholder in the question
         question = question.replace(placeholder, "").strip()
 
-        return question, modality
+        return question
 
 
 
