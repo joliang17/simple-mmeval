@@ -10,3 +10,4 @@ av
 datasets
 accelerate
 protobuf
+sentencepiece
