@@ -8,7 +8,7 @@ python mmeval/run.py \
     --model_name_or_path HuggingFaceM4/idefics-9b-instruct \
     --gpu_per_parallel 1 \
     --parallel_per_task 1 \
-    --max_new_tokens 512
+    --max_new_tokens 128
 
 python mmeval/run.py \
     --infile test_bed/modality_test/task/multi_image_interleave.json \
@@ -18,4 +18,4 @@ python mmeval/run.py \
     --model_name_or_path HuggingFaceM4/idefics-80b-instruct \
     --gpu_per_parallel 1 \
     --parallel_per_task 1 \
-    --max_new_tokens 512 
+    --max_new_tokens 128

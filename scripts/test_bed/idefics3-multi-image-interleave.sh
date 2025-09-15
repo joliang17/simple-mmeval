@@ -8,4 +8,4 @@ python mmeval/run.py \
     --model_name_or_path HuggingFaceM4/Idefics3-8B-Llama3 \
     --gpu_per_parallel 1 \
     --parallel_per_task 1 \
-    --max_new_tokens 512 
+    --max_new_tokens 50 

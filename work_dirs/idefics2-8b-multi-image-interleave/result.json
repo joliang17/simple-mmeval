@@ -9,7 +9,7 @@
         "hint": "",
         "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
         "eval-id": 0,
-        "response": "In this image we can see a vehicle on the ground. In the background there are hills and sky."
+        "response": "In this image we can see a vehicle on the ground. In the background we can see hills and sky."
     },
     {
         "id": 1,
@@ -33,7 +33,7 @@
         "hint": "",
         "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
         "eval-id": 2,
-        "response": "In the first image, there is a vehicle on the road. In the background, there are plants, grass and rocks. In the second image, there is a boat on the water. In the background, there is sky."
+        "response": "In the first image, there is a vehicle on the road. In the second image, there is a boat on the water."
     },
     {
         "id": 3,
@@ -69,7 +69,7 @@
         "hint": "",
         "comment": "Test 'multi image interleave' modality.",
         "eval-id": 5,
-        "response": "The first image shows a white and black speed boat moving through the water. The second image shows a gray GMC truck driving on a dirt road."
+        "response": "The first image shows a white and black speed boat moving through the water. The second image shows a silver GMC truck driving on a dirt road."
     },
     {
         "id": 6,
@@ -81,7 +81,7 @@
         "hint": "",
         "comment": "Test 'multi image interleave' modality.",
         "eval-id": 6,
-        "response": "Image A shows a GMC truck driving on a dirt road with smoke coming out from its tires. Image B shows a white boat sailing on the water."
+        "response": "Image A shows a GMC truck driving on a dirt road with dust in the air. Image B shows a white boat sailing on the water."
     },
     {
         "id": 7,
@@ -93,6 +93,6 @@
         "hint": "",
         "comment": "Test 'multi image interleave' modality.",
         "eval-id": 7,
-        "response": "Image A shows a white speedboat moving through the water. Image B shows a silver GMC truck driving on a dirt road."
+        "response": "Image A shows a white speed boat moving through the water. Image B shows a silver GMC truck driving on a dirt road."
     }
 ]

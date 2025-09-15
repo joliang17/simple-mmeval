@@ -22,7 +22,7 @@ class TaskRunner(Task):
         
     def load_model(self, args):
         self.model = Idefics3ForConditionalGeneration.from_pretrained(
-            args.model_name_or_path, **self.model_kwargs
+            args.model_name_or_path, torch_dtype=self.dtype, **self.model_kwargs
         ).eval()
         self.processor = AutoProcessor.from_pretrained(args.model_name_or_path)
         
