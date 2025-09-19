@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "choices": {},
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image shows a silver GMC truck driving on a dirt road. The truck is positioned in the center of the frame, with the front facing the camera, giving a clear view of its front grille and headlights. The grille features the GMC logo, which is a prominent emblem with a red and blue design. The vehicle has a rugged appearance, with a black bumper and black wheels, and it's equipped with a set of off-road tires. The truck is kicking up dust as it moves, indicating motion, and the terrain around it is rocky and uneven, suggesting a rural or off-road setting. The background is a desert-like landscape with rocky cliffs and a clear sky, indicating a dry, arid environment. The image is a promotional or advertising photograph, likely intended to showcase the vehicle's capabilities and design in an outdoor setting."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "choices": {},
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image shows a white yacht speeding across the water, leaving a trail of white spray behind it. The yacht is a large, luxury vessel with a sleek design, featuring a prominent bow and a cabin structure that appears to be enclosed. The hull is painted white, and there are visible windows along the side, suggesting it's a multi-level structure. The yacht is equipped with a large, curved windshield and a smaller one at the stern, which is likely the captain's cabin. The deck is adorned with a railing and there are several windows, possibly for passengers to enjoy the view. The yacht is moving at a high speed, as indicated by the white wake it's creating, and the water is a deep blue, indicating it's likely in a marine environment. The sky is clear and blue, suggesting good weather conditions. The image is a photograph with a focus on the yacht, capturing the motion and the dynamic nature of the scene."
+    }
+]
