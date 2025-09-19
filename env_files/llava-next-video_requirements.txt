@@ -11,3 +11,4 @@ datasets
 accelerate
 protobuf
 sentencepiece
+multiprocess
