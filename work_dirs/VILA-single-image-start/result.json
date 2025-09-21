@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image captures a moment of a silver GMC truck in motion on a dirt road. The truck, with its black grille and black wheels, is moving from the left to the right of the frame. The road, appearing to be dry and dusty, stretches out in front of the truck, suggesting a journey in progress.\n\nThe setting is a desert-like environment, characterized by the presence of red rock formations in the background. These formations, with their rugged texture and vibrant color, add a sense of depth and scale to the image. The truck, road, and rocks together create a scene that speaks of adventure and exploration.\n\nThere are no discernible texts or countable objects in the image. The relative position of the truck to the rocks suggests it is moving away from them, further down the road. The image does not contain any other objects or figures, making the truck the central focus of the scene. The overall composition of the image suggests a sense of solitude and tranquility, with the truck's journey through the desert landscape being the main action."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image captures a moment of a white yacht gliding through the deep blue ocean. The yacht, with its sleek design and pointed bow, is moving towards the right side of the frame. The wake it leaves behind is a stark contrast to the calm ocean, creating a dynamic sense of motion. The sky above is a clear blue, devoid of any clouds, suggesting a perfect day for sailing. The perspective of the image is from the side of the yacht, giving a sense of its size and speed. There are no other objects or text in the image, making the yacht the sole focus of this nautical scene."
+    }
+]
