@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image start' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image features a GMC pickup truck in a dynamic off-road setting. The vehicle is captured in motion, kicking up dust as it travels across a dirt path, indicating its robust off-road capabilities. It has a metallic gray finish with black accents on the wheels, side mirrors, and grille, which prominently displays the GMC logo. The truck is equipped with large, rugged tires suitable for off-road conditions. The design includes a crew cab configuration with four doors, and the front end is characterized by sharp, angular headlights and a large, bold grille. The background showcases a rugged, natural landscape with rocky terrain and sparse vegetation, suggesting a desert or canyon environment. The lighting and shadows imply the photo was taken during the golden hour, enhancing the dramatic effect."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image start' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image depicts a luxury yacht moving at high speed across a vast expanse of deep blue ocean. The yacht is predominantly white with a sleek, streamlined design, featuring a pointed bow and a smooth, curved superstructure. It is equipped with multiple windows and a radar dome on the top, indicating advanced navigation capabilities. The yacht's wake is a prominent white froth, highlighting its speed and power. The sea is calm, with gentle ripples, and the horizon is clearly visible, suggesting a clear day with minimal cloud cover. The yacht's design and the wake it creates suggest it is a high-performance vessel, likely capable of reaching significant speeds."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality.",
+        "eval-id": 2,
+        "response": "**Image 1: GMC Pickup Truck**\n\n- **Vehicle**: A GMC pickup truck with a four-door crew cab configuration.\n- **Design**: Features a metallic gray finish with black accents on the wheels and side mirrors.\n- **Setting**: The truck is on a dirt road, kicking up dust, indicating off-road capability.\n- **Background**: A rugged, rocky landscape with sparse vegetation, suggesting a desert or canyon environment.\n- **Lighting**: The lighting suggests it is either early morning or late afternoon, with the sun casting a warm glow.\n\n**Image 2: Luxury Yacht**\n\n- **Vessel**: A sleek, white luxury yacht with a streamlined design.\n- **Features**: The yacht has a large windshield and a spacious deck, indicating a high-end model.\n- **Setting**: The yacht is on open water, creating a wake, suggesting high speed.\n- **Background**: The calm sea and clear sky create a serene atmosphere.\n- **Lighting**: The bright sunlight and clear sky suggest a midday setting.\n\nThese images highlight the contrast between the ruggedness of the GMC pickup truck and the luxury of the yacht, each set in distinct environments."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality.",
+        "eval-id": 3,
+        "response": "**Image 1: Luxury Yacht at Sea**\n\n- **Description**: A sleek, white luxury yacht is captured in motion on the open sea. The vessel is characterized by its streamlined design, with a prominent bow and a superstructure featuring multiple levels.\n- **Details**: The yacht is creating a large wake, indicating high speed. The sea is a deep blue, and the sky is clear, suggesting favorable weather conditions.\n- **Features**: The yacht's design includes large windows and a spacious deck, typical of high-end models.\n\n**Image 2: GMC Pickup Truck Off-Road**\n\n- **Description**: A GMC pickup truck is shown driving on a dirt road in a rugged, desert-like environment.\n- **Details**: The truck is a four-door model with a prominent grille and the GMC logo. It features off-road tires and a raised suspension, suitable for rough terrain.\n- **Environment**: The background includes rocky formations and sparse vegetation, indicating a challenging off-road setting.\n\nThese images contrast the luxury of maritime travel with the ruggedness of off-road adventure."
+    }
+]

@@ -1,0 +1,5 @@
+# flash-attn==2.7.3
+
+mantis-vl @ git+https://github.com/TIGER-AI-Lab/Mantis.git
+transformers==4.40.2
+datasets==2.18.0

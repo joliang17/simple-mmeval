@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "ER:  \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image features a large black pickup truck driving on a dirt road. The truck is a GMC Sierra, and it appears to be a four-wheel drive vehicle. The truck is moving at a fast pace, kicking up dust as it travels down the road. The scene captures the truck's power and capability to handle rough terrain."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "ER:  \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image features a large white boat speeding across the water, leaving a trail of water behind it. The boat is a yacht, and it appears to be a speedboat, as it is moving at a fast pace. The boat is positioned in the center of the scene, with the water surrounding it. The boat's speed and movement create a sense of motion and excitement in the image."
+    }
+]

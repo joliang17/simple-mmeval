@@ -2,6 +2,7 @@ import os
 import sys
 import tqdm
 import json
+import traceback
 
 from mmeval.data import load_dataset
 from mmeval.utils.res_handler import ResponseHandler
@@ -51,6 +52,7 @@ class Task:
         while not self.res_handler.check_complete(self.dataset) and run_count < self.max_retry:
             run_count += 1
 
+            retry_count = 0
             # Format tqdm progress bar
             for sample in tqdm.tqdm(
                 self.dataset, 
@@ -66,15 +68,14 @@ class Task:
                 maxinterval=1.0,       
                 smoothing=0.3         
             ):
-                
-                cnt = 0
                 try:
                     ret = self.run_sample(sample)
                     self.res_handler.save(ret)
 
                 except Exception as e:
                     tqdm.tqdm.write(f"[Shard {self.rank}] ❌ Error: {e}")
-                    cnt += 1
-                    if cnt >= self.max_retry_sample:
+                    tqdm.tqdm.write(f"[Shard {self.rank}] Traceback: {traceback.format_exc()}")
+                    retry_count += 1
+                    if retry_count >= self.max_retry_sample:
                         tqdm.tqdm.write(f"[Shard {self.rank}] ⚠️  Max retries reached, skipping sample")
                         continue

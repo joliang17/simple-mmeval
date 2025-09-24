@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "A white yacht is sailing across the ocean, leaving a trail of wake behind it. The yacht is positioned towards the center of the image, cutting through the blue water and creating a strong wake that contrasts with the surrounding calmness. The scene is captured during daytime, providing a clear view of the yacht and the ocean's surface."
+    },
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image features a dark gray GMC truck driving on a dirt road. The truck is positioned towards the center of the frame, moving from left to right. The truck has black wheels and appears to be in motion, kicking up dust behind it. \n\nThe setting of the image is a desert-like environment, with rocky terrain visible in the background. The truck is driving close-up, capturing the details of its black wheels and the dust kicked up by the vehicle."
+    }
+]

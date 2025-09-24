@@ -134,6 +134,22 @@ Currently supported model series:
 | **VideoLLaMA2** | VideoLLaMA2-7B, VideoLLaMA2-13B | [`scripts/test_bed/videollama2.sh`](scripts/test_bed/videollama2.sh) |
 | **BLIP2-FLAN-T5** | Salesforce/blip2-flan-t5-xl, Salesforce/blip2-flan-t5-xxl | [`scripts/test_bed/blip2-flan-t5-xl.sh`](scripts/test_bed/blip2-flan-t5-xl.sh) |
 | **VILA** | VILA1.5-3b, VILA1.5-13b, VILA1.5-40b, Llama-3-VILA1.5-8B | [`scripts/test_bed/vila.sh`](scripts/test_bed/vila.sh) |
+| **Cambrian** | cambrian-8b, cambrian-13b, cambrian-34b, cambrian-phi3-3b | [`scripts/test_bed/cambrian-multi-image-video-interleave.sh`](scripts/test_bed/cambrian-multi-image-video-interleave.sh) |
+| **Gemma3** | gemma-3-4b-it, gemma-3-12b-it, gemma-3-27b-it | [`scripts/test_bed/gemma3-multi-image-interleave.sh`](scripts/test_bed/gemma3-multi-image-interleave.sh) |
+| **GLM-4V** | glm-4v-9b | [`scripts/test_bed/glm-4v-single-image-start.sh`](scripts/test_bed/glm-4v-single-image-start.sh) |
+| **InternVL-Chat** | InternVL-Chat-V1-1, InternVL-Chat-V1-2, InternVL-Chat-V1-2-Plus | [`scripts/test_bed/internvl-chat-multi-image-video-interleave.sh`](scripts/test_bed/internvl-chat-multi-image-video-interleave.sh) |
+| **InternVL-Chat-1.5** | Mini-InternVL-Chat-2B-V1-5, Mini-InternVL-Chat-4B-V1-5, InternVL-Chat-V1-5 | [`scripts/test_bed/internvl-chat1d5-multi-image-video-interleave.sh`](scripts/test_bed/internvl-chat1d5-multi-image-video-interleave.sh) |
+| **InternVL2** | InternVL2-1B, InternVL2-2B, InternVL2-4B, InternVL2-8B, InternVL2-26B, InternVL2-40B, InternVL2-Llama3-76B | [`scripts/test_bed/internvl2-multi-image-video-interleave.sh`](scripts/test_bed/internvl2-multi-image-video-interleave.sh) |
+| **InternVL2.5** | InternVL2_5-1B, InternVL2_5-2B, InternVL2_5-4B, InternVL2_5-8B, InternVL2_5-26B, InternVL2_5-38B, InternVL2_5-78B, InternVL2_5-1B-MPO, InternVL2_5-2B-MPO, InternVL2_5-4B-MPO, InternVL2_5-8B-MPO, InternVL2_5-26B-MPO, InternVL2_5-38B-MPO, InternVL2_5-78B-MPO | [`scripts/test_bed/internvl2d5-multi-image-video-interleave.sh`](scripts/test_bed/internvl2d5-multi-image-video-interleave.sh) |
+| **InternVL3** | InternVL3-1B, InternVL3-2B, InternVL3-8B, InternVL3-9B, InternVL3-14B, InternVL3-38B, InternVL3-78B, InternVL3-1B-Instruct, InternVL3-2B-Instruct, InternVL3-8B-Instruct, InternVL3-9B-Instruct, InternVL3-14B-Instruct, InternVL3-38B-Instruct, InternVL3-78B-Instruct, InternVL3-1B-Pretrained, InternVL3-2B-Pretrained, InternVL3-8B-Pretrained, InternVL3-9B-Pretrained, InternVL3-14B-Pretrained, InternVL3-38B-Pretrained, InternVL3-78B-Pretrained | [`scripts/test_bed/internvl3-multi-image-video-interleave.sh`](scripts/test_bed/internvl3-multi-image-video-interleave.sh) |
+| **Janus-Pro** | Janus-Pro-1B, Janus-Pro-7B | [`scripts/test_bed/janus-pro-multi-image-video-interleave.sh`](scripts/test_bed/janus-pro-multi-image-video-interleave.sh) |
+| **LLaVA-OneVision** | LLaVA-OneVision-Qwen2-0.5B, LLaVA-OneVision-Qwen2-7B, LLaVA-OneVision-Qwen2-72B | [`scripts/test_bed/llava_ov.sh`](scripts/test_bed/llava_ov.sh) |
+| **Mantis** | Mantis-8B-clip-llama3, Mantis-8B-siglip-llama3 | [`scripts/test_bed/mantis-multi-image-interleave.sh`](scripts/test_bed/mantis-multi-image-interleave.sh) |
+| **Mantis-Idefics2** | Mantis-8B-Idefics2 | [`scripts/test_bed/mantis-idefics2-multi-image-interleave.sh`](scripts/test_bed/mantis-idefics2-multi-image-interleave.sh) |
+| **Moondream1** | moondream1 | [`scripts/test_bed/moondream1.sh`](scripts/test_bed/moondream1.sh) |
+| **Moondream2** | moondream2 | [`scripts/test_bed/moondream2.sh`](scripts/test_bed/moondream2.sh) |
+| **Ovis1.5** | Ovis1.5-Llama3-8B, Ovis1.5-Gemma2-9B | [`scripts/test_bed/ovis1d5-single-image-start.sh`](scripts/test_bed/ovis1d5-single-image-start.sh) |
+
 
 ## Supported Datasets
 
