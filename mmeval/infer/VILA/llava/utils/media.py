@@ -61,7 +61,7 @@ def _load_video(video_path: str, *, num_frames: int, fps: float) -> List[PIL.Ima
 
     # Extract frames uniformly
     # If FPS is specified, use that to compute timestamps
-    if fps > 0:
+    if fps and fps > 0:
         timestamps = np.arange(0, duration_sec, 1.0 / fps)
         timestamps = timestamps[:num_frames]  # Clamp
         indices = [int(t * video_fps) for t in timestamps]
