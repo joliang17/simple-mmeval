@@ -1,0 +1,240 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image depicts a Chevrolet GMC pickup truck in mid-motion, kicking up a dust trail. The truck is an SUV variant, characterized by a robust and practical design in front. The model suggests that the vehicle is designed for rugged use, likely for terrain such as dirt tracks, as is apparent from the visible dirt on the ground behind the truck.\n\nThe pickup's front fascia prominently features the Chevrolet logo at the center of the grille, just above the grille that spans the width of the vehicle's front. The grille itself is composed of horizontal slats with a prominent Chevrolet emblem in the center. Below the grille, the hood of the truck is black with a slight metallic sheen, enhancing the visual appeal. The truck\u2019s front bumper is black, complementing the overall dark color theme.\n\nThe truck features five-spoke alloy wheels, which are common in SUVs due to their aesthetic and practical benefits. These wheels are fitted with black tires, maintaining the cohesive color scheme. The headlights are angular and horizontally aligned, complementing the grille\u2019s design. The side mirrors are chrome, providing a touch of sophistication. The vehicle's windshield is wide, offering ample space for the occupants.\n\nThe truck\u2019s cabin includes a dark-toned interior with visible seats, though details are not clear due to the dust kicked up. The truck appears to be equipped with a roof rack for additional cargo space, adding further utility to its design. The windows are tinted, obscuring the exterior views of the interior.\n\nBehind the vehicle, there is a distant view of a desert landscape, with sand dunes and rocky formations. The setting is suggestive of a dry region, which contributes to the ruggedness of the truck's appearance. The lighting indicates that it is daytime with either early morning or late afternoon sunlight casting light on the scene.\n\nOverall, the image captures a dynamic portrayal of an adventure-ready car designed for challenging terrains and environments, with elements of style and utility. The image emphasizes the truck's capability to handle off-road conditions and its presence in a rugged setting. \n\nIn summary, the image contains:\n- A Chevrolet GMC pickup truck in mid-motion kicking up a dust trail.\n- The vehicle is an SUV which might be designed for rough terrain.\n- Specific features include black-front grill, chrome accents, angular headlights, and alloy wheels.\n- There's a background with a sandy and rocky desert landscape in the distance.\n- The overall ambience is outdoors during the daytime, with sunlight casting a warm glow on the vehicle."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image displays a sleek, modern catamaran boat cruising on a calm, deep blue ocean, devoid of significant waves. The vessel is positioned centrally in the frame, with the hull prominently visible. It appears to be a large, multi-faceted design suitable for various types of sailing and speed, suggesting it is well-engineered and well-maintained.\n\nThe boat is mostly white with distinct black trim lines, adding a contrasting and aesthetically appealing color scheme. The design features a streamlined hull with an elongated nose leading to the bow, which is an iconic feature in catamarans for stability and performance during long voyages. The bow is slightly bow-tied, aligning with traditional catamaran nautical practices.\n\nMultiple structures are visible on the deck of the catamaran. The bridge area above is likely outfitted with ample seating for passengers, providing panoramic views of the sea or surrounding terrain. There are also two adjacent wings extending from the stern towards each other, likely housing navigation or lifeboats, adding to the boat's functionality.\n\nThe wake trailing behind the boat is notable, indicating that the vessel\u2019s speed is high. The choppy water suggests a strong breeze is at hand, which enhances the boat's agility and the enjoyment of sailing, as it can maneuver more effectively through rough waters. This is a sign of well-equipped marine technology designed to enhance the sailing experience.\n\nIn the background of the image, the horizon meets the sea, with a clear blue sky scattered with tiny specks of white, indicating fair weather conditions which are ideal for outdoor activities, navigation, and boating.\n\nIn summary: \nThe image shows a high-performance, modern catamaran boat sailing on an expansive, calm sea under clear blue skies, highlighting its design features, functionality, and readiness for a variety of sailing conditions."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The image consists of two separate vehicles engaged in different activities. The first is a GMC Sierra, a midsize pickup truck, positioned diagonally on the right side.\n\n- **Left Side (Vehicles on Beach)**:\n  1. **Vehicle on Beach**: This image shows the front and part of the rear of a GMC Sierra, which is driving on a sandy beach. The terrain appears to be rocky and uneven. The vehicle is kicking up sand into a pile as it moves away from the camera. This is typical of a pickup truck, which is heavily built for off-road and rugged terrain capable of pulling off rocky or uneven surfaces.\n\n  2. **Vehicle on Runway**: A passenger plane is in the air, possibly taking off or about to land at an airport. The plane is a commercial cargo airline characterized by an advanced wing structure and streamlined fuselage, which is typical for such large transport aircraft.\n\n### Chain of Thought Analysis:\n\n#### Objects Present in the Image:\n1. **Pickup Truck** (Luggage):\n   - **Model**: GMC Sierra\n   - **Action**: Picking up onto sand.\n2. **Plane (Passenger Plane)**\n   - **Type**: Large commercial airliner.\n   - **Action**: Taking off or landing at an airport.\n\n#### Relevant Knowledge:\n1. **Pickup Truck**: Often used for cargo transport and is known for its rugged features suitable for rough terrain adventures, such as road trips.\n2. **Commercial Airplanes**: Aircraft used for international passenger and cargo transport.\n3. **Sand Pile**: Indicates the rough outdoor environment where the truck is driving through.\n\n### Relevant Knowledge:\n1. **Vehicle Driving Techniques**: When operating in rough terrain, such pickup trucks like the GMC Sierra are designed and equipped with reinforced structures to handle the weight and rugged demands of off-road driving.\n2. **Rugged Transport**: The design of large commercial airliners, like passenger planes in the image, is specifically built to transport passengers around the world and is capable of navigating challenging atmospheric conditions.\n\n### Integrating Relevant Knowledge:\nConsidering the context, the image seems to depict a moment where these two vehicles are operating in different environments\u2014one for travel and the other for transportation. The sandy beach and rocky terrain may symbolize the unpredictability and adventure inherent to the pickup truck's capability to handle such environments, while the airport setting of the plane underscores the logistical and travel-oriented aspect of these vehicles.\n\nThus, this coherent depiction of vehicles"
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The image depicts two distinct vehicles engaged in water activities. \n\nStarting with the image of the larger, white boat: \n- **Structure**: This appears to be a motorboat, primarily designed for recreational or long-distance travel on open waters. It has multiple decks, suggesting it can accommodate passengers and possibly other boats or possibly a crew in case of emergencies.\n- **Function**: The hull has a sleek, modern design, likely optimized for speed. The bow of the boat curves sharply, indicating it is built to maneuver at high speeds efficiently, suitable for either private tours or business missions.\n\nNext, the visual of the SUV:\n- **Type**: This is a Chevrolet GMC SUV, a popular brand known for vehicles that combine ruggedness with comfort and style. The size, two-door hatchback configuration, and robust design are evident, suggesting it can handle off-road adventures.\n- **Features**: The vehicle showcases a muscular stance suitable for rough terrains. It has a roof rack, indicating mobility and possibly storage for cargo or equipment. The headlights are robust, blending modern functionality with the rugged appearance. The SUV displays good clearance and is designed for driving conditions encountered in desert or mountainous areas.\n\nIn conclusion, the image shows a modern, luxury-oriented vehicle, likely intended for recreational boating or family vacations, while the other vehicle, an SUV, shows capability for more intense, possibly multi-use activities, such as off-roading or exploring rugged terrain. Both vehicles emphasize style and capability, though the first image centers more on the speed and open water sport, while the second image focuses on the robust nature of the vehicle for tougher conditions.\n\n### Example Questions and Answers:\n**1. What type of vehicle is shown in the image?**\n  \nA: The vehicle shown in the image is a large motorboat, primarily white with a sleek design, likely designed for recreational or long-distance water travel on open waters. It has multiple decks and is equipped to handle moderate speeds and possibly crew on board for emergencies.\n\n**2. What does the Chevrolet GMC SUV exhibit?**\nA: The Chevrolet GMC SUV depicted exhibits contemporary styling, a muscular structure, a two-door hatchback configuration, robust features such as a roof rack for accessibility, and an advanced interior with modern controls and comfort features, suitable for off-road adventures.\n\n### Chain of Thought:\nUnderstanding each type and setting helps in formulating the image\u2019s description. The motorboat emphasizes speed and recreational uses, while the SUV highlights rugged capability for off-road excursions. This synthesis helps"
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 4,
+        "response": "The image shows a GMC truck driving on what appears to be desert terrain with the waterway visible in the background. The truck has a modern design with prominent LED light clusters, side mirrors, and a distinctive grille featuring the GMC logo. The vehicle is also fitted with large all-terrain tires and features a sporty design, including a prominent hood ornament."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 5,
+        "response": "This image shows a GMC sport utility vehicle (SUV) kicking up a trail of dirt and small particles behind it as it navigates the ocean waves. The RV appears to be moving at a high speed, likely through a salt-water lagoon or coastal barrier reef. The vehicle's robust, modern design is well suited for tough conditions."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 6,
+        "response": "## Description\nThe image depicts an adventure scenario involving two different modes of transportation: a pickup truck and a luxury yacht.\n\n1. **Image A:** \n    - **Foreground:** A GMC G150 pickup truck is captured in motion on an open, dusty road. \n    - **Lighting and Visibility:** \n        - The vehicle is captured in clear daylight, showcasing its metallic silver body.\n        - The truck appears to be in operation, propelled rapidly by a noticeable rear end movement or strong kick, which is evident from its wake.\n        - The tires on the truck are tines, characteristic of pickup trucks.\n\n2. **Image B:**\n    - **Foreground:** The scene transitions to a yacht cutting through the sea water.\n    - **Lighting and Visibility:**\n        - The vessel is gliding at a moderate speed.\n        - The yacht is depicted with a sleek and modern design, featuring multiple levels and various hull elements.\n        - The water is deep blue, indicating it might be near the shore or even deeper.\n        - A starboard side profile (right side) of the yacht is visible, displaying the deck and masts.\n\n## Analysis\n\n### Context of the Vehicles\n- The pickup truck is depicted in an outdoor, open environment, possibly a desert or rough terrain area as the mud splotches the ground.\n- The luxury yacht, on the other hand, is shown in an open sea environment, suggesting a maritime or oceanic journey.\n\n### Relevant Knowledge\n- **Pickup Truck:** A pickup truck is typically used in both harsh and smooth terrains due to its four-wheel drive capability. It typically carries heavy loads and requires robustness in off-road conditions.\n- **Luxury Yacht:** Yachts are designed for high-speed cruising and often equipped with luxury features like multiple decks, swim platforms, and spacious compartments for passengers. The starboard profile reveals the starboard side, signifying the vessel's orientation when fully in the water.\n\n### Analysis of Motion Modes\n- The high velocity indicated by the car's blur in Image A indicates that the vehicle is in motion which can be attributed to various factors like speed sensors, GPS, or a remote-controlled setup.\n- The yacht in Image B seems to be cruising at a moderate speed, likely allowing enough room for passenger accommodation and comfort.\n\n### Chain of Thought:\n1. **Pickup Truck and Movement:** The car\u2019s position and the blurred motion suggest it is in motion, likely on a dirt"
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 7,
+        "response": "The image consists of two distinct scenes, each showcasing different aspects of vehicles moving through the coastal or highway environment. Here is a detailed description of each:\n\n**Image A**:\nThis image portrays a coastal recreational or sports boat engaged in a speedboat maneuver. The boat is moving swiftly through water with its waters splashing due to the force of its motion. The boat is white, with noticeable details such as a clear, streamlined hull, and a deck that accommodates passengers on board. The helm housing is mounted on the boat, and the boat has a spacious cabin with possibly multiple seats and windows providing panoramic views. The forward horizon reveals a calm sea, with little wave activity, and a bright blue sky, indicating fair weather.\n\n**Image B**:\nThe second image shows a medium-sized pickup truck in motion on a rugged, seemingly unpaved terrain. The truck is moving faster than the boat, as evidenced by the tire tracks and dust being kicked up behind it. The truck is silver or grey, a common color for pickup trucks, and it appears well-maintained with steel wheels. The truck has black protective bars around its cabin window. The terrain is mostly rocky and uneven, with visible rock formations in the distant background. The sky is clear, and it shows a warm, pleasant day, suggesting ideal driving conditions. The truck seems well-equipped for off-road or rugged driving.\n\nNow, combining the information provided by both images, we can draw a narrative:\n1. The dynamic interplay between the boat and the truck provides a metaphorical comparison between the powerful nature of vehicles and human endurance and speed.\n2. This scene captures the essence of adventure and freedom, likely symbolizing the kind of fun and exploration one might experience with a boat on the water, and the durability and capability of a truck on rugged terrains.\n\nEach image conveys different aspects and emotions, showing the contrast between the speed of a boat and the robustness of a pickup truck, respectively. It emphasizes two different elements of adventure and functionality in different terrains, giving a full picture of a dynamic travel experience."
+    },
+    {
+        "id": 8,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 8,
+        "response": "The video portrays a scene in a bright, sunny park where a ginger cat is wandering across lush green grass. The focus of the video is on this charming and lively creature as it traverses through a serene environment. The scene captures the essence of outdoor leisure and the natural beauty of a park setting.\n\nThe main subjects include a ginger cat and the green grass. The cat is characterized by its rich orange hue, which contrasts vividly with the green grass underfoot. The cat\u2019s fur appears soft and slightly unruly with short, wispy curls that seem well-groomed. This detailed portrayal emphasizes the cat\u2019s alert nature, as it looks to the side with a curious gaze as it walks across the grassy surface.\n\nThe grass on which the cat is moving exhibits a rich green color, hinting at its healthy condition but also conveying a sense of freshness and vitality. The grass provides a perfect backdrop that accentuates the colors of the surroundings. There are few discernible patches of darker green, which suggest darker areas might exist in the grass, possibly indicating the possibility of shadows or shadow lines created by the cat's movements on the ground.\n\nThe video captures movement in various contexts, with occasional zoom-ins that highlight the depth and texture of the landscape. The cat is seen walking in a calm, slightly forward direction rather than at a steady pace, showcasing its pace and exploration. The overall composition demonstrates a harmonious blend of natural elements like grass and sky.\n\nThroughout the video, there are no signs of interaction between the cat and other living things or any other subjects. Despite this, the cat's movement and its interaction with the green space suggest an undisturbed pace, suggesting a quiet day in the park.\n\nThe sunlight is suffused in the scene, illuminating the cat's fur and the grass with strong highlights and deep shadows. The sun enhances the overall contrast and warmth of the image. The clarity of the shot captures the cat\u2019s light brown fur and the greenery, making it appear vibrant and inviting.\n\nIn summary, the video showcases the cat as a central figure in a lush, well-kept grassy park. Its orange fur stands out amidst the green hues, set against the backdrop of open skies. The natural environment and the undisturbed pace of the cat contribute to the overall serene, tranquil atmosphere of the scene."
+    },
+    {
+        "id": 9,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 9,
+        "response": "The video opens with an expansive view of the horizon, capturing the vastness of nature and the earth's beauty. The sky is a vibrant canvas featuring a mesmerizing burst of colors, with vivid yellow and orange hues stretching across the top part of the image, signaling either a sunrise or the onset of twilight. Below the horizon, there appears to be a dense, rolling landscape with rolling brown hills of varying heights, gradually fading into the darker foreground.\n\nIn the immediate foreground, the sun shines brightly, casting a soft, ethereal glow over the landscape. Rays of light scatter across the clouds, creating an almost dreamlike atmosphere. The gentle motion of the light casts soft shadows across what is likely a dense forest or a bushier terrain, adding a sense of depth to the scene.\n\nAs the seconds progress, we notice the sun's rays hitting and dispersing across the landscape, transitioning from sun rays to the warm hues of the foreground, creating a captivating play of light and shadow. The intensity of the sunlight, combined with the warm sunlight, casts a warm, golden tone over the landscape, making it feel peaceful and calm.\n\nThe sky transitions through varying shades of orange, blending from bright yellowish tones to deep, fiery oranges. The clouds, devoid of much motion, are barely discernible as they blend into the gradually blending hues of sky, gradually merging into the deeper sky. Towards the bottom right corner of the frame, a faintly visible sun is seen, barely showing through small patches of the sky, adding a contrast to the more dominant colors in the sky. The presence of a few scattered clouds enhances the image, giving it a touch of serenity and natural beauty.\n\nThe overall effect of the video is a sublime, almost meditative representation of sunlight interacting with nature during the morning or late evening hours. The serene, tranquil ambiance created by the clear sky, the gentle light, and the undisturbed landscape gives off a calming energy, inviting the viewer to contemplate the beauty of creation and the ever-changing aspects of nature."
+    },
+    {
+        "id": 10,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 10,
+        "response": "In the video, a playful orange cat is seen running through a grassy field during the beautiful sunset. The sky is illuminated by a gradient of warm colors ranging from orange to deep blue, creating a picturesque and tranquil atmosphere. The sun is setting, casting a radiant glow on the landscape and adding to the serene ambiance. The cat\u2019s movements are lively and cheerful, conveying its joy and excitement as it explores the beauty of nature. Overall, the video captures the essence of a peaceful moment in nature, with the sun\u2019s golden light reflecting on the green grass."
+    },
+    {
+        "id": 11,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 11,
+        "response": "The video captures a golden orange cat gently gliding across a lush, green lawn during what appears to be an early morning or late afternoon timeframe. The grass is green and lush, indicating the well-maintained lawn's health and vibrancy. The cat's fur is smooth and its tail is long, curling elegantly with each step as it navigates through the grass. Its back and hind legs are slightly spread apart, implying that the cat is moving steadily but cautiously. The blue and orange color palette of the sky adds a striking contrast to the warm tones of the lawn, creating a visually appealing snapshot. The scene evokes a sense of tranquility and the cozy, carefree nature of the cat exploring its surroundings."
+    },
+    {
+        "id": 12,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 12,
+        "response": "The video begins with a beautiful scene of a golden retriever enjoying the grass in a well-maintained hedge nearby. The dog, distinguished by its light brown fur with orange patches, is walking on the lush green lawn with a sense of joyful exploration. The grass is tall and healthy, indicating that it has been recently tamed, allowing the dog ample space to roam. In the middle of the video, the dog turns slightly behind its owner, making small adjustments to its stance and posture as it moves from its original stance to a slightly more attentive one.\n\nTransitioning to a second scene, the focus shifts to the golden retriever continuing its exploration of the lush green lawn. The hedge appears well-treed and vibrant, with green leaves that provide a contrasting backdrop to the tan fur. The sunlight appears to be shining through the shadows, highlighting the edges of the dog's fur and giving a warm glow to the surroundings. The video captures the dog\u2019s energetic demeanor, as it moves with a keen focus and purpose, as if searching for something specific.\n\nIn the next scene, the video focuses on the golden retriever once again running across the green grass. This time, we can see that the sun is very high in the sky, a brilliant orange that creates a symmetrical landscape behind the dog. The surrounding landscape consists of a lush green hill with a gentle slope that leads up to the horizon. The hill appears quiet and undisturbed, highlighting the tranquility of the setting around the dog. The dog's running form is strong and energetic, reflecting its joyful nature. The sun, now positioned further down the hill, adds a subtle texture to the background, making the scene even more picturesque.\n\nAs the video progresses, it shifts back to show the golden retriever once again on the grass, running through the next scenic view. Unlike the previous scenes, this time the sun appears more prominently above the horizon. The scene becomes dappled with light, casting a warm golden light on the scene. The background reveals darker shades, transitioning from the warm tones of the sun to darker shadows, painting a serene and calming view of the setting.\n\nThroughout the video, the dog's movements are fluid, with each stride creating a soft blur. The scene is serene and peaceful, with the dog's expressions ranging from happy to slightly alert, suggesting familiarity and trust with its owner. The video ends with the dog once again running across the green grass, completing the visual journey from exploration to tranquility, with the warm sunlight continuing to play an essential role in shaping"
+    },
+    {
+        "id": 13,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 13,
+        "response": "The video depicts the serene beauty of a vast landscape where the sun slowly sets, casting warm hues of orange, yellow, and purple across the sky. In the scene, the sun is low on the horizon, slowly sinking below the horizon line while its rays cut through the treetops and the clouds creating dynamic patterns in the sky. The sun's last rays reach the landscape, illuminating the earth with their radiant light.\n\nThe backdrop features a dense hilly landscape that extends towards the horizon, highlighting the tranquility and magnificence of nature. The hillside appears quite shadowy, with its edges etched from the distance, adding depth to the visual impression. The transition from the dark, shadowy hilly land to the bright, radiant sky symbolizes the transition from the night to the sunset.\n\nIn the foreground, a solitary red and white tabby cat is captured in mid-motion, seemingly running amidst the lush, deep, and vibrant green expanse of grass. The cat has a thick fur coat with orange and white shades, which reflects the vibrant colors seen in the surroundings. The cat's tail is particularly noticeable, flaring out in a diagonal line as it runs, indicating a sense of vitality and playfulness in its leisure activity. Its eyes, large and alert, are focused towards the sky, signifying anticipation and curiosity.\n\nThe sunlight casts a faint trail in the grass, providing a natural highlight that adds to the serene and picturesque nature of the scene. The gentle rustling of the grass and the gentle chirping of birds are minor elements that contribute to the overall peaceful and calming atmosphere. \n\nThroughout the video, the movements of the cat are steady and composed, indicating that it is enjoying a leisurely and fulfilling period within its natural habitat. The camera moves through the scene, capturing the cat as it moves from one spot to another, providing a sense of movement and exploring the hidden corners of the landscape.\n\nIn summary, the video illustrates a mesmerizing natural landscape at sunset where a solitary red and white tabby cat is running amidst a lush, green hill at a distance. The setting sun, the calm, vivid colors of the sky, the shadowy edges of the hilly landscape, and the reflective light on the grass collectively create a visually arresting and serene display of nature and calm coexistence."
+    },
+    {
+        "id": 14,
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 14,
+        "response": "In the video, a lively scene takes place with a cat playing and enjoying outdoor activities in a grassy outdoor setting, likely designed for a children's show or an educational video. The cat, which resembles a ginger cat, is seen hopping around, sniffing around, and wandering across the grass. The surrounding environment is a sunny day, and the grass looks healthy and vibrant. The cat appears to be skipping and exploring, with its expression lively and focused, bringing a joyful and energetic vibe to the footage."
+    },
+    {
+        "id": 15,
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 15,
+        "response": "This video captures the dynamic motion of a GMC pickup truck as it drives through a desert landscape under a vibrant, orange sunset. The truck is prominently featured in the foreground, showcasing its large size, robust build, and practical features. The background reveals a rolling landscape with a rugged terrain and scattered clouds, highlighting the isolation and beauty of the desert environment. The sunset paints a warm and picturesque atmosphere, emphasizing the truck's role in this adventurous journey through the desert."
+    },
+    {
+        "id": 16,
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 16,
+        "response": "### Image A Description:\n\nIn Image A, a powerful and majestic scene takes center stage as the sun begins to rise from the horizon of a tranquil ocean. The scene unfolds with the sun dipping below the horizon, casting a captivating glow over the sea below. Several boats, primarily white, are seen speeding swiftly across the expanse of water's surface. The boats' motion is accentuated by the ripples and waves that create a dynamic and energetic scene, signifying the power of water as both a source and destination for the boats.\n\n### Image B Description:\n\nImage B transitions from Image A into a serene sunset spectacle, showcasing the stark contrast and beauty of the sky painted with deep orange, yellow, and purple hues. The sunset is rich in color, as the scattered clouds and the glowing sun create a mesmerizing and tranquil atmosphere. The sunlight breaks through the clouds, casting rays of light in a gentle arc across the sky. This natural beauty is complemented by the silhouettes of trees extending from the horizon, adding depth and dimension to the scene.\n\n### Image C Description:\n\nThis image showcases a close-up of a sunruler, located near the horizon of calm water. The sunruler, with a smooth surface, contrasts sharply with the clear blue sky, forming an enchanting visual that encapsulates both tranquility and the natural beauty of the scene. The rULER\u2019s surface mirrors the sunlight, creating a delicate touch of light and warmth against the serenity of the setting sun.\n\n### Image D Description:\n\nImage D portrays a serene evening sky in close proximity to water. The sun\u2019s descent from the horizon is depicted with a strong sense of movement, giving a sense of motion and energy. The sky is a gradient of warm colors, transitioning from deep oranges at the horizon to lighter yellows as we ascend. The clouds are fluffy and dispersed, adding to the natural and peaceful ambiance of the scene. It is evident from the low angle of the sun that the current season is during the day, and the overall mood is calm and pleasant.\n\n### Image E Description:\n\nImage E is a series featuring multiple boats on the water. Each boat, mainly white in color, is captured in a motion starting from a low angle on the horizon line. The boats are angled in various directions, indicating their swift movement across the water's surface. This dynamic depiction shows the efficiency and speed of boats in transit, emphasizing their reliance on water for travel. \n\n### Image F Description:\n\nIn the image"
+    },
+    {
+        "id": 17,
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 17,
+        "response": "The video starts with two cats, one orange and one white, on a lush green lawn. The orange cat, noticeable even from a distance, has a fluffy, golden coat. It is a lively sight, running swiftly across the green lawn. The white cat, also brown-toned, walks behind the orange one, maintaining a balanced pace, mirroring the energy of its companion.\n\nThroughout the video, the background showcases a wide expanse of green fields, indicating a peaceful, idyllic outdoor setting. The green lawn is well-maintained, showing a healthy state of grass with fine, well-groomed tufts of grass, providing shade to the cats beneath. The lighting is bright and natural, probably taken during midday, casting no shadows on the grass.\n\nContinuing with the video, one of the cats changes its direction, running towards a distant point along the edge of the lawn. The orange cat, having made its way earlier, now starts running down towards the sea. Its fur looks less dense and less thick compared to the other cat, which has lost its fluffy appearance. This suggests the shift in direction and movement as the video continues.\n\nAt some point, the orange cat catches a glimpse of a boat. A small white boat is seen making its way across the water, moving from a rightward slope with no visible motion blur. The water appears calm and clear, indicating a safe marine environment. The white boat has a clean design, reflecting the same blue hue as the sea, but the movement is minimal compared to the other cat's swift speed.\n\nRepeating briefly between the two cats, the video pans towards the top right corner showing a blue sky and some distant mountains, adding depth to the scene. The sky is clear without any clouds, providing a calm disposition to the surroundings.\n\nTowards the end of the video, the cat that is running towards the boat takes a turn, disappearing from view into the horizon. The presence of the boat signifies a serene moment of observation and reflection on nature's vastness. This video captures the tranquil relationship between the two cats as they explore their surroundings, emphasizing their playful yet curious nature."
+    }
+]

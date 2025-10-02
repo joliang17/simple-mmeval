@@ -1,0 +1,5 @@
+# flash-attn==2.7.3
+
+janus @ git+https://github.com/deepseek-ai/Janus.git
+datasets
+diffusers==0.34.0

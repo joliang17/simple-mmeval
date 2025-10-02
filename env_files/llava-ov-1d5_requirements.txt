@@ -1,0 +1,14 @@
+torch
+torchvision
+transformers==4.56.2
+timm
+Pillow
+numpy
+pandas
+python-dotenv
+av
+datasets
+accelerate
+protobuf
+sentencepiece
+qwen_vl_utils

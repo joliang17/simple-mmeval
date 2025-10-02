@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "ER:  \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image features a black GMC truck driving on a dirt road. The truck is the main focus of the scene, occupying a significant portion of the image. The road appears to be a dirt trail, and the truck is moving along it. The truck's presence in the scene suggests that it might be a part of a trail ride or an off-road adventure."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "ER:  \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image features a white yacht speeding through the water, leaving a trail of white foam behind it. The yacht is positioned in the middle of the scene, with its bow facing the viewer. The boat appears to be a large, luxurious vessel, possibly a speedboat, as it glides through the water. The scene captures the excitement and thrill of the yacht's journey."
+    }
+]

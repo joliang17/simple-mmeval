@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image shows a GMC truck, specifically a model from the Sierra series, driving on a dusty, rugged terrain that appears to be a desert or mountainous area. The truck is painted in a metallic gray color and features a robust design with a prominent front grille that displays the GMC logo. The grille has a black finish with red accents, complementing the overall aesthetic.\n\nThe vehicle's headlights are sleek and angular, contributing to its modern and aggressive look. The truck is equipped with large, black off-road tires that have deep treads, suitable for navigating challenging terrains. The wheels are fitted with black rims that match the truck's dark theme.\n\nThe background reveals a rocky landscape with reddish-brown hues, typical of arid regions. The sky above is clear, suggesting a sunny day. The dust kicked up by the truck's tires indicates movement through loose soil or sand, emphasizing the vehicle's capability in off-road conditions. The overall scene conveys a sense of adventure and the truck's durability in tough environments."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image depicts a luxurious motor yacht speeding across calm, deep blue waters under clear skies. The yacht is sleek and modern, with a white hull that contrasts sharply against the vibrant blue of the sea. It features a spacious deck area with railings for safety, and the bow is pointed, designed to cut through the water efficiently. A wake of white foam trails behind the yacht as it moves at high speed, indicating its powerful engines. The horizon is visible in the background, suggesting an open sea setting. The overall scene conveys a sense of luxury, speed, and leisure."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The image contains two distinct scenes:\n\n1. **Image 1 (Left):**\n   - The scene features a GMC truck, likely a model from the Sierra or Canyon series, driving on a dusty, unpaved road.\n   - The truck is painted in a metallic gray color and has a rugged design with black accents on the grille, wheels, and side mirrors.\n   - The vehicle appears to be equipped for off-road use, as suggested by its tires and the dust kicked up behind it.\n   - The background shows a rocky, desert-like landscape with sparse vegetation, indicating a remote or rural area.\n\n2. **Image 2 (Right):**\n   - This image showcases a luxury motor yacht cruising across calm blue waters.\n   - The yacht is sleek and modern, with a white hull and a dark stripe running along its side.\n   - It has multiple decks, including a visible upper deck with railings, and a cabin area at the rear.\n   - The water spray created by the yacht's movement indicates that it is moving at a high speed.\n   - The sky above is clear and bright, suggesting good weather conditions.\n\nBoth images highlight vehicles designed for different environments: one for land and the other for water."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The image on the left shows a luxury motor yacht speeding across calm, blue waters. The boat is sleek and modern, with a white hull and a dark-colored lower section. It features a spacious deck area with railings for safety, and the wake behind it indicates its high speed. The sky above is clear and bright, suggesting good weather conditions.\n\nThe image on the right displays a GMC pickup truck driving on a dusty, unpaved road surrounded by rocky terrain. The truck appears to be a rugged model, possibly designed for off-road use, as indicated by its large tires and robust build. The vehicle's color is a metallic gray, and the GMC logo is prominently displayed on the front grille. The background suggests a desert or mountainous environment, adding to the adventurous feel of the scene."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "The first image depicts a GMC truck, specifically a model that appears to be part of the Sierra or Canyon series, given its design and branding. The vehicle is captured in motion on a dusty, unpaved road, suggesting off-road capability. It has a dark gray or metallic finish with black accents on the grille, wheels, and side mirrors. The truck features a prominent front grille with the GMC logo, LED headlights, and a rugged front bumper. The tires appear to be large, suitable for off-road conditions, and the overall design conveys strength and utility.\n\nThe second image shows a luxury motor yacht speeding across calm blue waters. The yacht is sleek and modern, with a white hull and a dark stripe running along its side, possibly red or black. It has a spacious deck area with railings, indicating it's designed for passenger comfort and safety. The wake behind the boat suggests high speed, and the clear sky and open water imply favorable weather conditions for boating. The overall impression is one of leisure and opulence, as the yacht is likely used for recreational purposes rather than commercial or fishing activities."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "The first image depicts a luxury motor yacht speeding across calm, deep blue waters under a clear sky. The yacht is sleek with a white hull and features a prominent bow wave, indicating its high speed. It has a modern design with a spacious deck area, railings for safety, and what appears to be a bridge or cabin at the rear. The water spray behind the yacht suggests it's moving at a considerable velocity.\n\nThe second image shows a GMC pickup truck driving on a dusty, unpaved road surrounded by a rugged, desert-like landscape with rocky terrain. The truck is a dark gray color, equipped with black wheels and a robust front grille that prominently displays the GMC logo. The vehicle appears to be in motion, kicking up dust as it travels along the dirt path, emphasizing its off-road capabilities. The setting conveys a sense of adventure and exploration."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "### Description of Image A:\nThe image shows a GMC truck, specifically a model that appears to be part of the Sierra or Canyon series, driving on a rugged terrain. The vehicle is painted in a metallic gray color with black accents on the grille and wheels. It features a prominent front grille with the GMC logo at the center, along with LED headlights and fog lights. The truck has a four-door cab configuration and a bed at the rear, which is partially visible. The tires are large and appear to be designed for off-road use, with deep treads. Dust is being kicked up by the tires as the truck moves forward, indicating motion. The background consists of rocky cliffs and a clear sky, suggesting a desert or mountainous environment.\n\n### Description of Image B:\nThe second image depicts a luxury motor yacht speeding across calm blue waters. The yacht is sleek and modern, with a white hull and a dark stripe running along its side. It has multiple decks, including what seems to be a sun deck at the top, and is equipped with railings and a canopy structure. The bow of the yacht is pointed, cutting through the water, creating a wake behind it. The sky above is clear and bright, suggesting good weather conditions. The overall impression is one of speed"
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "### Description of Image A:\nImage A features a luxury motor yacht speeding across calm, deep blue waters under a clear sky. The yacht is sleek and modern, with a white hull and a dark-colored lower section. It has a prominent bow wave, indicating its high speed. The vessel appears to be well-equipped for leisure, as suggested by its size and design, which includes railings along the deck and what looks like a small cabin or control area at the rear. The overall scene conveys a sense of motion and luxury.\n\n### Description of Image B:\nImage B shows a GMC pickup truck driving on a dusty, unpaved road surrounded by rocky terrain. The truck is a modern model with a dark gray or metallic finish, featuring bold styling elements such as large black wheels, a prominent front grille with the GMC logo, and sharp headlights. The environment suggests a rugged outdoor setting, possibly a desert or mountainous region, with sparse vegetation visible in the background. The truck's tires kick up dust as it moves, emphasizing its off-road capabilities. The image highlights the vehicle\u2019s robust design and capability for adventurous travel."
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "USER: \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image shows a GMC pickup truck in a desert-like environment. The truck is a four-door model with a crew cab configuration, featuring a black grille with the GMC logo prominently displayed in the center. The vehicle is equipped with large, black wheels and has a raised suspension, suggesting it is designed for off-road use. The body of the truck is a metallic silver color, and the windows are tinted. The truck is in motion, as evidenced by the dust being kicked up by the tires. The background consists of a rocky landscape with a reddish-brown color, indicative of a desert or arid terrain. The sky is clear, suggesting it might be late afternoon or early evening. The image is a promotional or advertising photograph, likely intended to showcase the vehicle's off-road capabilities and design."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "USER: \n Please provide a detailed description of the contents shown in the image. ASSISTANT: The image shows a white motor yacht in motion on a body of water. The yacht has a sleek design with a curved bow and a cabin area on the main deck. There are no visible texts or distinctive branding on the yacht. The water around the yacht is churned, indicating high speed, and there is a wake trailing behind the boat. The background features a clear sky and calm water, suggesting a sunny day with good weather conditions. The style of the image is a realistic photograph with a focus on the yacht, capturing its motion and the surrounding environment."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "USER: \n\n Please provide a detailed description of the contents shown in the two images. ASSISTANT:"
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "USER: \n\n Please provide a detailed description of the contents shown in the two images. ASSISTANT:\n\n\n.\n.\n.\n.\nthe 0 0 0 \n0\nthe\n"
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "USER: \n\nPlease provide a detailed description of the contents shown in   and  . ASSISTANT:"
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "USER: \n\nPlease provide a detailed description of the contents shown in   and  . ASSISTANT:\n\n\n.\n.\n.\nthe\nthe 0 0 0 0 \nthe\n:\n:\n:\n.\n.\n.\n.\n:\n:\n:\n:\n:\n:\n:\nthe\nthe\nthe .\nthe\n: : :\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe the the the the the the the : : : : : : :\nthe\nthe\nthe\nthe\nthe\nthe\nthe\nthe-."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "USER: \n\nGiven the Image A   and Image B  . Please provide a detailed description of the contents shown in each image. ASSISTANT:"
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "USER: \n\nGiven the Image A   and Image B  . Please provide a detailed description of the contents shown in each image. ASSISTANT:\n.\n. 0 0 0 \n\n"
+    }
+]

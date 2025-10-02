@@ -1,0 +1,12 @@
+torch
+torchvision
+transformers
+timm
+Pillow
+numpy
+pandas
+python-dotenv
+av
+datasets
+accelerate
+multiprocess

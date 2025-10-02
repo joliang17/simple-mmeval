@@ -1,33 +1,36 @@
 [
     {
         "id": 0,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 1,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 2,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -39,7 +42,8 @@
         "id": 3,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -49,33 +53,36 @@
     },
     {
         "id": 4,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 5,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 6,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -87,7 +94,8 @@
         "id": 7,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -97,33 +105,36 @@
     },
     {
         "id": 8,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 9,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 10,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -135,7 +146,8 @@
         "id": 11,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -145,33 +157,36 @@
     },
     {
         "id": 12,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 13,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 14,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -183,7 +198,8 @@
         "id": 15,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -193,33 +209,36 @@
     },
     {
         "id": 16,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 17,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 18,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -231,7 +250,8 @@
         "id": 19,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -241,33 +261,36 @@
     },
     {
         "id": 20,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 21,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 22,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -279,7 +302,8 @@
         "id": 23,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -289,33 +313,36 @@
     },
     {
         "id": 24,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 25,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 26,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -327,7 +354,8 @@
         "id": 27,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -337,33 +365,36 @@
     },
     {
         "id": 28,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 29,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 30,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -375,7 +406,8 @@
         "id": 31,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -385,33 +417,36 @@
     },
     {
         "id": 32,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 33,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 34,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -423,7 +458,8 @@
         "id": 35,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -433,33 +469,36 @@
     },
     {
         "id": 36,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 37,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 38,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -471,7 +510,8 @@
         "id": 39,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -481,33 +521,36 @@
     },
     {
         "id": 40,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 41,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 42,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -519,7 +562,8 @@
         "id": 43,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -529,33 +573,36 @@
     },
     {
         "id": 44,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 45,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 46,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -567,7 +614,8 @@
         "id": 47,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -577,33 +625,36 @@
     },
     {
         "id": 48,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 49,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 50,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -615,7 +666,8 @@
         "id": 51,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -625,33 +677,36 @@
     },
     {
         "id": 52,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 53,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 54,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -663,7 +718,8 @@
         "id": 55,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -673,33 +729,36 @@
     },
     {
         "id": 56,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 57,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 58,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -711,7 +770,8 @@
         "id": 59,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -721,33 +781,36 @@
     },
     {
         "id": 60,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 61,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 62,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -759,7 +822,8 @@
         "id": 63,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -769,33 +833,36 @@
     },
     {
         "id": 64,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 65,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 66,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -807,7 +874,8 @@
         "id": 67,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -817,33 +885,36 @@
     },
     {
         "id": 68,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 69,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 70,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -855,7 +926,8 @@
         "id": 71,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -865,33 +937,36 @@
     },
     {
         "id": 72,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 73,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 74,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -903,7 +978,8 @@
         "id": 75,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -913,33 +989,36 @@
     },
     {
         "id": 76,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 77,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 78,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -951,7 +1030,8 @@
         "id": 79,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -961,33 +1041,36 @@
     },
     {
         "id": 80,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 81,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 82,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -999,7 +1082,8 @@
         "id": 83,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -1009,33 +1093,36 @@
     },
     {
         "id": 84,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 85,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 86,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -1047,7 +1134,8 @@
         "id": 87,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -1057,33 +1145,36 @@
     },
     {
         "id": 88,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 89,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 90,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -1095,7 +1186,8 @@
         "id": 91,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -1105,33 +1197,36 @@
     },
     {
         "id": 92,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 93,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 94,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -1143,7 +1238,8 @@
         "id": 95,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -1153,33 +1249,36 @@
     },
     {
         "id": 96,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "cat.mp4"
+            "truck.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 97,
-        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
-            "sun.mp4"
+            "boat.png"
         ],
-        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
         "hint": "",
-        "comment": "Test 'single video start' modality."
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet."
     },
     {
         "id": 98,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "cat.mp4"
         ],
@@ -1191,7 +1290,8 @@
         "id": 99,
         "question": "<video> Please provide a detailed description of the contents shown in the video.",
         "answer": "",
-        "choices": {},
+        "options": {},
+        "choices": [],
         "media": [
             "sun.mp4"
         ],
@@ -1199,4 +1299,4 @@
         "hint": "",
         "comment": "Test 'single video start' modality."
     }
-] 
+]

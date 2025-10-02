@@ -1,8 +1,10 @@
+import os
+import base64
+import requests
+from PIL import Image
+from io import BytesIO
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional, Set, Tuple, Union
-import os
-
-from PIL import Image
 
 
 
@@ -106,13 +108,22 @@ class BaseDataset(ABC):
     def load_image(self, f) -> Image.Image:
         """Load image from path with PIL."""
         if isinstance(f, Image.Image):
-            return f
+            return f if f.mode == "RGB" else f.convert("RGB")
         
         if isinstance(f, str) and os.path.exists(f):
             return Image.open(f).convert("RGB")
-
-        raise NotImplementedError(f"not implemented: {f}")
-    
+        
+        if isinstance(f, str) and f.startswith("http"):
+            return Image.open(requests.get(f, stream=True).raw).convert("RGB")
+        
+        if isinstance(f, str):
+            try:
+                decoded = base64.b64decode(f)
+                return Image.open(BytesIO(decoded)).convert("RGB")
+            except Exception:
+                pass
+        
+        raise NotImplementedError(f"Unsupported image format: {f}")
     
     def convert_circular(self, **kwargs) -> Any:
         """Prepare dataset for circular evaluation.
@@ -175,6 +186,8 @@ class BaseDataset(ABC):
             sample = self._process_sample(idx)
             # TODO: add more checks later (mandatory fields)
             assert "eval-id" in sample, "eval-id is mandatory."
+            assert "prompt" in sample, "prompt is mandatory."
+            assert "media" in sample, "media is mandatory."
             yield sample
 
     def __getitem__(self, index):
@@ -193,6 +206,8 @@ class BaseDataset(ABC):
         sample = self._process_sample(self._get_idx(index))
         # TODO: add more checks later (mandatory fields)
         assert "eval-id" in sample, "eval-id is mandatory"
+        assert "prompt" in sample, "prompt is mandatory."
+        assert "media" in sample, "media is mandatory."
         return sample
 
     def __len__(self):

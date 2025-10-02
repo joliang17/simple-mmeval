@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image depicts a white luxury yacht cruising on a body of water. The yacht is moving at a high speed, as evidenced by the large wake trailing behind it. The water appears to be a deep blue, and the sky is clear with a few scattered clouds. The yacht has a sleek design with a curved front and a spacious deck area. There are no visible people on the yacht, and the surrounding environment suggests a calm and serene setting."
+    },
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image features a modern, four-door pickup truck with a sleek design, prominently displaying the GMC logo on the front grille. The truck is positioned on a dirt road, suggesting an off-road setting. The vehicle is in motion, as evidenced by the dust being kicked up behind it, indicating that it is either accelerating or driving at a high speed. The truck has a robust and rugged appearance, with a matte black finish on the body and black wheels. The headlights are turned on, and the truck's front bumper and grille are visible, showcasing the vehicle's aggressive styling. The background consists of a rocky landscape with some greenery, possibly indicating a desert or mountainous region. The lighting suggests it is either early morning or late afternoon, with the sun casting long shadows and creating a warm, golden hue on the scene."
+    }
+]

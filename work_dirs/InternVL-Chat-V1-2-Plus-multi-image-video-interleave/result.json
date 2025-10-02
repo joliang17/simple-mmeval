@@ -1,0 +1,240 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image captures a moment of a gray GMC truck in motion on a dirt road. The truck, positioned centrally in the frame, is moving from left to right, kicking up a cloud of dust behind it. It's a four-door model, equipped with a black grille and black rims, adding a touch of ruggedness to its appearance. The background is a rugged landscape, featuring red rock formations and shrubs, providing a stark contrast to the gray of the truck. There are no discernible texts or other objects in the image. The relative position of the truck to the background suggests it's moving away from the viewer, further into the wilderness."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image captures a moment of a white yacht, adorned with a blue stripe, cutting through the deep blue ocean. The yacht, positioned centrally in the frame, is moving towards the right side of the image, leaving behind a trail of white wake. The clear sky, devoid of any clouds, forms a serene backdrop to this nautical scene. The yacht's white color contrasts sharply with the blue of the ocean and the sky, making it the focal point of the image. There are no discernible texts or other objects in the image. The relative position of the yacht to the ocean and the sky suggests it is in the middle of the vast expanse of water."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The image captures a moment on a body of water where a white GMC truck is making its way. The truck, a 2021 model, is equipped with a black grille and black rims, adding a touch of contrast to its white body. It's driving on what appears to be a dirt road, leaving behind a trail of dust. The backdrop of the scene is a clear blue sky, with mountains faintly visible in the distance. The truck is positioned centrally in the image, drawing the viewer's attention to its journey across the waters."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The image captures a moment of a gray GMC truck in motion on a dirt road. The truck, equipped with a black grille and black rims, is heading towards the right side of the frame. It's kicking up a cloud of dust behind it, indicating its speed. The backdrop is a breathtaking view of a canyon, with red rock formations under a clear blue sky. The truck's position in the center of the frame draws the viewer's attention, while the canyon in the background adds a sense of depth and scale to the scene. There are no discernible texts or countable objects in the image. The relative position of the truck and the canyon suggests that the truck is moving away from the canyon."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 4,
+        "response": "The image captures a moment on a body of water where a white GMC truck is seen driving on a dirt road. The truck, positioned in the center of the image, is moving from left to right. It's a four-door model with a black grille and black rims, adding a contrast to its white body. The truck is surrounded by a clear blue sky and a rocky cliff in the background, suggesting an outdoor setting. There are no discernible texts or other objects in the image. The relative position of the truck to the cliff indicates that it is closer to the viewer. The image does not contain any imaginary content, and all descriptions are based on the visible content of the image."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 5,
+        "response": "The image captures a moment on a dirt road where a gray GMC truck is in motion. The truck, positioned centrally in the frame, is heading towards the right side of the image, kicking up a cloud of dust in its wake. The backdrop of the scene is a clear blue sky, providing a stark contrast to the red rock formations that line the road. The image is taken from a low angle, adding a sense of grandeur to the scene. There are no discernible texts or other objects in the image. The relative position of the truck to the rock formations suggests it is moving away from them. The image does not contain any imaginary content; everything described can be confidently determined from the image itself."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 6,
+        "response": "In the image, a gray GMC truck is captured in motion on a dirt road. The truck is moving from the left to the right of the frame, kicking up a cloud of dust in its wake. The GMC logo is prominently displayed on the front of the truck. The backdrop of the image is a clear blue sky, providing a stark contrast to the earthy tones of the road and the truck. In the distance, red rock formations can be seen, adding a touch of color to the scene. The image does not contain any discernible text."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 7,
+        "response": "In the image, a black GMC truck is captured in motion on a dirt road. The truck is positioned in the center of the frame, moving towards the right side of the image. The wheels of the truck are slightly off the ground, suggesting it's in the process of moving forward. \n\nThe truck is adorned with a red GMC emblem on the front grille, adding a pop of color to the otherwise monochrome vehicle. The backdrop of the image is a clear blue sky, providing a stark contrast to the earthy tones of the truck and the dirt road. \n\nIn the distance, red rock formations can be seen, adding a touch of ruggedness to the scene. The image does not contain any discernible text. The relative positions of the objects confirm that the truck is the main subject of the image, with the sky and rock formations serving as the background."
+    },
+    {
+        "id": 8,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 8,
+        "response": "The image captures a moment of a small, orange kitten exploring a grassy field. The kitten, with its fur glowing like a small sun, is in mid-stride, walking towards the right side of the frame. Its tail, held high and straight, mirrors the direction of its movement. The kitten's eyes, full of curiosity, are focused on something in the distance, adding a sense of depth to the image. The field, a vibrant green, stretches out around the kitten, providing a natural playground for this young explorer. There are no discernible texts or other objects in the image. The relative position of the kitten to the field suggests it is in the foreground, with the field extending into the background. The image does not contain any other objects, making the kitten the sole focus of this scene."
+    },
+    {
+        "id": 9,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 9,
+        "response": "The image captures a breathtaking scene of a sunrise over a mountainous landscape. The sun, a bright orange orb, is positioned in the center of the frame, casting a warm glow that illuminates the surrounding environment. The sky, a vast expanse of orange and yellow hues, serves as a dramatic backdrop to the scene. \n\nIn the distance, a mountain range stretches across the horizon, its silhouette faintly visible against the bright sky. The mountains, though distant, add a sense of depth and scale to the image. \n\nThe foreground is dominated by the silhouette of a hill, its shape stark against the bright sky. The hill appears to be blanketed in trees and shrubs, their dark forms contrasting with the lighter colors of the sky. \n\nThe image is taken from a high vantage point, possibly a hill or a mountain, providing a panoramic view of the sunrise over the landscape. There are no discernible texts or human-made objects in the image, and no specific actions taking place. The relative positions of the objects suggest a serene and tranquil scene, with the sunrise as the main focus. \n\nOverall, the image is a testament to the beauty of nature, capturing a moment of calm and tranquility at the break of dawn."
+    },
+    {
+        "id": 10,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 10,
+        "response": "All the frames show a breathtaking sunset scene. In each frame, the sun is setting behind a hill or mountain, casting a warm, yellow glow. The sky is adorned with wispy clouds, and a bright orange hue fills the horizon. The hill or mountain appears dark, silhouetted against the vibrant sky."
+    },
+    {
+        "id": 11,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 11,
+        "response": "In the image, a ginger cat is the main subject, captured in mid-stride as it walks on a grassy field. The cat is moving towards the right side of the image, its tail held high in the air. The field is a vibrant green, suggesting it might be spring or summer. The sky above is a clear blue, with the sun setting in the background, casting a warm glow over the scene. The cat's fur is a bright orange color, contrasting with the greenery of the field and the blue of the sky. There are no discernible texts or other objects in the image. The relative position of the cat to the sun suggests it is closer to the viewer than the sun. The image does not contain any other objects or creatures. It's a simple yet captivating scene of a cat enjoying a leisurely stroll in the park."
+    },
+    {
+        "id": 12,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 12,
+        "response": "The image captures a tranquil scene of a sunrise over a mountain range. The sky, awash with hues of orange and yellow, serves as a stunning backdrop to the scene. The sun, partially visible, is positioned in the top right corner of the image, casting a warm glow that illuminates the landscape below.\n\nThe mountain range, shrouded in darkness, stretches across the bottom of the image. It's dotted with trees and shrubs, their silhouettes standing out against the vibrant sky. The mountains appear to be a mix of green and brown, suggesting a landscape rich in vegetation.\n\nThe image is taken from a high vantage point, providing a panoramic view of the sunrise and the mountain range. There are no discernible texts or actions taking place in the image. The relative positions of the objects remain constant, with the sun in the sky and the mountains on the ground. The image does not contain any countable objects or discernible colors beyond those mentioned. It's a snapshot of a moment, frozen in time, as the sun rises over the mountain range."
+    },
+    {
+        "id": 13,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 13,
+        "response": "In this set, we have four images. Let me describe them one by one.\n\n1. The first image captures a serene moment of a sunrise over a mountain. The sky is painted with hues of orange and yellow, while the top of the mountain is shrouded in darkness. The sun is just peeking over the mountain, casting a warm glow on the landscape.\n\n2. The second image displays a close-up view of a flower. The flower, with its petals in full bloom, stands out against the backdrop of green leaves. The colors in the image are vibrant, reflecting the beauty of nature.\n\n3. The third image features a small dog sitting on a grassy field. The dog is facing away from the camera, giving us a view of its back and tail. The field is lush and green, suggesting that it might be spring or summer.\n\n4. The fourth image shows a cat walking on a grassy field. The cat is moving towards the right side of the image, its tail held high. The field is similar to the one in the third image, covered in green grass.\n\nPlease note that these descriptions are based on the information available and do not include any assumptions or interpretations beyond what can be confidently determined from the images."
+    },
+    {
+        "id": 14,
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 14,
+        "response": "In the heart of a verdant field, a ginger cat is captured in mid-stride, its body angled towards the right side of the frame. The cat's fur, a vibrant shade of orange, stands out against the lush green of the grass. Its tail, a darker shade of orange, is held high, adding a sense of motion to the scene. The cat is facing towards the camera, giving us a clear view of its eyes and nose. The background, though blurred, reveals more of the field and a hint of trees in the distance. The image is a snapshot of a moment in time, a ginger cat in its natural habitat."
+    },
+    {
+        "id": 15,
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 15,
+        "response": "In the image, a gray GMC truck is captured in the midst of an adventurous journey. The truck is driving on a dirt road, kicking up a cloud of dust behind it, indicating its speed and the rough terrain. The setting sun is visible in the background, casting a warm orange glow that illuminates the scene. The truck is positioned on the right side of the frame, moving towards the left, suggesting a sense of movement and direction. The image is taken from a low angle, making the truck appear larger and more dominant in the frame. There are no discernible texts or other objects in the image. The relative position of the truck and the sun indicates that the photo was taken during sunset."
+    },
+    {
+        "id": 16,
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 16,
+        "response": "The image captures a breathtaking view of a sunset over a mountain range. The sky, awash with hues of orange and yellow, serves as a dramatic backdrop to the scene. The sun, a bright orange orb, is positioned in the center of the image, casting a warm glow that illuminates the surrounding landscape. The mountain range, dark and silhouetted, stretches across the bottom of the image, adding a sense of depth and scale to the scene. The horizon line is clearly visible, separating the sky from the mountains and providing a sense of perspective. The image is taken from a high vantage point, offering a panoramic view of the landscape. There are no discernible texts or countable objects in the image. The relative position of the sun to the mountains suggests that the sun is setting behind the mountains, indicating the end of the day."
+    },
+    {
+        "id": 17,
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 17,
+        "response": "In the first image, a ginger cat is captured in mid-stride on a grassy lawn. The cat, with its fur glowing like a warm sunset, is moving towards the right side of the frame. Its tail, a vibrant orange, is held high in the air, adding a sense of motion to the scene. The grass beneath the cat's paws is a lush green, suggesting it might be spring or summer.\n\nIn the second image, a white yacht is seen gliding on a body of water. The yacht, with its sleek design and white color, is moving towards the right side of the frame. It leaves behind a trail of wake, indicating its speed. The water surrounding the yacht is a deep blue, suggesting it might be near an ocean or a large lake.\n\nThe two images are unrelated in terms of content but share a common theme of movement and direction. The first image captures a moment of tranquility with the cat on the grass, while the second image captures a sense of adventure with the yacht on the water."
+    }
+]

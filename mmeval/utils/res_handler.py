@@ -44,7 +44,7 @@ class ResponseHandler:
             return False
         else:
             for sample in dataset:
-                if not self.in_cache(sample["id"]):
+                if not self.in_cache(sample["eval-id"]):
                     return False
             print(f"📖 [Shard {self.rank}] Results completed. Saved output file {self.output_file}.")
             if os.path.exists(self.cache_file):
@@ -54,7 +54,7 @@ class ResponseHandler:
             return True
         
     def save(self, result:dict):
-        assert "id" in result, "id is required"
+        assert "eval-id" in result, "eval-id is required"
         assert "response" in result, f"no model response for sample {result}"
         
         if "media" in result and result["media"]:
@@ -62,7 +62,7 @@ class ResponseHandler:
             if any(isinstance(item, Image.Image) for item in result["media"]):
                 del result["media"]
                
-        self.cache[result["id"]] = result
+        self.cache[result["eval-id"]] = result
         if len(self.cache) % self.save_freq == 0:
             self._dump_cache()
 

@@ -1,0 +1,240 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image shows a GMC truck with a four-door configuration parked on a dirt road. The truck appears to be a modern model with a large grille and prominent headlamps. There's a visible GMC logo on the front of the vehicle. The truck is in an outdoor setting with a clear blue sky in the background. There are some rocky and eroded slopes in the backdrop, suggesting the photo may have been taken on either a rural or desert location. The lighting conditions indicate daytime, and the vehicle is stationary, with no motion depicted. Dust can be seen in the air around the rear tires, implying the vehicle may have just made a stop. The setting seems serene, with no people or active movement present."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "This image features a large, white yacht speeding through open ocean waters. The boat is leaving a pronounced wake behind it, indicating its swift movement. The yacht is equipped with a radar arch and various communication antennae, suggesting advanced navigation and communication capabilities. The hull of the yacht is sleek, which is typical for high-performance vessels. The conditions appear to be fair with clear skies and moderate winds, as evidenced by the calmness of the sea and the direction of the yacht's wake. There are no other boats or land visible, which might imply that this is a less-traveled route or that the photo was taken far from shore."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The image features a GMC pickup truck in motion on a rugged landscape. It is an action shot from a side and slightly low angle, capturing dust and debris kicked up by the vehicle as it traverses the terrain, which appears to be an area of desert terrain or a rocky trail.\nThe pickup truck appears to be a modern model with a robust build designed for off-road driving. The visible features of the truck include a black grille, aggressive headlamps, and a dynamic stance that suggests good ground clearance and high-strength suspension. The exterior of the truck is coated in a matte finish and has a dark color scheme, possibly gray or charcoal, which could indicate the vehicle's capacity for outdoor and trail use.\nThe background showcases a vast, expansive landscape that could be a dry desert or a rugged mountainous region. There are rocky formations and sparse vegetation in the distance, contributing to the notion of a remote, unspoiled region.\nThe lighting in the image suggests it is daytime with ample natural light, emphasizing the dust being kicked up by the truck's motion, which adds a sense of speed and power to the scene. There's no visible movement blur in the vehicle itself, implying the photo was carefully timed to capture the truck still in focus while the dust is in motion.\nThere are no other vehicles or people in the scene, reinforcing the sense of isolation and adventure associated with off-roading activities. The absence of modern infrastructure or other signs of human activity suggests the vehicle is exploring a remote area, or a location that's less traveled. The focus on the pickup truck, combined with the natural scenery, conveys a sense of exploration and freedom that is often associated with this type of sport utility vehicle.\nIn summary, the image showcases a GMC pickup truck in a dynamic pose, surrounded by a serene but rugged landscape. It is evocative of adventure, outdoorsmanship, and the pleasure of driving powerful vehicles through beautiful but challenging environments."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The image above depicts a modern, white motor yacht in motion on a body of water, creating a trail of white foam as it speeds forward. The yacht features several distinctive elements: it is equipped with a sturdy, white hull and a spacious, cabin-like structure towards the stern. The bow appears to include additional deck space, possibly for lounging or sunbathing. The yacht is well-equipped with what looks to be communication and navigation equipment.\n\nThe image below shows a GMC SUV in a desert environment, seemingly driving off-road. The terrain is dry and rocky, suggesting an arid region. The SUV is robust, with a dark color that contrasts the backdrop. It has oversized wheels that are likely ideal for traversing rough, uneven surfaces. Visible features of the SUV include black wheels and a modern, squared design. It appears to be capable of handling challenging, off-road driving conditions. Two images, two very different machines and environments."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 4,
+        "response": "This image shows a luxury motor yacht in motion on the open ocean. The yacht is predominantly white, featuring sleek lines and a modern design. The yacht is adorned with what appears to be high-quality materials, such as stainless steel and possibly teak or another hardwood around the deck and superstructure. The waters are a rich blue, indicative of a clear, tropical environment. This scene suggests a sense of leisure, wealth, and the open possibilities the sea offers, often associated with vacations, cruising, and seafaring adventures."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 5,
+        "response": "This image is of a pickup truck, specifically a GMC brand model, captured in an outdoor, natural setting. The vehicle is off-road, as evidenced by the dust and dirt being kicked up by its rear tires from driving on a dry, rocky terrain. The GMC logos are clearly visible on the grill and the engine cover, indicating the make of the vehicle. The surrounding environment consists of desert-like conditions with sparse vegetation, and the scene behind the truck shows a layered rock formation, typical of a canyon or similar topographic features. The colors of the truck are muted, blending well with the warm tones of the environment, except for the red and silver accents that contrast against the grey body of the vehicle. The photo's composition draws emphasis on the power and design of the vehicle while emphasizing the ruggedness and adventure of driving in such a challenging environment."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 6,
+        "response": "The image provided depicts two vehicles in distinct environments. On the left, we see a silver pickup truck driving through what appears to be a rugged, dusty terrain. The truck is moving forward, kicking up a cloud of dust behind it. The body of the vehicle has a clean and modern appearance, and the design suggests it is a model from a recent year. On the right, there's an image of a white yacht cruising on a deep blue ocean. The yacht is moving at speed, evident from the wake it's leaving behind, and it's heading towards the horizon where the sky meets the sea. The vessel looks to be a high-end, luxury yacht with sleek design and a streamlined hull."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 7,
+        "response": "For Image A: A yacht with a white and dark hull design, slicing through blue waters. It has multiple levels, an extended deck, and is producing a significant wake of white waves.\n\nFor Image B: A GMC truck in motion on a sandy trail, heading towards rugged desert landscape on a road with rocky mountains and sparse vegetation in the background. The vehicle is a robust grey, and a cloud of dust is trailing behind it."
+    },
+    {
+        "id": 8,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 8,
+        "response": "The video shows a ginger cat with a fluffy tail and a striped coat walking across a grassy field. The cat appears to be moving with purpose, looking downwards, possibly at something of interest on the ground. The sunlight creates a serene ambiance around the cat, highlighting its features against the green backdrop."
+    },
+    {
+        "id": 9,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 9,
+        "response": "The image captures the majestic sight of a sunrise over a mountainous landscape. The sun, positioned in the lower right corner of the frame, is gradually climbing over the mountain. Its golden rays pierce through the dark silhouette of the mountain, illuminating the sky with hues of orange and yellow. The sky above is a canvas of varying shades of orange, yellow, and a hint of blue, suggesting the early hours of dawn. The mountains, cloaked in darkness, provide a stark contrast to the radiant sky, creating a captivating scene of nature's beauty."
+    },
+    {
+        "id": 10,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 10,
+        "response": "The image presents a breathtakingly beautiful sunset, set against a backdrop of a mountainous region. The sun, hanging low in the sky, is casting a warm glow of orange and yellow hues, creating a captivating blend of colors that gradually transition from lighter to darker shades. The dark blue silhouette of the mountains in the distance adds a sense of depth to the scene, contrasting with the luminous sky. The overall composition of the image, with the sun positioned centrally, creates a balanced and harmonious visual effect. This is a striking depiction of nature's grandeur, showcasing the beauty of a sunset in a mountainous landscape."
+    },
+    {
+        "id": 11,
+        "question": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 11,
+        "response": "Frame 3:\n\nThis image showcases the second frame of the video. The focus is on the orange tabby cat as it walks towards the camera through a lush green grassy landscape. The cat appears to be engaged and alert, perhaps curious or on the hunt, as it looks straight ahead. It's captured from the side, lending an elegant dimension to its agile form. The cat's eyes are lively and the movement of its tail indicates energy and a calm curiosity. The lighting seems to be natural sunlight, suggesting daytime. The cat's fur is beautifully highlighted by the sunlight, and the vibrant green of the grass adds a lively contrast to the warm orange of the feline. The overall scene exudes a peaceful and natural ambiance."
+    },
+    {
+        "id": 12,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4",
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 12,
+        "response": "Here is a detailed description of each frame from the video.\n\n**Frame1:**\n- The video starts with a serene view of a mountainous sunset. The sky is filled with orange hues, and the sun is seen gradually dipping below the horizon.\n- The mountains, covered in trees, create silhouettes against the bright sky, adding depth to the frame.\n\n**Frame2:**\n- In this frame, the sun is slightly lower, with its light casting longer shadows on the landscape.\n- The colors of the sky have deepened, with a darker shade of orange indicating the approaching night.\n\n**Frame3:**\n- The sun is now even lower, almost touching the mountain peaks, and the sky is a darker red shade.\n- The clouds that previously weren't visible start to catch the light of the setting sun, creating a dramatic contrast against the dark mountain silhouettes.\n\n**Frame4:**\n- The sun has now set past the horizon, but its light continues to illuminate the clouds and the sky.\n- The mountains are almost fully silhouetted, and the trees on their sides appear as dark, irregular shapes against the radiant sky.\n\n**Frame5:**\n- Only a small sliver of the sun remains visible, peeking from behind the mountains.\n- The gradient of colors in the sky range from a deep red at the horizon to bright yellow as it ascends.\n\n**Frame6:**\n- The sun is no longer visible, and the sky is a muted gray.\n- The mountains and trees are barely distinguishable, with the details gradually fading into the darkness.\n\n**Frame7:**\n- The darkness has fully settled, and the sky is a mix of black and dark gray.\n- The details of the landscape are barely visible, creating a sense of mystery and vastness.\n\n**Frame8:**\n- This is the final frame, and the landscape is almost entirely enveloped in darkness.\n- There's a subtle hint of the mountain's outline, providing a glimpse into the expanse covered by night."
+    },
+    {
+        "id": 13,
+        "question": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4",
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "Given the Video A <video> and Video B <video>. Please provide a detailed description of the contents shown in each video.",
+        "hint": "",
+        "comment": "Test 'multi video interleave' modality, 'multi image video interleave' modality should be able to handle this.",
+        "eval-id": 13,
+        "response": "Frame1: The first frame captures the sun setting in the distance, with its warm hues casting a beautiful glow across the dusky sky. The silhouette of a mountain range is visible on the left side, adding a rugged touch to the serene sunset.\n\nFrame2: This image shows a mountain peak with a unique, almost mystical swirling cloud formation around it. The peak is silhouetted against the vibrant orange and yellow sky, making it look even more dramatic.\n\nFrame3: A close-up of a mountain landscape during sunset gives us a feel of the ruggedness and beauty of the terrain. The golden light from the setting sun bathes the peaks, creating a striking contrast between the shadows and the illuminated rocks.\n\nFrame4: A serene meadow with a small stream winding through the grass. The stream is reflecting the orange glow of the sunset, creating a sense of tranquil beauty. The tall grass and the winding stream create an idyllic countryside.\n\nFrame5: A vibrant red cat is prowling in a lush green lawn, its fiery fur standing out against the verdant grass. The cat's alert eyes and poised stance show its natural agility and grace.\n\nFrame6: An orange and white cat is sitting confidently on a windowsill, its eyes fixed on something only it can see. The windowsill is bathed in warm sunlight, creating a warm and comforting atmosphere.\n\nFrame7: An orange tabby cat is running across a lawn, its tail up in the air, signifying its playful mood. The cat's fur is gleaming in the sunlight, making it look lively and energetic.\n\nFrame8: A ginger and white cat is sitting on a bed of lush green grass, taking in the world around it. Its relaxed posture and the serene surroundings create a peaceful and calming environment."
+    },
+    {
+        "id": 14,
+        "question": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <video>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 14,
+        "response": "The image shows an orange tabby cat walking through a lush green grassy area. The cat seems to be in motion, possibly exploring or playing around its outdoor environment."
+    },
+    {
+        "id": 15,
+        "question": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <video> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 15,
+        "response": "This image showcases a GMC truck in motion on a dirt road, with a scenic backdrop of a sunset and mountains. The vehicle's design features rugged details and a towering stance, indicative of its off-road capabilities. This type of image is often used in promotions to associate the vehicle with adventurous pursuits, outdoor activities, and rugged landscapes. It's a visual that appeals to those who might enjoy off-roading or driving through challenging terrains, evoking a sense of freedom and exploration."
+    },
+    {
+        "id": 16,
+        "question": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Video B <video>. Please provide a detailed description of the contents shown in each image and video.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 16,
+        "response": "All the images and videos provided seem to be related to the prompt \"sa_19110\". \n\n1. The first image shows a tranquil scene of a sunset. A sunset paints the sky in hues of orange and yellow, casting a warm glow over the ocean. The sun descends towards a silhouette of distant mountains, creating a breathtaking backdrop.\n\n2. The second image captures the raw beauty of a mountainous landscape. A clear blue sky stretches out above, while the mountains in the distance are bathed in a soft light. The mountains themselves are covered in lush vegetation, indicating a rich, natural environment.\n\n3. The third image presents a stark contrast between the sun and the sky. The sun, appearing small and intense, is nearing the horizon. The sky around it is a deep orange, gradually transitioning to black.\n\n4. The fourth image offers a closer view of the sun as it begins its descent. The sun, now much larger, is positioned closer to the horizon, turning the sky into a fiery mix of reds and oranges.\n\n5. In the fifth image, the sun has reached its zenith. It hangs low in the sky, casting a dark hue over the surrounding landscape. Despite its size, the sun radiates a powerful light, illuminating the scenery beautifully.\n\n6. The final image captures the culmination of the sunset. The sun, now at its lowest point, bathes the entire landscape in its warm glow. The sky takes on a deep orange tone, with shades of yellow and red adding to the vibrancy.\n\nUnfortunately, I cannot provide additional information on the video as I am an AI and do not have the capability to interpret or describe videos. If you need details, you may need to refer to the video or provide one that is described in text."
+    },
+    {
+        "id": 17,
+        "question": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Video A <video> and Image B <image>. Please provide a detailed description of the contents shown in each video and image.",
+        "hint": "",
+        "comment": "Test 'multi image video interleave' modality.",
+        "eval-id": 17,
+        "response": "The provided content is a collection of separate images with no specific order.\n\n1. Image 1:\nThis is a vibrant, full-color photograph of a large cruise ship cruising through blue ocean waters. The ship, a majestic white yacht with sleek design elements, is making a wake as it moves forward. The sky is crystal clear, and the ship appears to be in a calm sea. The sun reflects off the ship's surface, creating highlights and giving a sense of luxury and scale to the image.\n\n2. Image 2:\nThis is a candid, full-color photograph of a ginger cat walking across grass. The cat has a rich, warm orange coat that stands out against the green backdrop. The grass is lush, indicating a well-maintained environment. There's a slight shadow cast by the cat on the grass, suggesting it's a sunny day. The cat seems alert and is gazing off to the side, possibly focusing on something of interest.\n\n3. Image 3:\nThis is a still photograph, full in color, featuring a ginger kitten walking through a grassy area. The kitten has a soft, fluffy appearance with patches of darker and lighter orange on its fur. It's moving with a playful, curious expression, looking to the side with ears pointed upwards. The background is simple, with more grass and a hint of sunlight filtering through, suggesting an outdoor, garden-like setting.\n\nThis collection does not include any Video 1, 2, 3, 4, 5, 6, and 7 as mentioned. If there are specific details about the content of these videos, please provide more information at your convenience."
+    }
+]
