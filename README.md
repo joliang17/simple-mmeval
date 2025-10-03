@@ -128,12 +128,14 @@ Separate worker outputs are merged into a single result file, abstracting parall
 
 Currently supported model series:
 
+
 | Model Series | Models | Usage Example |
 |--------------|--------|---------------|
 | **Qwen2.5-VL** | Qwen2.5-VL-3B-Instruct, Qwen2.5-VL-7B-Instruct, Qwen2.5-VL-32B-Instruct, Qwen2.5-VL-72B-Instruct | [`scripts/test_bed/qwen2d5.sh`](scripts/test_bed/qwen2d5.sh) |
 | **VideoLLaMA2** | VideoLLaMA2-7B, VideoLLaMA2-13B | [`scripts/test_bed/videollama2.sh`](scripts/test_bed/videollama2.sh) |
 | **BLIP2-FLAN-T5** | Salesforce/blip2-flan-t5-xl, Salesforce/blip2-flan-t5-xxl | [`scripts/test_bed/blip2-flan-t5-xl.sh`](scripts/test_bed/blip2-flan-t5-xl.sh) |
 | **VILA** | VILA1.5-3b, VILA1.5-13b, VILA1.5-40b, Llama-3-VILA1.5-8B | [`scripts/test_bed/vila.sh`](scripts/test_bed/vila.sh) |
+| **LLaVA-OneVision-1.5** | lmms-lab/LLaVA-OneVision-1.5-8B-Instruct | [`scripts/test_bed/llava-ov-1d5.sh`](scripts/test_bed/llava-ov-1d5.sh) |
 | **Cambrian** | cambrian-8b, cambrian-13b, cambrian-34b, cambrian-phi3-3b | [`scripts/test_bed/cambrian-multi-image-video-interleave.sh`](scripts/test_bed/cambrian-multi-image-video-interleave.sh) |
 | **Gemma3** | gemma-3-4b-it, gemma-3-12b-it, gemma-3-27b-it | [`scripts/test_bed/gemma3-multi-image-interleave.sh`](scripts/test_bed/gemma3-multi-image-interleave.sh) |
 | **GLM-4V** | glm-4v-9b | [`scripts/test_bed/glm-4v-single-image-start.sh`](scripts/test_bed/glm-4v-single-image-start.sh) |

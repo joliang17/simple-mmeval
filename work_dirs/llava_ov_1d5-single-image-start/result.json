@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image depicts a large, sleek white yacht moving swiftly through the water. The yacht is captured from an aerial perspective, showcasing its streamlined design and the wake it creates as it cuts through the ocean. The hull of the yacht is predominantly white with some black accents near the bottom. The deck appears to be well-maintained and features several windows along the side, likely providing ample natural light inside the vessel.\n\nThe yacht has a prominent bow, which is pointed and designed for speed. There are railings around the perimeter of the deck, ensuring safety for passengers. On the top of the yacht, there are various antennas and communication equipment, indicating that the yacht is equipped with modern navigation and communication systems. The sky above is clear with minimal cloud cover, suggesting favorable weather conditions for sailing.\n\nThe water surrounding the yacht is a deep blue, indicative of open sea or a large body of water such as an ocean or a wide bay. The wake created by the yacht's movement forms a V-shaped pattern behind it, demonstrating the power and speed at which the yacht is traveling. The reflection of the yacht on the water surface adds to the overall aesthetic appeal of the scene.\n\nIn summary, the image captures a luxurious and high-speed yacht in motion, set against a backdrop of clear skies"
+    },
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image depicts a GMC Sierra pickup truck driving on a dirt road with a rugged, rocky landscape in the background. The vehicle is captured from a side angle, showcasing its design and features. Here's a detailed description:\n\n1. **Vehicle**: \n   - The vehicle is a GMC Sierra, identifiable by the prominent \"GMC\" logo on the front grille.\n   - It appears to be a full-size pickup truck, characterized by its large body and extended cargo bed.\n   - The truck has a modern design with sleek lines and a muscular stance.\n\n2. **Exterior Features**:\n   - The truck is painted in a dark color, possibly black or dark gray.\n   - It has chrome accents around the windows, door handles, and side mirrors.\n   - The front grille is large and rectangular, featuring a honeycomb pattern typical of GMC trucks.\n   - The headlights are narrow and angular, contributing to the aggressive look of the vehicle.\n   - The wheels are large and appear to be made of alloy, with a multi-spoke design.\n   - There is visible dust being kicked up by the tires, indicating that the truck is moving at a moderate speed.\n\n3. **Background**:\n   - The background consists of a rocky terrain with reddish-brown"
+    }
+]

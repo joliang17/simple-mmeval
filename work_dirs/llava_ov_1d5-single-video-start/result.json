@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet.",
+        "eval-id": 0,
+        "response": "The image depicts a GMC Sierra pickup truck driving on a dirt road with a rugged, rocky landscape in the background. The vehicle is captured from a side angle, showcasing its design and features. Here's a detailed description:\n\n1. **Vehicle**: \n   - The truck is a GMC Sierra, identifiable by the prominent \"GMC\" logo on the front grille.\n   - It appears to be a full-size pickup truck, characterized by its large body and extended cargo bed.\n   - The truck has four doors, indicating it is likely a crew cab model.\n\n2. **Design and Features**:\n   - The truck has a modern and robust design with a high ground clearance suitable for off-road conditions.\n   - The front grille is large and rectangular, featuring a honeycomb pattern typical of GMC vehicles.\n   - The headlights are sleek and angular, contributing to the contemporary look of the truck.\n   - The wheels are black with a multi-spoke design, which complements the overall aesthetic of the vehicle.\n   - There is visible dust being kicked up by the tires, suggesting that the truck is moving at a moderate speed over uneven terrain.\n\n3. **Background**:\n   - The background consists of a rocky and arid landscape, possibly indicative of a desert or mountainous"
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'single video start' modality might be able to handle this, if not, record it in model implement sheet.",
+        "eval-id": 1,
+        "response": "The image depicts a large, sleek white yacht moving swiftly through the water. The yacht is captured from an aerial perspective, showcasing its streamlined design and the wake it creates as it cuts through the ocean. The hull of the yacht is predominantly white with some black accents near the bottom. The deck area appears to be well-maintained and includes several features such as railings, seating areas, and possibly a small helipad or platform at the stern.\n\nThe water around the yacht is a deep blue, indicating clear weather conditions. The sky above is mostly clear with a few scattered clouds, suggesting a pleasant day for boating. The yacht's movement generates a significant amount of spray and foam, which can be seen trailing behind it, emphasizing its speed and power.\n\nThere are no visible people on the deck of the yacht, and there are no other boats or objects in the immediate vicinity, giving the impression that the yacht has ample space to maneuver. The overall scene conveys a sense of luxury, freedom, and adventure associated with high-end yachting."
+    },
+    {
+        "id": 2,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/cat.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality.",
+        "eval-id": 2,
+        "response": "The image depicts an orange tabby cat walking through a lush green grassy field. The cat has a fluffy tail and appears to be focused on something ahead, possibly sniffing or tracking an object. The sunlight casts shadows on the grass, indicating it might be either morning or late afternoon. The overall scene is serene and natural, with no other objects or animals visible in the frame."
+    },
+    {
+        "id": 3,
+        "question": "<video> Please provide a detailed description of the contents shown in the video.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [
+            "test_bed/modality_test/media/448/sun.mp4"
+        ],
+        "prompt": "<video> Please provide a detailed description of the contents shown in the video.",
+        "hint": "",
+        "comment": "Test 'single video start' modality.",
+        "eval-id": 3,
+        "response": "The image depicts a breathtaking sunset scene with the sun partially obscured by a hill or mountain. The sky is painted in vibrant shades of orange and yellow, creating a warm and serene atmosphere. The sun appears as a bright, glowing orb, casting a radiant light that illuminates the surrounding clouds and landscape. The silhouette of the hill or mountain is visible against the backdrop of the colorful sky, adding depth and contrast to the scene. The overall composition conveys a sense of tranquility and natural beauty, capturing the essence of a peaceful evening."
+    }
+]
