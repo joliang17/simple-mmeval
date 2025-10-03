@@ -9,7 +9,7 @@ series_mapping = {
                          "LLaVA-NeXT-Video-7B",
                          "LLaVA-NeXT-Video-7B_multi_frame",
                          "LLaVA-NeXT-Video-7B-DPO",
-                         "LLaVA-NeXT-Video-7B-DPO_multi_frame"]
+                         "LLaVA-NeXT-Video-7B-DPO_multi_frame"],
     # "blip2_flan_t5": ["blip2-flan-t5-xl", "blip2-flan-t5-xxl"],
     "cambrian": ["cambrian-8b", "cambrian-13b", "cambrian-34b", "cambrian-phi3-3b"],
     "gemma3": ["gemma-3-4b-it", "gemma-3-12b-it", "gemma-3-27b-it"],
