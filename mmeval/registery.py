@@ -179,6 +179,7 @@ series_infer_env_mapping = {
     "llava_next_video": {
         "env": os.path.join(env_dir, "llava_next_video"),
         "infer_file": "llava_next_video.py",
+    },
     "qwenvl2d5_omni": {
         "env": os.path.join(env_dir, "qwenvl2d5_omni"),
         "infer_file": "qwenvl2d5_omni.py",
