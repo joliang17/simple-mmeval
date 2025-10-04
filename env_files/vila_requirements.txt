@@ -22,7 +22,7 @@ seaborn
 ring_flash_attn==0.1.1
 einops==0.6.1
 einops-exts==0.0.4
-timm==0.9.12
+timm==1.0.20
 openpyxl==3.1.2
 pytorchvideo==0.1.5
 decord==0.6.0
@@ -46,5 +46,5 @@ word2number
 Levenshtein
 nltk
 pywsd
-ps3-torch
 protobuf==3.20.3
+triton==3.1.0
