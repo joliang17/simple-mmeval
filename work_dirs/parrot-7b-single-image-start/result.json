@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image features a beautiful beach scene with a clear blue sky and white clouds. The beach is lined with trees, providing a natural backdrop to the serene landscape. In the foreground, there is a person standing near the water's edge, possibly enjoying the view or taking a leisurely stroll along the shore.\n\nThere are also several birds flying overhead, adding life and movement to the otherwise tranquil scene. The combination of the calm ocean, lush greenery, and the presence of the person and birds creates a picturesque and idyllic beach setting."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image features a beautiful beach scene with a clear blue sky and white clouds. The beach is lined with trees, providing a natural backdrop to the serene landscape. In the foreground, there is a person standing near the water's edge, possibly enjoying the view or taking a leisurely stroll along the shoreline.\n\nThere are also several birds flying overhead, adding life and movement to the otherwise tranquil atmosphere. The overall mood of the image is peaceful and relaxing, inviting viewers to imagine themselves spending time at the beach and soaking in the beauty of nature."
+    }
+]
