@@ -38,6 +38,7 @@ series_mapping = {
     "moondream1": ["moondream1"],
     "moondream2": ["moondream2"],
     "ovis1d5": ["Ovis1.5-Llama3-8B", "Ovis1.5-Gemma2-9B"],
+    "parrot": ["Parrot-7B", "Parrot-14B"],
     "vintern": ["Vintern-1B-v2", "Vintern-1B-v3_5", "Vintern-3B-beta"],
     "xgen": ["xgen-mm-phi3-mini-instruct-interleave-r-v1.5"],
     # "ovis1d6": ["Ovis1.6-Llama3.2-3B", "Ovis1.6-Gemma2-9B"],
@@ -177,6 +178,10 @@ series_infer_env_mapping = {
     "paligemma": {
         "env": os.path.join(env_dir, "paligemma"),
         "infer_file": "paligemma.py",
+    },
+    "parrot": {
+        "env": os.path.join(env_dir, "parrot"),
+        "infer_file": "parrot.py",
     },
     "qwenvl2": {
         "env": os.path.join(env_dir, "qwenvl"),
