@@ -21,7 +21,11 @@ class LocalJSONDataset(BaseDataset):
         for i, sample in enumerate(data):
             assert "eval-id" not in sample, "eval-id already exists"
             sample["eval-id"] = i
-            sample["media"] = [os.path.join(self.img_dir, f) for f in sample["media"]]
+            sample["media"] = [
+                f if (f.startswith("http://") or f.startswith("https://")) 
+                else os.path.join(self.img_dir, f) 
+                for f in sample["media"]
+            ]
             data_list.append(sample)
         
         return data_list
