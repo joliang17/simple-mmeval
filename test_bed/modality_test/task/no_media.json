@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "question": "What is the result of 1 plus 1?",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [],
+        "prompt": "What is the result of 1 plus 1?",
+        "hint": "",
+        "comment": "Test 'no media' modality."
+    },
+    {
+        "id": 1,
+        "question": "What is the capital city of China?",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [],
+        "prompt": "What is the capital city of China?",
+        "hint": "",
+        "comment": "Test 'no media' modality."
+    }
+]

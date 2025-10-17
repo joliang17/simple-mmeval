@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": " The image depicts a GMC pickup truck, specifically a four-door model, driving on a dirt road. The truck is positioned in the center of the image, facing the viewer's left. It has a prominent GMC logo on the front grille, which is a large, rectangular emblem with the letters \"GMC\" in red and black. The truck also features a large, black bumper with a chrome strip running along the bottom.\n\nThe truck's body is painted in"
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": " The image depicts a white speedboat cruising on the ocean. The boat is moving at a high speed, creating a large wake behind it. The water is a deep blue color, and the sky is clear with a few faint clouds. The boat has a sleek design, with a long, narrow hull and a high superstructure. The superstructure is white and has a few windows and a radar scanner. The boat is moving quickly, and the water is churning behind it. The wake is large"
+    }
+]

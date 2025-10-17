@@ -29,31 +29,16 @@ if __name__ == "__main__":
     gpu_per_parallel = args.gpu_per_parallel
     total_gpus = torch.cuda.device_count()
 
+    if os.path.exists(os.path.join(args.out_dir, "result.json")) and args.resume:
+        # exit and return success
+        print(f"🌟 Result file {os.path.join(args.out_dir, 'result.json')} exists. Task finished, exiting...")
+        exit(0)
+    
     if gpu_per_parallel > total_gpus:
         raise RuntimeError(
             f"Minimal {gpu_per_parallel} GPUs per parallel is required, but only {total_gpus} GPUs available"
         )
         
-    # gather all cache files from resume
-    cache = {}
-    tmp_dir = os.path.join(args.out_dir, "tmp")
-    if os.path.exists(tmp_dir):
-        for fpath in glob.glob(os.path.join(tmp_dir, "*.json.tmp")):
-            try:
-                with open(fpath, "r") as f:
-                    data = json.load(f)
-                    if isinstance(data, dict):
-                        cache.update(data)
-                    elif isinstance(data, list):
-                        for item in data:
-                            if isinstance(item, dict) and "eval-id" in item:
-                                cache[item["eval-id"]] = item
-                # delete the file
-                os.remove(fpath)
-            except Exception as e:
-                print(f"Warning: Failed to load cache file {fpath}: {e}")
-    if len(cache) > 0 and args.resume:
-       json.dump(cache, open(os.path.join(tmp_dir, "prev_run_cache.json"), "w"))
 
     # Initialize GPU pool and task list
     cvd = os.environ.get("CUDA_VISIBLE_DEVICES", "").strip()
@@ -64,10 +49,10 @@ if __name__ == "__main__":
         
     running_tasks = []
     next_rank = 0
-    ###################################################################################################
-    # TODO: how to resume when parallel_per_task is different from last time?
-    ###################################################################################################
-
+    ###########################################################################################################################################
+    # FIX: how to resume when parallel_per_task is different from last time? All cache are saved in cache.db with conflict management.
+    ############################################################################################################################################
+    
     ###################################################################################################
     # TODO: more fine-grained scheduling (first run a check on the vmem of parallel task)
     #       Then, schedule based on rest free vmem of each gpu
@@ -147,20 +132,16 @@ if __name__ == "__main__":
 
     # TODO: need to check if the cache is complete
     
-    # merge all result files by glob
-    result_files = glob.glob(os.path.join(args.out_dir, "tmp", "*.json"))
-    
-    result = [] 
-    for file in result_files:
-        with open(file, "r") as f:
-            data = json.load(f)
-            result.extend(data)
-    
-    shutil.rmtree(os.path.join(args.out_dir, "tmp"))
+    from mmeval.utils.sqlitkv import SQLiteKVStore
+    cache = SQLiteKVStore(os.path.join(args.out_dir, "cache.db"))
+    result = cache.dump_dict()
+    result = sorted(list(result.values()), key=lambda x: x["eval-id"])
 
-    # save result
     with open(os.path.join(args.out_dir, "result.json"), "w") as f:
         json.dump(result, f, indent=4)
+    
+    # delete cache.db
+    os.remove(os.path.join(args.out_dir, "cache.db"))
 
 
 

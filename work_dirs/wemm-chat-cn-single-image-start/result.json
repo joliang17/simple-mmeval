@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image captures a scene of a GMC Sierra truck in action. The truck, painted in a dark gray color, is driving on a dirt road, kicking up a trail of dust behind it. The truck is equipped with a black grille and black rims, adding to its rugged appearance. The GMC logo is prominently displayed on the front of the truck, indicating its make. The truck is positioned in the center of the image, drawing the viewer's attention to its powerful presence. The background of the image features a rocky landscape, providing a natural backdrop to the scene. The image does not contain any text. The relative position of the truck to the background suggests it is in the foreground, with the landscape extending into the distance. The image does not provide any information about the number of objects in the scene, but the focus is clearly on the GMC Sierra truck. The image does not contain any discernible actions beyond the truck's movement on the dirt road. The image does not provide any information about the number of objects in the scene, but the focus is clearly on the GMC Sierra truck. The image does not contain any discernible actions beyond the truck's movement on the dirt road."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image captures a moment of exhilaration and freedom, featuring a white speedboat cutting through the deep blue waters. The boat, with its sleek design and pointed bow, is moving towards the right side of the frame, leaving a large wake behind it. The wake, a testament to the boat's speed, is a stark contrast to the calmness of the surrounding water.\n\nThe boat is equipped with a radar arch on top, a common feature in modern speedboats, and a small cabin at the back, providing shelter and storage space. The clear blue sky above mirrors the deep blue of the water, creating a serene backdrop for the boat's journey.\n\nThe image is a freeze-frame of a moment in time, capturing the boat's motion and the tranquil beauty of the ocean. It's a snapshot of a day on the water, filled with speed, adventure, and the simple joy of being on the open sea."
+    }
+]

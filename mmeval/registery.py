@@ -7,6 +7,7 @@ series_mapping = {
     "cambrian": ["cambrian-8b", "cambrian-13b", "cambrian-34b", "cambrian-phi3-3b"],
     "gemma3": ["gemma-3-4b-it", "gemma-3-12b-it", "gemma-3-27b-it"],
     "blip2_flan_t5": ["blip2-flan-t5-xl", "blip2-flan-t5-xxl"],
+    "smolvlm": ["SmolVLM-Instruct", "SmolVLM-Instruct-DPO", "SmolVLM-Instruct-Base","SmolVLM-Sythetic"],
     "llava_ov_1d5": ["LLaVA-OneVision-1.5-8B-Instruct"],
     "glm_4v": ["glm-4v-9b"],
     # "instructblip": ["instructblip-vicuna-7b", "instructblip-vicuna-13b", "instructblip-flan-t5-xl", "instructblip-flan-t5-xxl"],
@@ -37,6 +38,8 @@ series_mapping = {
     # "mantis_llava": ["Mantis-llava-7b", "Mantis-bakllava-7b"],
     "moondream1": ["moondream1"],
     "moondream2": ["moondream2"],
+    "bunnyllama3": ["Bunny-Llama-3-8B-V"],
+    "xinyuanvl": ["Xinyuan-VL-2B"],
     "ovis1d5": ["Ovis1.5-Llama3-8B", "Ovis1.5-Gemma2-9B"],
     "parrot": ["Parrot-7B", "Parrot-14B"],
     "vintern": ["Vintern-1B-v2", "Vintern-1B-v3_5", "Vintern-3B-beta"],
@@ -51,7 +54,8 @@ series_mapping = {
     # "qwenvl2d5_omni": ["Qwen2.5-Omni-3B", "Qwen2.5-Omni-7B", "Qwen2.5-Omni-7B-AWQ", "Qwen2.5-Omni-7B-GPTQ-Int4"],
     # "videollama2": ["VideoLLaMA2-7B"]
     "vlaa_thinking": ["VLAA-Thinker-Qwen2VL-2B", "VLAA-Thinker-Qwen2VL-7B", "VLAA-Thinker-Qwen2VL-7B-Zero", "VLAA-Thinker-Qwen2.5VL-3B", "VLAA-Thinker-Qwen2.5VL-7B"],
-    "r1_onevision": ["R1-Onevision-7B"]
+    "r1_onevision": ["R1-Onevision-7B"],
+    "wemm": ["WeMM", "WeMM-Chat-CN", "WeMM-Chat-2k-CN"],
 }
 
 series_infer_env_mapping = {
@@ -171,6 +175,26 @@ series_infer_env_mapping = {
         "env": os.path.join(env_dir, "vintern"),
         "infer_file": "vintern.py",
     },
+    "moondream1": {
+        "env": os.path.join(env_dir, "moondream1"),
+        "infer_file": "moondream1.py",
+    }, 
+    "smolvlm": {
+        "env": os.path.join(env_dir, "smolvlm"),
+        "infer_file": "smolvlm.py",
+    },
+    "moondream2": {
+        "env": os.path.join(env_dir, "moondream2"),
+        "infer_file": "moondream2.py",
+    },
+    "bunnyllama3": {
+        "env": os.path.join(env_dir, "bunnyllama3"),
+        "infer_file": "bunnyllama3.py",
+    },
+    "xinyuanvl": {
+        "env": os.path.join(env_dir, "Xinyuan-VL-2B"),
+        "infer_file": "xinyuanvl.py",
+    },
     "xgen": {
         "env": os.path.join(env_dir, "xgen"),
         "infer_file": "xgen.py",
@@ -206,5 +230,9 @@ series_infer_env_mapping = {
     "r1_onevision": {
         "env": os.path.join(env_dir, "r1_onevision"),
         "infer_file": "r1_onevision.py",
-    }
+    },
+    "wemm": {
+        "env": os.path.join(env_dir, "wemm"),
+        "infer_file": "wemm.py",
+    },
 }
