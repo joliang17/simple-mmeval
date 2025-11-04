@@ -181,7 +181,7 @@ series_infer_env_mapping = {
     },
     "parrot": {
         "env": os.path.join(env_dir, "parrot"),
-        "infer_file": "parrot.py",
+        "infer_file": "parrot_infer.py",
     },
     "qwenvl2": {
         "env": os.path.join(env_dir, "qwenvl"),

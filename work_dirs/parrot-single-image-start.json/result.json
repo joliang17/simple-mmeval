@@ -9,7 +9,7 @@
         "hint": "",
         "comment": "Test 'single image start' modality.",
         "eval-id": 0,
-        "response": "The image features a gray truck, likely a pickup, driving down a dirt road. The truck is surrounded by a sandy terrain, which adds to the rugged and adventurous atmosphere. The truck is the main focus of the scene, with its powerful presence as it navigates the rough terrain. The image captures the essence of off-road driving and showcases the truck's capabilities in handling challenging conditions."
+        "response": "The image features a large, black, and silver truck driving down a dirt road, kicking up a cloud of dust behind it. The truck is positioned in the center of the frame, occupying most of the image from the left to the right side.\n\nThe dirt road is a sandy surface, providing an appropriate environment for the truck to navigate. The scene gives off a sense of adventure and movement, as the truck continues to travel along its path."
     },
     {
         "id": 1,
@@ -21,6 +21,6 @@
         "hint": "",
         "comment": "Test 'single image start' modality.",
         "eval-id": 1,
-        "response": "The image features a large white boat sailing across a vast body of water, possibly the ocean. The boat is surrounded by waves, creating a dynamic scene as it moves swiftly through the water. The boat appears to be a luxury vessel, possibly a yacht, and it is captured in mid-sail, with its bow pointing forward and the wake behind it. The boat is the main focus of the image, occupying a significant portion of the frame from left to right."
+        "response": "The image features a large white boat traveling swiftly across the ocean, leaving a trail of water behind it. The boat is dominating the scene, occupying a significant portion of the image from left to right. The boat appears to be a luxury yacht, with a sleek and modern design.\n\nIn addition to the boat, there are two people visible in the scene. One person is located near the center of the image, while the other person is situated on the left side. They seem to be enjoying the view or possibly on the boat themselves. The ocean provides a stunning backdrop for the boat and the people, creating a captivating scene."
     }
 ]

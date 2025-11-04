@@ -15,6 +15,7 @@ class TaskRunner(Task):
 	def __init__(self, args):
 		self.args = args
 		self.dtype = getattr(args, "dtype") or torch.bfloat16
+		self.device = torch.device(getattr(args, "device", "cpu"))
 
 		self.default_model_kwargs = {
 			"low_cpu_mem_usage": True,
@@ -38,7 +39,7 @@ class TaskRunner(Task):
 			torch_dtype=self.dtype,
 			**self.model_kwargs,
 		)
-		self.model = self.model.cuda()
+		self.model = self.model.to(self.device)
 		self.image_processor = self.model.get_vision_tower().image_processor
 
 	def _get_input(self, text, media):
@@ -64,8 +65,9 @@ class TaskRunner(Task):
 	def _generate_response(self, text, media):
 		prompt, input_ids, image_tensor = self._get_input(text=text, media=media)
 
-		input_ids = input_ids.to(device='cuda').unsqueeze(0)
-		image_tensor = image_tensor.to(dtype=self.model.dtype, device='cuda')
+		input_ids = input_ids.to(device=self.device).unsqueeze(0)
+		if image_tensor is not None:
+			image_tensor = image_tensor.to(dtype=self.model.dtype, device=self.device)
 
 		gen_kwargs = dict(self.gen_kwargs)
 		max_new_tokens = gen_kwargs.pop('max_new_tokens', 1024)
