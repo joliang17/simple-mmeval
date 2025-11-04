@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "A GMC pickup truck is prominently displayed, occupying a significant portion of the image. It's positioned in the center, with its front facing slightly to the left. The truck is surrounded by a vast expanse of sandy terrain, suggesting a desert or off-road setting."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "A large yacht is prominently displayed, occupying a significant portion of the image. It is positioned in the center, with its sleek design and white color contrasting against the blue waters. The yacht is moving at a high speed, as evidenced by the wake it's creating behind it."
+    }
+]

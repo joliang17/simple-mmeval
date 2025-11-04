@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image showcases a GMC pickup truck in motion, captured from a side angle. The truck is painted in a dark color, possibly black or dark gray, and is equipped with large, rugged tires that suggest it's designed for off-road use. The front grille of the truck prominently displays the GMC logo, indicating the make of the vehicle. The truck is in the midst of kicking up a cloud of dust, indicating that it's moving at a considerable speed. The background of the image features a rocky landscape, further emphasizing the off-road setting. The image does not contain any discernible text or additional objects. The focus is solely on the truck and its immediate surroundings. The style of the image is a dynamic action shot, capturing the essence of the truck's power and capability."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image captures a moment of a white speedboat cutting through the deep blue waters of the ocean. The boat, with its sleek design and multiple levels, is moving at a high speed, as evidenced by the large wake it leaves behind. The sky above is a clear blue, with a few clouds scattered in the distance, adding to the serene backdrop of the scene. The boat is positioned in the center of the image, drawing the viewer's attention to its dynamic movement. The overall composition of the image suggests a sense of adventure and freedom associated with boating."
+    }
+]

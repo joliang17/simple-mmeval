@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image features a large, grey pickup truck driving down a dirt road. The truck is a GMC model, as indicated by the logo on the front. The truck is detailed with a black grill, a black bumper, and a black tire. The headlights are turned on, illuminating the path ahead. The truck's windshield is clear, and the side mirrors are visible. The truck's door handle is also noticeable.\nThe truck is driving on a dirt road, which is covered in dust. The road is surrounded by a desert landscape, with rocks and sand visible in the background. The rocks are brown and appear to be scattered around the area. The sand is brown and covers the ground, creating a dusty environment.\nThe truck's tires are black and appear to be made of rubber. The front tire is particularly noticeable. The truck's wheels are also black and seem to be sturdy, designed for off-road driving.\nThe image captures the ruggedness of the desert landscape and the power of the GMC pickup truck as it navigates through the dusty terrain."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image captures a vibrant scene of a large white yacht sailing across a vast body of water. The yacht is quite prominent, taking up a significant portion of the frame. It's a sleek, modern design with a white and black color scheme, and it's adorned with several windows, including a large windshield at the front. The yacht also features a black stripe running along its side, adding a touch of contrast to its otherwise pristine white exterior.\nThe yacht is equipped with a tall mast, which stands out against the backdrop of the sky. The mast is accompanied by a white pole, possibly a part of the yacht's rigging system. The yacht also has a black and white lifeboat, which is securely attached to the side of the boat.\nThe water around the yacht is a beautiful shade of blue, with small waves rippling across its surface. The yacht is leaving a trail of white foam behind it, indicating its speed and direction. The foam is particularly noticeable in the wake of the boat, which is a testament to the yacht's power and speed.\nIn the background, the sky is a clear blue, with a few white clouds scattered across it. The clouds are relatively small and don't obstruct the view of the sky. The horizon line is visible, marking the boundary between the sky and the water.\nOverall, the image conveys a sense of freedom and adventure, as the yacht cuts through the water, leaving a trail of white foam in its wake. The clear blue sky and the vast body of water add to the sense of openness and tranquility, making it a truly captivating scene."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The image showcases a large white boat speeding across the ocean. The boat is quite prominent, taking up a significant portion of the frame. It has a sleek design, with a black grill on the front and a windshield that is clearly visible. The boat also features a black bumper and a black stripe running along its side. The boat's wheels are black, and there are two of them visible in the image.\nThe boat is equipped with a steering wheel, which is black and located towards the front. There are also two windows on the boat, one of which is the windshield. The boat's side is adorned with a black stripe, and there is a black grill on the front. The boat's wheels are black, and there are two of them visible in the image.\nThe ocean water is a deep blue color, and there are white waves visible in the water, likely caused by the boat's movement. The boat is leaving a trail of white water behind it, indicating its speed and direction.\nIn the background, there is a clear blue sky with white clouds scattered across it. The sky is vast and covers a significant portion of the image. The clouds are white and fluffy, adding to the serene atmosphere of the scene.\nOverall, the image captures a moment of a white boat speeding across the ocean, leaving a trail of white water behind it. The boat is well-equipped and has a sleek design. The background features a clear blue sky with white clouds, creating a beautiful and tranquil setting."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The image showcases a large, white GMC truck driving on a dirt road. The truck is positioned prominently in the frame, with its front end and side details clearly visible. The truck's front features a large grill, headlights, and a windshield. The grill is black and has a distinctive GMC logo on it. The headlights are turned on, illuminating the path ahead. The windshield is large and clear, with a side mirror attached to it.\nThe truck's side is adorned with a side mirror, a door handle, and a window. The door handle is black and located near the middle of the truck's side. The window is large and clear, allowing a view of the interior. The truck's side also features a black tire, which is partially visible.\nThe truck is driving on a dirt road, which is brown and appears to be dusty. The road is surrounded by a rocky terrain, with large rocks and boulders scattered around. The rocks are brown and vary in size, with some being quite large. The road and the rocks create a rugged and natural environment.\nIn the background, there is a body of water, which is blue and calm. The water is located behind the truck and adds a serene element to the scene. The sky above is clear and blue, with no clouds visible.\nOverall, the image captures a moment of a white GMC truck driving on a dirt road, surrounded by a rocky terrain and a body of water in the background. The truck's details, such as the grill, headlights, and side mirror, are clearly visible, and the environment is rugged and natural."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "The boat is white and black in color."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "The truck is a GMC, as indicated by the logo on the front."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "The image captures a dynamic scene of a white boat speeding across a large body of water, likely the ocean. The boat is a large, sleek vessel, possibly a yacht, with a black grill and a black and white color scheme. It's moving at a high speed, causing a significant wake behind it. The wake is white and foamy, adding a sense of motion to the image.\nThe boat is well-equipped with various features. It has a windshield at the front, and there are windows on the side. There are also doors on the side of the boat, possibly leading to the cabin. The boat's front is adorned with a black grill, and there's a black bumper on the front as well. The boat also has a black and white stripe running along its side, adding to its sleek design.\nThe boat is not alone in the image. There are several other boats visible in the background, although they are much smaller and appear to be further away. The water around the boat is a deep blue, and there are ripples visible on the surface, likely caused by the boat's movement.\nThe sky above is clear and blue, with a few white clouds scattered across it. The clouds are thin and wispy, adding a serene touch to the otherwise dynamic scene. The sky and the water together create a beautiful backdrop for the speeding boat.\nOverall, the image is a captivating depiction of a boat in motion, with a clear sky and deep blue water as its backdrop. The boat's design and the wake it creates add a sense of speed and adventure to the scene."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "The image showcases a large, white GMC truck in motion, speeding across a dirt road. The truck is detailed with a black grill and a black and red logo on the front. The truck's headlights are on, illuminating the path ahead. The truck's windshield is clear, and the side mirrors are visible. The truck's tires are black, and the front tire is particularly noticeable. The truck's door handle is also visible.\nThe road on which the truck is driving is made of dirt, and there are tire tracks visible in the dirt. The road is surrounded by a desert landscape, with rocks and sand. There are also some bushes in the background. The sky above is clear and blue, with white clouds scattered across it.\nThe image captures the dynamic movement of the truck, with the front of the truck leading the way. The truck's speed is evident from the dust being kicked up by the tires. The truck's design and the desert landscape create a striking contrast, with the white truck standing out against the brown dirt and rocks. The image conveys a sense of adventure and freedom, as the truck speeds through the open desert."
+    }
+]
