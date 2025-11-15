@@ -70,6 +70,7 @@ series_mapping = {
     "xai_grok": ["grok-4-fast-reasoning", "grok-4-fast-non-reasoning", "grok-4-0709", "grok-2-vision-1212"],
     "doubao_ark": ["doubao-seed-1-6-vision-250815"],
     "hunyuan_vision": ["hunyuan-vision", "hunyuan-t1-vision", "hunyuan-turbos-vision", "hunyuan-large-vision"],
+    "sailvl": ["SAIL-VL-2B"],
 }
 
 series_infer_env_mapping = {
@@ -288,5 +289,9 @@ series_infer_env_mapping = {
     "hunyuan_vision": {
         "env": os.path.join(env_dir, "hunyuan_vision"),
         "infer_file": "hunyuan_vision.py",
+    },
+    "sailvl": {
+        "env": os.path.join(env_dir, "sailvl"),
+        "infer_file": "sailvl.py",
     },
 }
