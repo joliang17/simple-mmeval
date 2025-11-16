@@ -121,6 +121,7 @@ class TaskRunner(Task):
             torch_dtype=self.dtype,
             trust_remote_code=True,
             **self.model_kwargs).eval()
+
         self.tokenizer = AutoTokenizer.from_pretrained(
             args.model_name_or_path,
             trust_remote_code=True,

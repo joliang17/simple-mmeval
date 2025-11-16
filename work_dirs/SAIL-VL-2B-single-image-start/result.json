@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 0,
+        "response": "The image shows a dark gray GMC Sierra 2500 pickup truck with black chrome accents driving on a dirt road in what appears to be a desert canyon. The truck is moving at speed, kicking up dust behind it as it cruises across the rugged terrain.\n\nThe vehicle is viewed from the right side, allowing us to see its profile along the right edge of the frame. The GMC logo is prominently displayed in red on the front grille. The truck's design features round headlights, a low-slung body, and a sturdy construction often associated with heavy-duty pickups.\n\nIn the background, the desert landscape is visible, with craggy rock formations resembling those found in southwestern regions, though it's difficult to pinpoint the exact location. The sky is clear blue above the canyon, adding to the scene's rugged atmosphere.\n\nThe rear tires of the truck are partially visible with the front right tire in full view, showcasing a low-profile, all-terrain rubber tire suitable for off-road conditions. The truck is a full-size pickup, evident from its four doors and long body design, suggesting a substantial cargo capacity and practical off-road utility.\n\nOverall, the image captures the robust and rugged character of the GMC Sierra, highlighting its potential for versatile off-road use in expansive, natural wilderness areas."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality.",
+        "eval-id": 1,
+        "response": "The image shows a white yacht with a sleek design, speeding through the blue, stormy Atlantic Ocean waters. The yacht features two levels, with a glass enclosure on the upper deck, visible dark windows on the interior, and a bridge-like structure for navigating waterways. Silver metal railings line the front of the yacht, adding a modern touch to its appearance. The yacht is making a sharp right turn, creating a splash of white waves behind it, showcasing its speed and power.\n\nIn the distant background, a faint outline of a sailboat on the horizon is visible, indicating a larger water body nearby. Above the yacht, clear blue skies hold some white clouds, suggesting a pleasant day for boating. This scene captures the essence of a high-performance yacht in action, navigating the vast, stormy Atlantic, illustrating both the speed and capabilities of modern luxury yachts in such challenging sea conditions."
+    }
+]
