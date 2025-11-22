@@ -6,6 +6,7 @@ series_mapping = {
     # "blip2_flan_t5": ["blip2-flan-t5-xl", "blip2-flan-t5-xxl"],
     "cambrian": ["cambrian-8b", "cambrian-13b", "cambrian-34b", "cambrian-phi3-3b"],
     "emu2-chat": ["Emu2-Chat", "BAAI/Emu2-Chat"],
+    "emu3-chat": ["Emu3-Chat", "BAAI/Emu3-Chat"],
     "gemma3": ["gemma-3-4b-it", "gemma-3-12b-it", "gemma-3-27b-it"],
     "glm_4v": ["glm-4v-9b"],
     # "instructblip": ["instructblip-vicuna-7b", "instructblip-vicuna-13b", "instructblip-flan-t5-xl", "instructblip-flan-t5-xxl"],
@@ -26,6 +27,7 @@ series_mapping = {
     "janus_pro": ["Janus-Pro-1B", "Janus-Pro-7B"],
     # "llava": ["llava-1.5-7b-hf", "llava-1.5-13b-hf"],
     # "llava_next": ["llava-v1.6-mistral-7b-hf", "llava-v1.6-vicuna-7b-hf", "llava-v1.6-vicuna-13b-hf", "llava-v1.6-34b-hf", "llama3-llava-next-8b-hf", "llava-next-72b-hf", "llava-next-110b-hf"],
+    "llama-3-mixsensev1_1":["Zero-Vision/Llama-3-MixSenseV1_1", "Llama-3-MixSenseV1_1"],
     "llava_ov": ["llava-onevision-qwen2-0.5b-si-hf",  "llava-onevision-qwen2-7b-si-hf", "llava-onevision-qwen2-72b-si-hf", 
     "llava-onevision-qwen2-0.5b-ov-hf","llava-onevision-qwen2-7b-ov-hf", "llava-onevision-qwen2-72b-ov-hf",  
     "llava-onevision-qwen2-7b-ov-chat-hf", "llava-onevision-qwen2-72b-ov-chat-hf"],
@@ -38,6 +40,8 @@ series_mapping = {
     "ovis1d5": ["Ovis1.5-Llama3-8B", "Ovis1.5-Gemma2-9B"],
     # "ovis1d6": ["Ovis1.6-Llama3.2-3B", "Ovis1.6-Gemma2-9B"],
     # "ovis1d6_27b": ["Ovis1.6-Gemma2-27B"],
+    "qwen-vl": ["Qwen/Qwen-VL"],
+    "qwen-vl-chat": ["Qwen/Qwen-VL-Chat"],
     # "qwenvl2": ["Qwen2-VL-2B-Instruct", "Qwen2-VL-7B-Instruct", "Qwen2-VL-72B-Instruct",
     #             "Qwen2-VL-2B-Instruct-AWQ", "Qwen2-VL-7B-Instruct-AWQ", "Qwen2-VL-72B-Instruct-AWQ",
     #             "Qwen2-VL-2B-Instruct-GPTQ-Int4", "Qwen2-VL-7B-Instruct-GPTQ-Int4", "Qwen2-VL-72B-Instruct-GPTQ-Int4"],
@@ -59,6 +63,10 @@ series_infer_env_mapping = {
     "emu2-chat": {
         "env": os.path.join(env_dir, "emu2-chat"),
         "infer_file": "emu2-chat.py",
+    },
+    "emu3-chat": {
+        "env": os.path.join(env_dir, "emu3-chat"),
+        "infer_file": "emu3-chat.py",
     },
     "gemma3": {
         "env": os.path.join(env_dir, "gemma3"),
@@ -107,6 +115,10 @@ series_infer_env_mapping = {
     "janus_pro": {
         "env": os.path.join(env_dir, "janus"),
         "infer_file": "janus_pro.py",
+    },
+    "llama-3-mixsensev1_1": {
+        "env": os.path.join(env_dir, "mixsense"),
+        "infer_file": "llama-3-mixsensev1_1.py",
     },
     "llava": {
         "env": os.path.join(env_dir, "llava"),
@@ -159,6 +171,14 @@ series_infer_env_mapping = {
     "paligemma": {
         "env": os.path.join(env_dir, "paligemma"),
         "infer_file": "paligemma.py",
+    },
+    "qwen-vl": {
+        "env": os.path.join(env_dir, "qwen-vl"),
+        "infer_file": "qwen-vl.py",
+    },
+    "qwen-vl-chat": {
+        "env": os.path.join(env_dir, "qwen-vl-chat"),
+        "infer_file": "qwen-vl-chat.py",
     },
     "qwenvl2": {
         "env": os.path.join(env_dir, "qwenvl"),

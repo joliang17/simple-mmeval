@@ -1,0 +1,20 @@
+[
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "1",
+        "eval-id": 0,
+        "response": "Picture 1: <img>/tmp/qwenvl_images_w4_lhljf/temp_image_0.jpg</img>"
+    },
+    {
+        "prompt": "<image>\nDescribe the image in detail.",
+        "id": "2",
+        "eval-id": 1,
+        "response": "Picture 1: <img>/tmp/qwenvl_images_w4_lhljf/temp_image_0.jpg</img>\n What is it? Where is it? When is it? What is it's size? Who is in the picture?"
+    },
+    {
+        "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
+        "id": "3",
+        "eval-id": 2,
+        "response": "Picture 1: <img>/tmp/qwenvl_images_w4_lhljf/temp_image_0.jpg</img>"
+    }
+]

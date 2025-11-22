@@ -1,5 +1,10 @@
 [
     {
+        "prompt": "<image>\nGenerate the caption in English with grounding:",
+        "media": ["https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg"],
+        "id": "0"
+    },
+    {
         "prompt": "<image>\nWhich of the paths shown in the figure leads to the blue triangle reasonably?",
         "media": ["e0001.png"],
         "id": "1"
