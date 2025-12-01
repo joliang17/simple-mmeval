@@ -176,44 +176,22 @@ class TaskRunner(Task):
 
     def _score_choices(self, question, pixel_values, num_patches_list, sample):
         """
-        Score multiple choice options using conditional probability
-        This is an experimental implementation for scoring mode
+        Scoring mode is not yet implemented for SAIL-VL.
+
+        SAIL-VL uses a custom chat interface that requires special image token
+        replacement (<image> -> <img><IMG_CONTEXT>*N</img>). Implementing proper
+        scoring would require:
+        1. Mimicking the chat() method's image token replacement logic
+        2. Building correct input_ids with image tokens
+        3. Using IncrementalLMScorer with properly formatted inputs
+
+        This can be implemented in the future if scoring mode is needed.
+        For now, use generation mode (--score_target=False) which works correctly.
         """
-        choices = sample.get("choices")
-
-        # Build inputs with model.build_conversation_input_ids
-        # For now, we use a simplified approach similar to InternVL
-        # Note: This might need adjustment based on actual SAIL-VL tokenization
-
-        scores = []
-        for choice in choices:
-            full_question = question + " " + choice
-            try:
-                # Get model logits for scoring
-                # This is a simplified implementation and may need refinement
-                with torch.no_grad():
-                    inputs = self.tokenizer(full_question, return_tensors="pt").to(self.device)
-                    if pixel_values is not None:
-                        outputs = self.model(
-                            **inputs,
-                            pixel_values=pixel_values,
-                            num_patches_list=num_patches_list
-                        )
-                    else:
-                        outputs = self.model(**inputs)
-
-                    # Calculate score (simplified - might need adjustment)
-                    logits = outputs.logits
-                    score = logits.mean().item()
-                    scores.append(score)
-            except Exception as e:
-                print(f"Warning: Scoring failed for choice '{choice}': {e}")
-                scores.append(float('-inf'))
-
-        return {
-            "score": scores,
-            "response": choices[np.argmax(scores)] if scores else choices[0]
-        }
+        raise NotImplementedError(
+            "Scoring mode is not yet supported for SAIL-VL. "
+            "Please use generation mode instead (remove --score_target flag)."
+        )
 
     def run_sample(self, sample: dict):
         """

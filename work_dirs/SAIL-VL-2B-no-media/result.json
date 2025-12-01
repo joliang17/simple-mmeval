@@ -1,0 +1,28 @@
+[
+    {
+        "id": 0,
+        "question": "What is the result of 1 plus 1?",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [],
+        "prompt": "What is the result of 1 plus 1?",
+        "hint": "",
+        "comment": "Test 'no media' modality.",
+        "eval-id": 0,
+        "response": "The result of \\(1 + 1\\) is \\(\\boxed{2}\\)."
+    },
+    {
+        "id": 1,
+        "question": "What is the capital city of China?",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "media": [],
+        "prompt": "What is the capital city of China?",
+        "hint": "",
+        "comment": "Test 'no media' modality.",
+        "eval-id": 1,
+        "response": "The capital city of China is Beijing. Located in East China, Beijing is the country's largest city, the historical and political center of Chinese culture, and a vibrant city with a rich history as the capital of the Ming and Qing empires."
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image start' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image shows a high-performance GMC truck traveling on what appears to be a dirt road. The truck's front grille prominently displays the GMC logo. The vehicle appears to be a high-end model, suggested by the large chrome wheels, a raised suspension system, and black tires. The truck's cab is elevated, hinting at an enhanced suspension setup. Despite the suspension's adjustments, the dirt is being kicked up as if the truck is currently traveling on a sloping terrain, with dust clouding the area immediately behind it.\n\nThe setting suggests a rugged outdoor environment, likely in a desert or desert-like region. Red rock formations, possibly sandstone, are visible in the background, adding to the sense of a remote, arid landscape. The sky is not visible in this image, maintaining a focus on the truck and its surroundings.\n\nThe background features clear blue skies with minimal cloud cover, creating a stark contrast with the earthy tones of the surrounding environment. The desert scene is accentuated by the dramatic use of light along the horizon. Overall, the image conveys a sense of adventure and off-road capability, showcasing the vehicle's strengths in challenging environments."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image start' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image showcases a luxurious white yacht gliding across the ocean's surface. This superyacht is striking in design, featuring a sleek, modern appearance with a dark stripe accentuating its side. It boasts a spacious deck with white railings, clearly designed for comfortable and safe navigation at high speeds.\n\nThe yacht's top deck includes a sophisticated cabin area, with a large window allowing abundant natural light. The cabin also features a cozy seating area with cushions, perfect for relaxation or socializing onboard.\n\nAdditional details of note:\n1. The yacht's hull is clearly streamlined, minimizing resistance and allowing for top speeds of up to 40 knots.\n2. It's pulling a significant wake behind it, indicating rapid motion through the water.\n3. The yacht is in an open sea setting.\n4. The sky above is a clear blue, suggesting daytime and good weather conditions perfect for boating.\n\nThis yacht exemplifies modern luxury yachting with attention to both exterior design and functional features perfect for the ocean's expansive waters."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality.",
+        "eval-id": 2,
+        "response": "The image set showcases two different transportation modes - a pickup truck, which appears to be an off-road SUV, and a high-performance motorboat, both set against contrasting backgrounds. \n\nIn the first image, the GMC Sierra truck is captured mid-drive on a rugged terrain. It's a metallic gray color with black tires, and there's visible dust kicked up by the vehicle. The truck is moving through a desert landscape with cliffs in the background, suggesting it's in a remote, off-road environment. The Sierra is equipped with a black grille, a sleek body, and it has a crew cab configuration with rear doors, providing a robust and spacious appearance.\n\nThe second image features a sleek, powerful white motorboat speeding across a shimmering blue body of water. The boat is designed with a streamlined hull for high speeds and a cabin for crew operation. It's equipped with large metal railings along the port side, providing safety and stability. The boat is traveling in a straight line, generating white water foam as it slices through the water, creating a sense of motion and speed. The clear blue sky in the background adds a serene contrast to the dynamic nature of the boat's movement.\n\nBoth images create a split-screen effect, showcasing different modes of transportation that represent distinct aspects of human advancement and the variety of environments we travel through."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality.",
+        "eval-id": 3,
+        "response": "The first image showcases a white Yamaha YZ19 outboard motor. This Yamaha model is specifically designed for marine use, providing an efficient push-pull engine solution for boats.\n\nIn the second image, we see a GMC Yukon truck in action. The vehicle is moving across a dirt road, kicking up dust as it travels. Its rugged design is particularly well-suited for off-road driving, offering a robust and versatile platform for both land and water travel.\n\nWhile both images feature vehicles in action, they represent entirely different domains: maritime and automotive. The outboard motor exemplifies marine technology and environmental performance, while the GMC Yukon demonstrates automotive features in a land-transport context."
+    }
+]

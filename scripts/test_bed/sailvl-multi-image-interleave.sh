@@ -2,12 +2,12 @@
 
 export PYTHONPATH=./:$PYTHONPATH
 
-# SAIL-VL-2B - Single Image Start Modality Test
+# SAIL-VL-2B - Multi Image Interleave Modality Test
 python mmeval/run.py \
     --dataset local@json \
-    --infile test_bed/modality_test/task/single_image_start.json \
+    --infile test_bed/modality_test/task/multi_image_interleave.json \
     --img_dir test_bed/modality_test/media/448 \
-    --out_dir work_dirs/SAIL-VL-2B-single-image-start \
+    --out_dir work_dirs/SAIL-VL-2B-multi-image-interleave \
     --model_name_or_path BytedanceDouyinContent/SAIL-VL-2B \
     --parallel_per_task 1 \
     --gpu_per_parallel 1 \

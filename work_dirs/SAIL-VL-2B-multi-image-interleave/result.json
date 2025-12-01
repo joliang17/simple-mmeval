@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 0,
+        "response": "The image displays a GMC truck in full motion, traveling on a rugged dirt road. The vehicle is captured in a dynamic pose, creating a sense of speed and power. The truck, likely drawn by its impressive 4x4 capabilities, is moving through a desert landscape. The GMC emblem is clearly visible on the front of the truck, signifying the brand. The pickup has a dual-tone color scheme, with the front body sections having an army green exterior and the rear featuring a slightly darker shade.\n\nThe truck's design showcases modern truck technologies, including its large grille area and sleek headlights. The bumper appears robust and rugged, typical of off-road vehicles, likely protecting the engine and other sensitive components. The tire compound is off-road, designed for better grip and reduced rolling resistance in challenging terrain, while the low ground clearance allows for better maneuverability and stability on uneven surfaces.\n\nThe truck's body has sleek, aerodynamic lines that improve its fuel efficiency and visibility. The cab section is the largest area of the vehicle, followed by the rear and then the wheel tracks where the dust is kicked up, reinforcing the truck's current state of motion.\n\nThe surrounding environment is barren and arid, with large rock outcrops and sparse vegetation lining the dirt road. In the background, the sunlight bathes the scene in a warm glow, illuminating the dusty atmosphere and casting the truck in high relief.\n\nGMC vehicles are known for their durability, performance, and modernization. The presence of dust from the truck's wheels suggests that the vehicle is capable of navigating through difficult areas, adding to the robust features of this GMC truck. The dynamic pose and pristine condition of the truck convey its capability for off-road adventures while maintaining style and utility."
+    },
+    {
+        "id": 1,
+        "question": "<image> Please provide a detailed description of the contents shown in the image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image> Please provide a detailed description of the contents shown in the image.",
+        "hint": "",
+        "comment": "Test 'single image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 1,
+        "response": "The image depicts a sleek white yacht racing across a vast expanse of deep blue ocean. The yacht is captured in mid-formation, moving from the right to the left of the frame. The vessel's hull leaves a trail of white wake behind it, emphasizing its speed as it cuts through the water.\n\nOn top of the yacht, there's a smaller, two-level deck featuring a railing that allows passengers to enjoy a panoramic view of the open sea. The main deck appears to host a steering wheel and navigation equipment, indicating the yacht's advanced control systems.\n\nThe yacht features two superstructures: an upper superstructure situated in the upper right corner and a lower superstructure in the center right. This layout provides functionality and allows for different uses of each level.\n\nAt the stern (rear) of the yacht, you can observe the yacht's rudder, ready to steer when needed. Alongside these features, two antennas protrude from the superstructures: one on each side of the main deck, ensuring optimal communication and navigation.\n\nThe water around the yacht appears relatively calm, with only minor wave crests visible where the yacht is cutting through, illustrating a peaceful yet dynamic sea state.\n\nThe sky above is a light blue with minimal clouds, creating a serene backdrop for the vibrant scene of the yacht in action. Overall, this image showcases a powerful, well-equipped yacht cruising at high speed across the ocean, while emphasizing the contrast between the yacht's detailed design and the tranquil maritime setting."
+    },
+    {
+        "id": 2,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 2,
+        "response": "The first image shows a GMC Sierra truck driving on a dirt road next to a cliff face. The vehicle is in motion, kicking up dust as it travels. The GMC Sierra appears to be a large truck with a prominent front grille and LED headlights.\n\nThe second image features a luxury yacht floating on water. The yacht is white with a blue stripe and is cutting through water, creating a large wake behind it. The blue of the water contrasts with the white of the yacht, making it stand out.\n\nThe two images contrast the rugged, off-road nature of the GMC Sierra with the serene, luxury atmosphere of the yacht. Both vehicles are modern and well-equipped, representing different styles of transportation in their environments.\n  \nThe GMC Sierra is being driven, while the yacht is in motion, creating white waves and a water jet as it glides across the ocean."
+    },
+    {
+        "id": 3,
+        "question": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "<image><image> Please provide a detailed description of the contents shown in the two images.",
+        "hint": "",
+        "comment": "Test 'multi image start' modality, 'multi image interleave' modality should be able to handle this.",
+        "eval-id": 3,
+        "response": "The first image depicts a striking scene of a luxury yacht speeding through the ocean. The vessel contrasts beautifully with the clear blue horizon and pristine, cloudless sky, creating an air of serene elegance. The yacht's sleek, high-tech design is highlighted, with its white hull, black accents, and the prominent GMC logo. This luxury watercraft appears to be maneuvering at high speed on a calm sea, leaving behind a wake that enhances the dynamic nature of the image.\n\nIn the second image, we see a powerful GMC truck in an action shot. The vehicle is positioned diagonally, emphasizing its rugged nature. The GMC logo is displayed proudly on the grilles and the hood of the truck, indicating its brand identity. The photograph captures the truck in motion on a dusty dirt road, surrounded by rugged desert landscape. The dramatic lighting and earthy tones create a sense of off-road adventure and natural setting.\n\nThese images together showcase a juxtaposition of luxury and ruggedness, highlighting two distinct modes of transportation - a smooth, refined watercraft against a more rugged terrain. Each image presents a unique perspective on power and style, inviting viewers to appreciate both the serenity of the water scene and the toughness of the desert landscape."
+    },
+    {
+        "id": 4,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 4,
+        "response": "The image shows two very different vehicles. In a desert environment near an ocean, a pickup truck is visible in the foreground. The truck has a metallic black exterior with a silver GMC emblem on its front grille. It appears to be in motion as evidenced by dust being kicked up behind it.\n\nTo the right of the truck, in a blue sea, is a sleek, modern-looking white luxury yacht. The yacht has a white roof and a black bow adorned with stripes. It's creating white waves as it cuts through the water, with a few distant mountains visible in the background on its left side. \n\nThe image beautifully juxtaposes the rugged, off-road appeal of the GMC truck against the luxurious, serene setting of a luxury yacht. It captures different aspects of modern transportation, whether it be adventure in rugged terrain or leisure travel at sea."
+    },
+    {
+        "id": 5,
+        "question": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Please provide a detailed description of the contents shown in <image> and <image>.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 5,
+        "response": "The image shows two main subjects: a luxury boat in mid-to-high speed and a gray GMC truck making its way across a dirt road. The boat is sleek and white, demonstrating high performance, while the GMC truck appears tough and rugged.\n\nBoth vehicles are photographed outdoors in what might be two different environments. The boat is on relatively calm blue water, moving towards the left side of the photo, leaving a white wake behind. The truck is on a rough terrain, possibly a dirt road, and emits a cloud of dust behind it. This adds to the gritty, adventurous feel of the scene.\n\nThis composition effectively highlights these two vehicles, representing both the fast life of the upper class and the rugged nature of off-road adventures. It also creates a contrast between the sleek, high-performance boat and the rugged GMC truck, showcasing different aspects of modern transportation technology."
+    },
+    {
+        "id": 6,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 6,
+        "response": "Certainly! Below are the detailed descriptions of the images you've requested:\n\n### Image A\n- **Title**: A 2023 Red Bull Rally Cup Car\n- **Description**:\n  - The image features a black 2023 Red Bull Rally Cup Car.\n  - The vehicle is prominently displayed in the foreground, with its side facing the camera.\n  - The car has a distinctive color and potentially includes a design that indicates its participation in the Red Bull Rally Cup events.\n  - The background appears to be a road or path, and a dust cloud is visibly being kicked up by the car as it moves.\n  - The Red Bull Rally Cup is known for its exciting rally races featuring globally recognized rally drivers on challenging terrains.\n\n### Image B\n- **Title**: The Ultimate Blue Whale, a fictional 12-meter vessel designed for deep underwater exploration.\n- **Description**:\n  - The image portrays a white vessel labeled \"The Ultimate Blue Whale,\" which is a 12-meter deep ocean vessel.\n  - The vessel is moving towards the viewer, leaving a trail of white foamy water behind it.\n  - The background shows a clear blue ocean meeting a clear sky.\n  - The vessel is equipped with various windows and openings, suggesting features designed for exploration and research in deep waters.\n  - The design and label on the vessel, \"The Ultimate Blue Whale,\" suggests it is a high-tech research vessel with potential applications in deep ocean or scientific exploration.\n\n### Additional Thoughts:\n- The description of the images and their applications provides a clear understanding of their contexts. The Red Bull Rally Cup Car is a competitive rally racing vehicle designed for high-speed and challenging terrain, whereas \"The Ultimate Blue Whale\" is a fictional vessel specifically designed for deep ocean exploration, likely suited for marine research or underwater technological exploration."
+    },
+    {
+        "id": 7,
+        "question": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "answer": "",
+        "options": {},
+        "choices": [],
+        "prompt": "Given the Image A <image> and Image B <image>. Please provide a detailed description of the contents shown in each image.",
+        "hint": "",
+        "comment": "Test 'multi image interleave' modality.",
+        "eval-id": 7,
+        "response": "Certainly! Here are detailed explanations for each image:\n\n**Image A:**\nThe image showcases a sophisticated, modern yacht floating peacefully on a serene, blue sea. The yacht appears to be a luxury vessel designed for comfort and elegance. It boasts a sleek, contemporary design with spacious interiors, indicative of top-tier craftsmanship and quality.\n- **Yacht Detail:** The yacht is characterized by its pristine white exterior and a sophisticated black stripe running along the side, adding a touch of elegance to the vessel.\n- **Design Elements:** The sail is securely set, suggesting that the boat is idle but alert, ready to embark on an adventure once needed.\n- **Environment:** The clear blue sea and a bright blue sky convey a sense of tranquility and vastness, further emphasizing the luxurious nature of the yacht's destination and setting.\n\n**Image B:**\nThis image depicts a GMC truck on what appears to be a rugged, outdoor setting. The truck is prominently in action, possibly after encountering a rough trail or a mountain pass.\n- **Truck Detail:** The truck is a metallic gray color, with the GMC logo distinguishable on the front grille, indicating that it is manufactured by GMC, a prominent American manufacturer.\n- **Action Capture:** A cloud of dust is ejected from underneath the vehicle, showcasing the truck's high-performance tires gripping the rough terrain.\n- **Environment:** The scene is set against a backdrop of rocky mountains and sparse vegetation, conveying an adventurous outdoor experience. The dust kicked up by the truck\u2019s tires suggests it is traversing uneven and challenging terrains, typical of off-roading or driving on mountains.\n- **Contextual Clues:** The truck's off-road capabilities and rugged design, emphasized by the dust cloud and the natural surroundings, highlight the adventurous spirit and the versatility of GMC trucks.\n\nThese images together illustrate different themes of journeys and experiences: the serene luxury of yachting against the rugged, adventurous spirit of off-road driving by GMC trucks."
+    }
+]
