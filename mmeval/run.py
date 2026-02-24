@@ -1,13 +1,27 @@
 import os
 import time
 import subprocess
-import torch
 import json
 import copy
 
 from mmeval.registry import series_mapping, series_infer_env_mapping
 from mmeval.utils.argparser import parse_args
 
+
+def _get_gpu_count() -> int:
+    """Get GPU count without external libs: use CUDA_VISIBLE_DEVICES or nvidia-smi."""
+    cvd = os.environ.get("CUDA_VISIBLE_DEVICES", "").strip()
+    if cvd:
+        return len([x for x in cvd.split(",") if x.strip()])
+    result = subprocess.run(
+        ["nvidia-smi", "-L"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0 and result.stdout:
+        return len(result.stdout.strip().split("\n"))
+    return 0
 
 def get_series(model_name: str):
     for series, models in series_mapping.items():
@@ -25,7 +39,7 @@ if __name__ == "__main__":
     infer_env = series_infer_env_mapping[series]["env"]
     parallel_per_task  = args.parallel_per_task
     gpu_per_parallel = args.gpu_per_parallel
-    total_gpus = torch.cuda.device_count()
+    total_gpus = _get_gpu_count()
 
     if os.path.exists(os.path.join(args.out_dir, "result.json")) and args.resume:
         # exit and return success
