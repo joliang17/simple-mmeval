@@ -208,8 +208,16 @@ class BaseDataset(ABC):
                 except Exception as e:
                     raise ValueError(f"{source} template rendering failed: {e}")
             
-            # Load media for this message's placeholders (zip auto-stops at shorter list)
+            # Validate and load media for this message's placeholders.
             placeholder_list = re.findall(r"<(video|image)>", prompt)
+            remaining_media = len(media_list) - media_idx
+            placeholder_count = len(placeholder_list)
+            if placeholder_count > remaining_media:
+                raise ValueError(
+                    "Prompt/media mismatch while processing messages: "
+                    f"message_index={len(processed_message_list)}, "
+                    f"placeholders={placeholder_count}, remaining_media={remaining_media}"
+                )
             processed_media_list = []
             for placeholder, media in zip(placeholder_list, media_list[media_idx:]):
                 if placeholder == "image":
@@ -224,6 +232,12 @@ class BaseDataset(ABC):
             message["prompt"] = prompt
             message["media"] = processed_media_list
             processed_message_list.append(message)
+        
+        if media_idx != len(media_list):
+            raise ValueError(
+                "Prompt/media mismatch while processing messages: "
+                f"used_media={media_idx}, total_media={len(media_list)}"
+            )
         
         return processed_message_list
 

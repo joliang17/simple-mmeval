@@ -72,7 +72,8 @@ class InferenceArguments:
 class ExperimentArguments:
     gpu_per_parallel: int = field(default=1, metadata={"help": "number of gpus per task"})
     parallel_per_task: int = field(default=4, metadata={"help": "number of parallel tasks."}) 
-    rank: int = field(default=-1, metadata={"help": "rank for parallel inference"}) 
+    rank: int = field(default=-1, metadata={"help": "rank for parallel inference"})
+    no_conda: bool = field(default=False, metadata={"help": "use current python env instead of conda"})
 
 
 ARGUMENT_DATACLASSES = (ModelArguments, DataArguments, InferenceArguments, ExperimentArguments)

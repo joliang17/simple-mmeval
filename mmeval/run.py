@@ -123,17 +123,21 @@ if __name__ == "__main__":
                                 cmd.append(f"--no_{key}")
                     else:
                         cmd.extend([f"--{key}", str(val)])
-            # Build the conda-run command
-            # if infer_env is a directory, then use -p
-            if os.path.isdir(infer_env):
+            # Build the command
+            if args.no_conda:
                 cmd = [
-                    "conda", "run", "--no-capture-output", "-p", infer_env, 
+                    "python", os.path.join("mmeval/infer", infer_file),
+                ]
+            # if infer_env is a directory, then use -p
+            elif os.path.isdir(infer_env):
+                cmd = [
+                    "conda", "run", "--no-capture-output", "-p", infer_env,
                     "python", os.path.join("mmeval/infer", infer_file),
                 ]
             # if infer_env is env name, then use -n
             else:
                 cmd = [
-                    "conda", "run", "--no-capture-output", "-n", infer_env, 
+                    "conda", "run", "--no-capture-output", "-n", infer_env,
                     "python", os.path.join("mmeval/infer", infer_file),
                 ]
                 
