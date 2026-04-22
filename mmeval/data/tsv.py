@@ -19,6 +19,7 @@ IMG_PLACEHOLDER_RE = re.compile(
     """,
     re.IGNORECASE | re.VERBOSE,
 )
+MEDIA_PLACEHOLDER_RE = re.compile(r"<(?:video|image)>")
 
 class TSVDataset(BaseDataset):
     """Dataset class for loading TSV files.
@@ -125,6 +126,26 @@ class TSVDataset(BaseDataset):
             question = IMG_PLACEHOLDER_RE.sub("<image>", question)
         elif media_list:
             question = f'{"<image>" * len(media_list)} {question}'.strip()
+        
+        placeholder_count = len(MEDIA_PLACEHOLDER_RE.findall(question))
+        media_count = len(media_list)
+        if placeholder_count > media_count:
+            # If prompt has more placeholders than media, keep only media_count
+            # placeholders and move them to the prompt prefix.
+            question_without_placeholders = MEDIA_PLACEHOLDER_RE.sub(" ", question)
+            question_without_placeholders = re.sub(r"\s+", " ", question_without_placeholders).strip()
+            placeholder_prefix = "<image>" * media_count
+            question = f"{placeholder_prefix} {question_without_placeholders}".strip() if question_without_placeholders else placeholder_prefix
+            placeholder_count = media_count
+
+        if placeholder_count < media_count:
+            eval_id = sample.get("eval-id", index)
+            question_preview = question.replace("\n", " ")[:200]
+            raise ValueError(
+                "Prompt/media mismatch for eval-id "
+                f"{eval_id}: placeholders={placeholder_count}, media={media_count}, "
+                f"question='{question_preview}'"
+            )
 
         # Build options dict and choices list
         options = {
