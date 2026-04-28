@@ -21,6 +21,27 @@ IMG_PLACEHOLDER_RE = re.compile(
 )
 MEDIA_PLACEHOLDER_RE = re.compile(r"<(?:video|image)>")
 
+def normalize_question_with_media(question: str, media_count: int) -> str:
+    """Normalize image placeholders against available media count.
+
+    Rules:
+    - If placeholder count equals media count: keep original positions and normalize tokens to <image>.
+    - If counts differ: remove all original image placeholders and prepend exactly media_count <image> tokens.
+    """
+    question = str(question)
+    placeholder_count = len(IMG_PLACEHOLDER_RE.findall(question))
+
+    if placeholder_count == media_count:
+        if placeholder_count == 0:
+            return question
+        return IMG_PLACEHOLDER_RE.sub("<image>", question)
+
+    stripped_question = IMG_PLACEHOLDER_RE.sub("", question).strip()
+    prefix = "<image>" * media_count
+    if prefix and stripped_question:
+        return f"{prefix} {stripped_question}".strip()
+    return prefix or stripped_question
+
 class TSVDataset(BaseDataset):
     """Dataset class for loading TSV files.
     
@@ -121,31 +142,9 @@ class TSVDataset(BaseDataset):
         media_list = self._extract_media_paths(sample)
         question = str(sample['question'])
 
-        # Normalize image placeholders
-        if IMG_PLACEHOLDER_RE.search(question):
-            question = IMG_PLACEHOLDER_RE.sub("<image>", question)
-        elif media_list:
-            question = f'{"<image>" * len(media_list)} {question}'.strip()
-        
-        placeholder_count = len(MEDIA_PLACEHOLDER_RE.findall(question))
-        media_count = len(media_list)
-        if placeholder_count > media_count:
-            # If prompt has more placeholders than media, keep only media_count
-            # placeholders and move them to the prompt prefix.
-            question_without_placeholders = MEDIA_PLACEHOLDER_RE.sub(" ", question)
-            question_without_placeholders = re.sub(r"\s+", " ", question_without_placeholders).strip()
-            placeholder_prefix = "<image>" * media_count
-            question = f"{placeholder_prefix} {question_without_placeholders}".strip() if question_without_placeholders else placeholder_prefix
-            placeholder_count = media_count
-
-        if placeholder_count < media_count:
-            eval_id = sample.get("eval-id", index)
-            question_preview = question.replace("\n", " ")[:200]
-            raise ValueError(
-                "Prompt/media mismatch for eval-id "
-                f"{eval_id}: placeholders={placeholder_count}, media={media_count}, "
-                f"question='{question_preview}'"
-            )
+        # Normalize image placeholders.
+        # If placeholder/media counts mismatch, all placeholders are moved to prefix.
+        question = normalize_question_with_media(question, len(media_list))
 
         # Build options dict and choices list
         options = {
