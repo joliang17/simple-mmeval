@@ -11,6 +11,12 @@ from mmeval.utils import constants
 from mmeval.utils.argparser import parse_args, parse_model_kwargs, parse_gen_kwargs
 from mmeval.utils.scorer import IncrementalLMScorer, target_tokens
 
+SYSTEM_PROMPT = (
+    "You are a helpful assistant. When the user asks a question, your response must include two parts: "
+    "first, the reasoning process enclosed in <think>...</think> tags, then the final answer enclosed in <answer>...</answer> tags."
+    "Please provide a clear, concise response within <answer>...</answer> tags that directly addresses the question."
+    "Example:<think>\nThis is my reasoning.\n</think>\n<answer>\nThis is my answer.\n</answer>.\n"
+)
 
 class TaskRunner(Task):
     def __init__(self, args):
@@ -43,6 +49,12 @@ class TaskRunner(Task):
         media_list = message.get('media', [])
 
         messages = [
+            {
+                "role": "system",
+                "content": [
+                    {"type": "text", "text": SYSTEM_PROMPT}
+                ],
+            },
             {
                 "role": "user",
                 "content": []
