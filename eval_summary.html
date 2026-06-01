@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluation Accuracy Summary</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #20242a;
+      --muted: #68717d;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --accent-soft: #e7f4f2;
+      --warn: #9a3412;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      padding: 22px 28px 14px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      margin-top: 6px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    main {
+      padding: 18px 28px 28px;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(160px, 1fr));
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: grid;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+
+    select,
+    input {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      padding: 7px 9px;
+      font: inherit;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .metric .value {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .metric .label {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+    }
+
+    th,
+    td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: #f0f3f7;
+      color: #35404d;
+      font-size: 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    tbody tr:hover {
+      background: var(--accent-soft);
+    }
+
+    .num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .path {
+      color: var(--muted);
+      max-width: 360px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .status-error {
+      color: var(--warn);
+      font-weight: 650;
+    }
+
+    @media (max-width: 880px) {
+      header,
+      main {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .toolbar,
+      .summary {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .toolbar,
+      .summary {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Evaluation Accuracy Summary</h1>
+    <div class="meta">
+      <span id="status">Loading eval_summary.csv</span>
+      <span id="last-updated"></span>
+      <span id="row-count"></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Filters">
+      <label>
+        Model / Run
+        <select id="run-filter">
+          <option value="">All runs</option>
+        </select>
+      </label>
+      <label>
+        Benchmark
+        <select id="dataset-filter">
+          <option value="">All benchmarks</option>
+        </select>
+      </label>
+      <label>
+        Search
+        <input id="search-filter" type="search" placeholder="Filter table text">
+      </label>
+      <label>
+        Refresh
+        <select id="refresh-interval">
+          <option value="10000">Every 10s</option>
+          <option value="30000" selected>Every 30s</option>
+          <option value="60000">Every 60s</option>
+          <option value="0">Manual</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="summary" aria-label="Visible summary">
+      <div class="metric">
+        <div class="value" id="metric-runs">0</div>
+        <div class="label">Runs</div>
+      </div>
+      <div class="metric">
+        <div class="value" id="metric-benchmarks">0</div>
+        <div class="label">Benchmarks</div>
+      </div>
+      <div class="metric">
+        <div class="value" id="metric-samples">0</div>
+        <div class="label">Samples</div>
+      </div>
+      <div class="metric">
+        <div class="value" id="metric-accuracy">-</div>
+        <div class="label">Weighted Accuracy</div>
+      </div>
+    </section>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="run">Run</th>
+            <th data-sort="dataset">Benchmark</th>
+            <th class="num" data-sort="samples">Samples</th>
+            <th class="num" data-sort="answered">Answered</th>
+            <th class="num" data-sort="correct">Correct</th>
+            <th class="num" data-sort="accuracy">Accuracy</th>
+            <th data-sort="scoring">Scoring</th>
+            <th data-sort="updated_at">Updated</th>
+            <th data-sort="result_path">Result Path</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    const csvPath = "eval_summary.csv";
+    let allRows = [];
+    let sortKey = "run";
+    let sortDirection = 1;
+    let refreshTimer = null;
+
+    const els = {
+      status: document.getElementById("status"),
+      lastUpdated: document.getElementById("last-updated"),
+      rowCount: document.getElementById("row-count"),
+      runFilter: document.getElementById("run-filter"),
+      datasetFilter: document.getElementById("dataset-filter"),
+      searchFilter: document.getElementById("search-filter"),
+      refreshInterval: document.getElementById("refresh-interval"),
+      rows: document.getElementById("rows"),
+      metricRuns: document.getElementById("metric-runs"),
+      metricBenchmarks: document.getElementById("metric-benchmarks"),
+      metricSamples: document.getElementById("metric-samples"),
+      metricAccuracy: document.getElementById("metric-accuracy"),
+    };
+
+    function parseTsv(text) {
+      const lines = text.trim().split(/\r?\n/).filter(Boolean);
+      if (!lines.length) return [];
+      const headers = lines[0].split("\t");
+      return lines.slice(1).map((line) => {
+        const values = line.split("\t");
+        return Object.fromEntries(headers.map((header, idx) => [header, values[idx] ?? ""]));
+      });
+    }
+
+    function numberValue(row, key) {
+      const value = Number(row[key]);
+      return Number.isFinite(value) ? value : 0;
+    }
+
+    function formatAccuracy(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num)) return "-";
+      return `${(num * 100).toFixed(2)}%`;
+    }
+
+    function formatInteger(value) {
+      const num = Number(value);
+      return Number.isFinite(num) ? num.toLocaleString() : "0";
+    }
+
+    function formatTimestamp(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num) || num <= 0) return "";
+      return new Date(num * 1000).toLocaleString();
+    }
+
+    function populateSelect(select, values, emptyLabel) {
+      const previous = select.value;
+      select.innerHTML = `<option value="">${emptyLabel}</option>`;
+      values.forEach((value) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        select.appendChild(option);
+      });
+      if (values.includes(previous)) {
+        select.value = previous;
+      }
+    }
+
+    async function loadSummary() {
+      try {
+        const response = await fetch(`${csvPath}?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        const text = await response.text();
+        allRows = parseTsv(text);
+
+        populateSelect(els.runFilter, [...new Set(allRows.map((row) => row.run))].sort(), "All runs");
+        populateSelect(els.datasetFilter, [...new Set(allRows.map((row) => row.dataset))].sort(), "All benchmarks");
+
+        els.status.textContent = "Loaded eval_summary.csv";
+        els.status.className = "";
+        els.lastUpdated.textContent = `Refreshed ${new Date().toLocaleTimeString()}`;
+        render();
+      } catch (error) {
+        els.status.textContent = `Could not load ${csvPath}: ${error.message}`;
+        els.status.className = "status-error";
+      }
+    }
+
+    function filteredRows() {
+      const run = els.runFilter.value;
+      const dataset = els.datasetFilter.value;
+      const search = els.searchFilter.value.trim().toLowerCase();
+      return allRows.filter((row) => {
+        if (run && row.run !== run) return false;
+        if (dataset && row.dataset !== dataset) return false;
+        if (search && !Object.values(row).join(" ").toLowerCase().includes(search)) return false;
+        return true;
+      });
+    }
+
+    function sortedRows(rows) {
+      return [...rows].sort((a, b) => {
+        const numeric = ["samples", "answered", "correct", "accuracy", "updated_at"].includes(sortKey);
+        const left = numeric ? numberValue(a, sortKey) : String(a[sortKey] || "");
+        const right = numeric ? numberValue(b, sortKey) : String(b[sortKey] || "");
+        if (left < right) return -sortDirection;
+        if (left > right) return sortDirection;
+        return 0;
+      });
+    }
+
+    function renderMetrics(rows) {
+      const runs = new Set(rows.map((row) => row.run));
+      const benchmarks = new Set(rows.map((row) => row.dataset));
+      const samples = rows.reduce((sum, row) => sum + numberValue(row, "samples"), 0);
+      const correct = rows.reduce((sum, row) => sum + numberValue(row, "correct"), 0);
+      const accuracy = samples > 0 ? correct / samples : NaN;
+
+      els.metricRuns.textContent = runs.size.toLocaleString();
+      els.metricBenchmarks.textContent = benchmarks.size.toLocaleString();
+      els.metricSamples.textContent = samples.toLocaleString();
+      els.metricAccuracy.textContent = formatAccuracy(accuracy);
+      els.rowCount.textContent = `${rows.length.toLocaleString()} visible / ${allRows.length.toLocaleString()} total rows`;
+    }
+
+    function render() {
+      const rows = sortedRows(filteredRows());
+      renderMetrics(rows);
+      els.rows.innerHTML = "";
+
+      rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${row.run}</td>
+          <td>${row.dataset}</td>
+          <td class="num">${formatInteger(row.samples)}</td>
+          <td class="num">${formatInteger(row.answered)}</td>
+          <td class="num">${formatInteger(row.correct)}</td>
+          <td class="num">${formatAccuracy(row.accuracy)}</td>
+          <td>${row.scoring}</td>
+          <td>${formatTimestamp(row.updated_at)}</td>
+          <td class="path" title="${row.result_path}">${row.result_path}</td>
+        `;
+        els.rows.appendChild(tr);
+      });
+    }
+
+    function resetRefreshTimer() {
+      if (refreshTimer) clearInterval(refreshTimer);
+      const interval = Number(els.refreshInterval.value);
+      if (interval > 0) {
+        refreshTimer = setInterval(loadSummary, interval);
+      }
+    }
+
+    document.querySelectorAll("th[data-sort]").forEach((th) => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.sort;
+        if (sortKey === key) {
+          sortDirection *= -1;
+        } else {
+          sortKey = key;
+          sortDirection = 1;
+        }
+        render();
+      });
+    });
+
+    [els.runFilter, els.datasetFilter, els.searchFilter].forEach((el) => {
+      el.addEventListener("input", render);
+    });
+    els.refreshInterval.addEventListener("change", resetRefreshTimer);
+
+    loadSummary();
+    resetRefreshTimer();
+  </script>
+</body>
+</html>
