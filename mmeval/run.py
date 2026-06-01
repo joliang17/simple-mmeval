@@ -13,13 +13,35 @@ def get_series(model_name: str):
         if model_name in models:
             return series
     raise ValueError(f"Model {model_name} not found in registry.")
+
+
+def get_series_from_model_path(model_name_or_path: str):
+    model_name = model_name_or_path.rstrip("/").split("/")[-1]
+    try:
+        return get_series(model_name)
+    except ValueError:
+        pass
+
+    config_path = os.path.join(model_name_or_path, "config.json")
+    if os.path.isdir(model_name_or_path) and os.path.exists(config_path):
+        with open(config_path, "r") as f:
+            config = json.load(f)
+
+        model_type = config.get("model_type")
+        architectures = config.get("architectures") or []
+        if model_type == "qwen2_vl" or "Qwen2VLForConditionalGeneration" in architectures:
+            return "qwenvl2"
+        if model_type == "qwen2_5_vl" or "Qwen2_5_VLForConditionalGeneration" in architectures:
+            return "qwenvl2d5"
+
+    raise ValueError(f"Model {model_name_or_path} not found in registry.")
     
 
 if __name__ == "__main__":
     args = parse_args()
 
     model_name_or_path = args.model_name_or_path
-    series = get_series(model_name_or_path.split("/")[-1])
+    series = get_series_from_model_path(model_name_or_path)
     
     infer_file = series_infer_env_mapping[series]["infer_file"]
     infer_env = series_infer_env_mapping[series]["env"]

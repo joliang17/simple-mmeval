@@ -31,10 +31,15 @@ class TaskRunner(Task):
         
     def load_model(self, args):
         self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(args.model_name_or_path, torch_dtype=self.dtype, **self.model_kwargs)
-        self.tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+        self.tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, fix_mistral_regex=True)
         min_pixels = 256 * 28 * 28
         max_pixels = 1280 * 28 * 28
-        self.processor = AutoProcessor.from_pretrained(args.model_name_or_path, min_pixels=min_pixels, max_pixels=max_pixels)
+        self.processor = AutoProcessor.from_pretrained(
+            args.model_name_or_path,
+            min_pixels=min_pixels,
+            max_pixels=max_pixels,
+            fix_mistral_regex=True,
+        )
 
     def parse_input(self, message):
         question = message["prompt"]
