@@ -14,12 +14,17 @@ OUT_ROOT="${OUT_ROOT:?Set OUT_ROOT to the output directory for this run}"
 PARALLEL_PER_TASK="${PARALLEL_PER_TASK:-4}"
 GPU_PER_PARALLEL="${GPU_PER_PARALLEL:-1}"
 
-datasets=(
-  MMStar
-  BLINK
-  MMBench_dev_en
-  MathVista_MINI
-)
+# DATASETS env var (space-separated) overrides the default list
+if [[ -n "${DATASETS:-}" ]]; then
+    read -r -a datasets <<< "${DATASETS}"
+else
+    datasets=(
+      MMStar
+      BLINK
+      MMBench_dev_en
+      MathVista_MINI
+    )
+fi
 
 mkdir -p "${OUT_ROOT}"
 
