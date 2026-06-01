@@ -1,0 +1,14 @@
+run,dataset,samples,answered,correct,accuracy,scoring,result_path,updated_at
+base_qwen25vl3b,BLINK,1901,1901,867,0.456076,choice,work_dirs/base_qwen25vl3b/BLINK/result.json,1780300981
+base_qwen25vl3b,MMBench_dev_en,4317,4317,3507,0.812370,choice,work_dirs/base_qwen25vl3b/MMBench_dev_en/result.json,1780304323
+base_qwen25vl3b,MMStar,1500,1500,739,0.492667,choice+free_form,work_dirs/base_qwen25vl3b/MMStar/result.json,1780299750
+base_qwen25vl3b,MathVista_MINI,1000,1000,179,0.179000,choice+free_form+numeric,work_dirs/base_qwen25vl3b/MathVista_MINI/result.json,1780305609
+ckpt100_qwen25vl3b,BLINK,1901,1901,860,0.452393,choice,work_dirs/ckpt100_qwen25vl3b/BLINK/result.json,1780308502
+ckpt100_qwen25vl3b,MMBench_dev_en,4317,4317,3517,0.814686,choice,work_dirs/ckpt100_qwen25vl3b/MMBench_dev_en/result.json,1780312033
+ckpt100_qwen25vl3b,MMStar,1500,1500,723,0.482000,choice+free_form,work_dirs/ckpt100_qwen25vl3b/MMStar/result.json,1780307116
+ckpt100_qwen25vl3b,MathVista_MINI,1000,1000,182,0.182000,choice+free_form+numeric,work_dirs/ckpt100_qwen25vl3b/MathVista_MINI/result.json,1780313294
+ckpt200_qwen25vl3b,BLINK,1901,1901,861,0.452920,choice,work_dirs/ckpt200_qwen25vl3b/BLINK/result.json,1780293362
+ckpt200_qwen25vl3b,MMBench_dev_en,4317,4317,3492,0.808895,choice,work_dirs/ckpt200_qwen25vl3b/MMBench_dev_en/result.json,1780296912
+ckpt200_qwen25vl3b,MMStar,1500,1500,725,0.483333,choice+free_form,work_dirs/ckpt200_qwen25vl3b/MMStar/result.json,1780292316
+ckpt200_qwen25vl3b,MathVista_MINI,1000,1000,179,0.179000,choice+free_form+numeric,work_dirs/ckpt200_qwen25vl3b/MathVista_MINI/result.json,1780298250
+smoke_mmstar_ckpt200,smoke_mmstar_ckpt200,1,1,0,0.000000,choice,work_dirs/smoke_mmstar_ckpt200/result.json,1780291253
