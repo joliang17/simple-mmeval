@@ -40,6 +40,11 @@ def parse_args() -> argparse.Namespace:
         help="CSV path to create/update. Defaults to eval_summary.csv.",
     )
     parser.add_argument(
+        "--delimiter",
+        default="\t",
+        help="Output delimiter. Defaults to a tab character.",
+    )
+    parser.add_argument(
         "--include-examples",
         action="store_true",
         help="Include work_dirs/examples results.",
@@ -53,13 +58,13 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_existing(path: Path) -> dict[tuple[str, str], dict[str, str]]:
+def load_existing(path: Path, delimiter: str) -> dict[tuple[str, str], dict[str, str]]:
     if not path.exists():
         return {}
 
     rows: dict[tuple[str, str], dict[str, str]] = {}
     with path.open(newline="") as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, delimiter=delimiter)
         for row in reader:
             run = row.get("run", "")
             dataset = row.get("dataset", "")
@@ -245,7 +250,7 @@ def main() -> None:
     out = Path(args.out)
     only = set(args.only) if args.only else None
 
-    rows = load_existing(out)
+    rows = load_existing(out, args.delimiter)
     result_paths = discover_results(root, args.include_examples, only)
     for result_path in result_paths:
         row = summarize_result(root, result_path)
@@ -253,7 +258,7 @@ def main() -> None:
 
     ordered = sorted(rows.values(), key=lambda row: (row["run"], row["dataset"]))
     with out.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        writer = csv.DictWriter(f, fieldnames=FIELDNAMES, delimiter=args.delimiter)
         writer.writeheader()
         writer.writerows(ordered)
 
