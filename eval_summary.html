@@ -71,7 +71,8 @@
     }
 
     select,
-    input {
+    input,
+    button {
       width: 100%;
       min-height: 36px;
       border: 1px solid var(--line);
@@ -80,6 +81,19 @@
       color: var(--text);
       padding: 7px 9px;
       font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 650;
+    }
+
+    button.secondary {
+      background: var(--panel);
+      color: var(--accent);
     }
 
     .summary {
@@ -218,6 +232,11 @@
           <option value="0">Manual</option>
         </select>
       </label>
+      <label>
+        Local File
+        <button id="load-local" type="button" class="secondary">Choose CSV</button>
+        <input id="file-input" type="file" accept=".csv,.tsv,text/csv,text/tab-separated-values" hidden>
+      </label>
     </section>
 
     <section class="summary" aria-label="Visible summary">
@@ -265,6 +284,8 @@
     let sortKey = "run";
     let sortDirection = 1;
     let refreshTimer = null;
+    let fileHandle = null;
+    let selectedFile = null;
 
     const els = {
       status: document.getElementById("status"),
@@ -274,6 +295,8 @@
       datasetFilter: document.getElementById("dataset-filter"),
       searchFilter: document.getElementById("search-filter"),
       refreshInterval: document.getElementById("refresh-interval"),
+      loadLocal: document.getElementById("load-local"),
+      fileInput: document.getElementById("file-input"),
       rows: document.getElementById("rows"),
       metricRuns: document.getElementById("metric-runs"),
       metricBenchmarks: document.getElementById("metric-benchmarks"),
@@ -327,20 +350,36 @@
       }
     }
 
+    function applySummaryText(text, sourceLabel) {
+      allRows = parseTsv(text);
+
+      populateSelect(els.runFilter, [...new Set(allRows.map((row) => row.run))].sort(), "All runs");
+      populateSelect(els.datasetFilter, [...new Set(allRows.map((row) => row.dataset))].sort(), "All benchmarks");
+
+      els.status.textContent = `Loaded ${sourceLabel}`;
+      els.status.className = "";
+      els.lastUpdated.textContent = `Refreshed ${new Date().toLocaleTimeString()}`;
+      render();
+    }
+
     async function loadSummary() {
       try {
+        if (fileHandle) {
+          const file = await fileHandle.getFile();
+          applySummaryText(await file.text(), file.name);
+          return;
+        }
+        if (selectedFile) {
+          applySummaryText(await selectedFile.text(), selectedFile.name);
+          return;
+        }
+        if (window.location.protocol === "file:") {
+          throw new Error("Local pages need Choose CSV once; browsers block automatic sibling-file reads.");
+        }
+
         const response = await fetch(`${csvPath}?t=${Date.now()}`, { cache: "no-store" });
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-        const text = await response.text();
-        allRows = parseTsv(text);
-
-        populateSelect(els.runFilter, [...new Set(allRows.map((row) => row.run))].sort(), "All runs");
-        populateSelect(els.datasetFilter, [...new Set(allRows.map((row) => row.dataset))].sort(), "All benchmarks");
-
-        els.status.textContent = "Loaded eval_summary.csv";
-        els.status.className = "";
-        els.lastUpdated.textContent = `Refreshed ${new Date().toLocaleTimeString()}`;
-        render();
+        applySummaryText(await response.text(), csvPath);
       } catch (error) {
         els.status.textContent = `Could not load ${csvPath}: ${error.message}`;
         els.status.className = "status-error";
@@ -414,6 +453,33 @@
       }
     }
 
+    async function chooseLocalCsv() {
+      if ("showOpenFilePicker" in window) {
+        try {
+          const [handle] = await window.showOpenFilePicker({
+            types: [{
+              description: "Evaluation summary",
+              accept: {
+                "text/tab-separated-values": [".csv", ".tsv"],
+                "text/csv": [".csv"],
+              },
+            }],
+            multiple: false,
+          });
+          fileHandle = handle;
+          selectedFile = null;
+          await loadSummary();
+          resetRefreshTimer();
+          return;
+        } catch (error) {
+          if (error.name === "AbortError") return;
+          els.status.textContent = `Could not open local CSV: ${error.message}`;
+          els.status.className = "status-error";
+        }
+      }
+      els.fileInput.click();
+    }
+
     document.querySelectorAll("th[data-sort]").forEach((th) => {
       th.addEventListener("click", () => {
         const key = th.dataset.sort;
@@ -431,6 +497,15 @@
       el.addEventListener("input", render);
     });
     els.refreshInterval.addEventListener("change", resetRefreshTimer);
+    els.loadLocal.addEventListener("click", chooseLocalCsv);
+    els.fileInput.addEventListener("change", async () => {
+      selectedFile = els.fileInput.files[0] || null;
+      fileHandle = null;
+      if (selectedFile) {
+        await loadSummary();
+        resetRefreshTimer();
+      }
+    });
 
     loadSummary();
     resetRefreshTimer();
