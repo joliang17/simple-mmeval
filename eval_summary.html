@@ -70,8 +70,7 @@
       text-transform: uppercase;
     }
 
-    select,
-    input {
+    input[type="search"] {
       width: 100%;
       min-height: 36px;
       border: 1px solid var(--line);
@@ -80,6 +79,83 @@
       color: var(--text);
       padding: 7px 9px;
       font: inherit;
+    }
+
+    .cb-dropdown {
+      position: relative;
+    }
+
+    .cb-toggle {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--text);
+      padding: 7px 30px 7px 9px;
+      font: inherit;
+      cursor: pointer;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cb-toggle::after {
+      content: "▾";
+      position: absolute;
+      right: 9px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: var(--muted);
+    }
+
+    .cb-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      min-width: 100%;
+      max-height: 260px;
+      overflow-y: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      z-index: 100;
+      padding: 6px 0;
+    }
+
+    .cb-panel.open {
+      display: block;
+    }
+
+    .cb-panel label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: none;
+      color: var(--text);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .cb-panel label:hover {
+      background: var(--accent-soft);
+    }
+
+    .cb-panel input[type="checkbox"] {
+      width: 14px;
+      min-height: unset;
+      height: 14px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      accent-color: var(--accent);
     }
 
     .summary {
@@ -117,7 +193,6 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 900px;
     }
 
     th,
@@ -195,15 +270,17 @@
     <section class="toolbar" aria-label="Filters">
       <label>
         Model / Run
-        <select id="run-filter">
-          <option value="">All runs</option>
-        </select>
+        <div class="cb-dropdown" id="run-dropdown">
+          <button type="button" class="cb-toggle" id="run-toggle">All runs</button>
+          <div class="cb-panel" id="run-panel"></div>
+        </div>
       </label>
       <label>
         Benchmark
-        <select id="dataset-filter">
-          <option value="">All benchmarks</option>
-        </select>
+        <div class="cb-dropdown" id="dataset-dropdown">
+          <button type="button" class="cb-toggle" id="dataset-toggle">All benchmarks</button>
+          <div class="cb-panel" id="dataset-panel"></div>
+        </div>
       </label>
       <label>
         Search
@@ -241,19 +318,7 @@
 
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr>
-            <th data-sort="run">Run</th>
-            <th data-sort="dataset">Benchmark</th>
-            <th class="num" data-sort="samples">Samples</th>
-            <th class="num" data-sort="answered">Answered</th>
-            <th class="num" data-sort="correct">Correct</th>
-            <th class="num" data-sort="accuracy">Accuracy</th>
-            <th data-sort="scoring">Scoring</th>
-            <th data-sort="updated_at">Updated</th>
-            <th data-sort="result_path">Result Path</th>
-          </tr>
-        </thead>
+        <thead id="thead"></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -270,8 +335,10 @@
       status: document.getElementById("status"),
       lastUpdated: document.getElementById("last-updated"),
       rowCount: document.getElementById("row-count"),
-      runFilter: document.getElementById("run-filter"),
-      datasetFilter: document.getElementById("dataset-filter"),
+      runToggle: document.getElementById("run-toggle"),
+      runPanel: document.getElementById("run-panel"),
+      datasetToggle: document.getElementById("dataset-toggle"),
+      datasetPanel: document.getElementById("dataset-panel"),
       searchFilter: document.getElementById("search-filter"),
       refreshInterval: document.getElementById("refresh-interval"),
       rows: document.getElementById("rows"),
@@ -313,25 +380,65 @@
       return new Date(num * 1000).toLocaleString();
     }
 
-    function populateSelect(select, values, emptyLabel) {
-      const previous = select.value;
-      select.innerHTML = `<option value="">${emptyLabel}</option>`;
-      values.forEach((value) => {
-        const option = document.createElement("option");
-        option.value = value;
-        option.textContent = value;
-        select.appendChild(option);
-      });
-      if (values.includes(previous)) {
-        select.value = previous;
-      }
+    function checkedValues(panel) {
+      return [...panel.querySelectorAll("input[type=checkbox]:checked")].map((cb) => cb.value);
     }
+
+    function updateToggleLabel(toggle, checked, allLabel) {
+      toggle.textContent = checked.length === 0 ? allLabel : checked.join(", ");
+    }
+
+    function buildCheckboxPanel(panel, toggle, values, allLabel, previousChecked) {
+      panel.innerHTML = "";
+      values.forEach((value) => {
+        const lbl = document.createElement("label");
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.value = value;
+        cb.checked = previousChecked.has(value);
+        cb.addEventListener("change", () => {
+          updateToggleLabel(toggle, checkedValues(panel), allLabel);
+          render();
+        });
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(value));
+        panel.appendChild(lbl);
+      });
+      updateToggleLabel(toggle, checkedValues(panel), allLabel);
+    }
+
+    function setupDropdown(toggle, panel) {
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = panel.classList.contains("open");
+        document.querySelectorAll(".cb-panel.open").forEach((p) => p.classList.remove("open"));
+        if (!isOpen) panel.classList.add("open");
+      });
+    }
+
+    setupDropdown(els.runToggle, els.runPanel);
+    setupDropdown(els.datasetToggle, els.datasetPanel);
+
+    document.addEventListener("click", () => {
+      document.querySelectorAll(".cb-panel.open").forEach((p) => p.classList.remove("open"));
+    });
 
     function applySummaryText(text, sourceLabel) {
       allRows = parseTsv(text);
 
-      populateSelect(els.runFilter, [...new Set(allRows.map((row) => row.run))].sort(), "All runs");
-      populateSelect(els.datasetFilter, [...new Set(allRows.map((row) => row.dataset))].sort(), "All benchmarks");
+      const prevRuns = new Set(checkedValues(els.runPanel));
+      const prevDatasets = new Set(checkedValues(els.datasetPanel));
+
+      buildCheckboxPanel(
+        els.runPanel, els.runToggle,
+        [...new Set(allRows.map((row) => row.run))].sort(),
+        "All runs", prevRuns
+      );
+      buildCheckboxPanel(
+        els.datasetPanel, els.datasetToggle,
+        [...new Set(allRows.map((row) => row.dataset))].sort(),
+        "All benchmarks", prevDatasets
+      );
 
       els.status.textContent = `Loaded ${sourceLabel}`;
       els.status.className = "";
@@ -350,61 +457,120 @@
       }
     }
 
-    function filteredRows() {
-      const run = els.runFilter.value;
-      const dataset = els.datasetFilter.value;
+    function visibleRunsAndBenchmarks() {
+      const selectedRuns = new Set(checkedValues(els.runPanel));
+      const selectedDatasets = new Set(checkedValues(els.datasetPanel));
       const search = els.searchFilter.value.trim().toLowerCase();
-      return allRows.filter((row) => {
-        if (run && row.run !== run) return false;
-        if (dataset && row.dataset !== dataset) return false;
-        if (search && !Object.values(row).join(" ").toLowerCase().includes(search)) return false;
+
+      const filtered = allRows.filter((row) => {
+        if (selectedRuns.size && !selectedRuns.has(row.run)) return false;
+        if (selectedDatasets.size && !selectedDatasets.has(row.dataset)) return false;
         return true;
       });
-    }
 
-    function sortedRows(rows) {
-      return [...rows].sort((a, b) => {
-        const numeric = ["samples", "answered", "correct", "accuracy", "updated_at"].includes(sortKey);
-        const left = numeric ? numberValue(a, sortKey) : String(a[sortKey] || "");
-        const right = numeric ? numberValue(b, sortKey) : String(b[sortKey] || "");
-        if (left < right) return -sortDirection;
-        if (left > right) return sortDirection;
-        return 0;
+      const runs = [...new Set(filtered.map((r) => r.run))].sort();
+      const benchmarks = [...new Set(filtered.map((r) => r.dataset))].sort();
+
+      // Build lookup: run -> dataset -> row
+      const lookup = {};
+      filtered.forEach((row) => {
+        if (!lookup[row.run]) lookup[row.run] = {};
+        lookup[row.run][row.dataset] = row;
       });
+
+      // Apply search across run name + accuracy values
+      const pivotRows = runs
+        .filter((run) => {
+          if (!search) return true;
+          const text = [run, ...benchmarks.map((b) => lookup[run]?.[b]?.accuracy ?? "")].join(" ").toLowerCase();
+          return text.includes(search);
+        })
+        .sort((a, b) => {
+          if (sortKey === "run") {
+            return sortDirection * a.localeCompare(b);
+          }
+          const la = numberValue(lookup[a]?.[sortKey] ?? {}, "accuracy");
+          const ra = numberValue(lookup[b]?.[sortKey] ?? {}, "accuracy");
+          if (la < ra) return -sortDirection;
+          if (la > ra) return sortDirection;
+          return 0;
+        });
+
+      return { pivotRows, benchmarks, lookup, filtered };
     }
 
-    function renderMetrics(rows) {
-      const runs = new Set(rows.map((row) => row.run));
-      const benchmarks = new Set(rows.map((row) => row.dataset));
-      const samples = rows.reduce((sum, row) => sum + numberValue(row, "samples"), 0);
-      const correct = rows.reduce((sum, row) => sum + numberValue(row, "correct"), 0);
+    function renderMetrics({ pivotRows, benchmarks, filtered }) {
+      const samples = filtered.reduce((s, r) => s + numberValue(r, "samples"), 0);
+      const correct = filtered.reduce((s, r) => s + numberValue(r, "correct"), 0);
       const accuracy = samples > 0 ? correct / samples : NaN;
 
-      els.metricRuns.textContent = runs.size.toLocaleString();
-      els.metricBenchmarks.textContent = benchmarks.size.toLocaleString();
+      els.metricRuns.textContent = pivotRows.length.toLocaleString();
+      els.metricBenchmarks.textContent = benchmarks.length.toLocaleString();
       els.metricSamples.textContent = samples.toLocaleString();
       els.metricAccuracy.textContent = formatAccuracy(accuracy);
-      els.rowCount.textContent = `${rows.length.toLocaleString()} visible / ${allRows.length.toLocaleString()} total rows`;
+      els.rowCount.textContent = `${pivotRows.length.toLocaleString()} runs · ${benchmarks.length.toLocaleString()} benchmarks`;
+    }
+
+    function renderHeader(benchmarks) {
+      const tr = document.createElement("tr");
+      const runTh = document.createElement("th");
+      runTh.textContent = "Run";
+      runTh.dataset.sort = "run";
+      tr.appendChild(runTh);
+      benchmarks.forEach((b) => {
+        const th = document.createElement("th");
+        th.className = "num";
+        th.textContent = b;
+        th.dataset.sort = b;
+        tr.appendChild(th);
+      });
+      // Update sort indicators
+      tr.querySelectorAll("th").forEach((th) => {
+        if (th.dataset.sort === sortKey) {
+          th.textContent += sortDirection === 1 ? " ▲" : " ▼";
+        }
+        th.addEventListener("click", () => {
+          if (sortKey === th.dataset.sort) {
+            sortDirection *= -1;
+          } else {
+            sortKey = th.dataset.sort;
+            sortDirection = 1;
+          }
+          render();
+        });
+      });
+      document.getElementById("thead").innerHTML = "";
+      document.getElementById("thead").appendChild(tr);
     }
 
     function render() {
-      const rows = sortedRows(filteredRows());
-      renderMetrics(rows);
-      els.rows.innerHTML = "";
+      const state = visibleRunsAndBenchmarks();
+      renderMetrics(state);
+      renderHeader(state.benchmarks);
 
-      rows.forEach((row) => {
+      // Max accuracy per benchmark across visible rows
+      const maxAcc = {};
+      state.benchmarks.forEach((b) => {
+        let best = -Infinity;
+        state.pivotRows.forEach((run) => {
+          const v = Number(state.lookup[run]?.[b]?.accuracy);
+          if (Number.isFinite(v) && v > best) best = v;
+        });
+        maxAcc[b] = best;
+      });
+
+      els.rows.innerHTML = "";
+      state.pivotRows.forEach((run) => {
         const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td>${row.run}</td>
-          <td>${row.dataset}</td>
-          <td class="num">${formatInteger(row.samples)}</td>
-          <td class="num">${formatInteger(row.answered)}</td>
-          <td class="num">${formatInteger(row.correct)}</td>
-          <td class="num">${formatAccuracy(row.accuracy)}</td>
-          <td>${row.scoring}</td>
-          <td>${formatTimestamp(row.updated_at)}</td>
-          <td class="path" title="${row.result_path}">${row.result_path}</td>
-        `;
+        let html = `<td>${run}</td>`;
+        state.benchmarks.forEach((b) => {
+          const row = state.lookup[run]?.[b];
+          const acc = Number(row?.accuracy);
+          const isBest = Number.isFinite(acc) && acc === maxAcc[b];
+          const style = isBest ? " style=\"font-weight:700\"" : "";
+          html += `<td class="num"${style}>${row ? formatAccuracy(row.accuracy) : "-"}</td>`;
+        });
+        tr.innerHTML = html;
         els.rows.appendChild(tr);
       });
     }
@@ -417,23 +583,8 @@
       }
     }
 
-    document.querySelectorAll("th[data-sort]").forEach((th) => {
-      th.addEventListener("click", () => {
-        const key = th.dataset.sort;
-        if (sortKey === key) {
-          sortDirection *= -1;
-        } else {
-          sortKey = key;
-          sortDirection = 1;
-        }
-        render();
-      });
-    });
-
-    [els.runFilter, els.datasetFilter, els.searchFilter].forEach((el) => {
-      el.addEventListener("input", render);
-    });
-    els.refreshInterval.addEventListener("change", resetRefreshTimer);
+    els.searchFilter.addEventListener("input", render);
+      els.refreshInterval.addEventListener("change", resetRefreshTimer);
 
     loadSummary();
     resetRefreshTimer();
