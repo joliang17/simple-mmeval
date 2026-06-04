@@ -174,7 +174,7 @@ cython_debug/
 .pypirc
 mydata
 .tmp/
-
-work_dirs/*
-
 *.csv
+datasets
+.claude
+work_dirs

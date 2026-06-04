@@ -19,6 +19,7 @@ IMG_PLACEHOLDER_RE = re.compile(
     """,
     re.IGNORECASE | re.VERBOSE,
 )
+MEDIA_PLACEHOLDER_RE = re.compile(r"<(?:video|image)>")
 
 def normalize_question_with_media(question: str, media_count: int) -> str:
     """Normalize image placeholders against available media count.

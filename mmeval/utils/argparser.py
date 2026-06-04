@@ -1,5 +1,7 @@
 import argparse
 import inspect
+import os
+import sys
 import warnings
 from dataclasses import dataclass, field, fields
 from typing import Dict, Optional, Sequence, get_args
@@ -84,7 +86,41 @@ class ExperimentArguments:
     no_conda: bool = field(default=False, metadata={"help": "use current python env instead of conda"})
 
 
-ARGUMENT_DATACLASSES = (ModelArguments, DataArguments, InferenceArguments, ExperimentArguments)
+@dataclass
+class ScoreRuntimeArguments:
+    out_dir: Optional[str] = field(default=None, metadata={"help": "output directory containing result.json files"})
+    parallel_per_task: int = field(default=4, metadata={"help": "number of sample workers inside each result.json"})
+
+
+@dataclass
+class ScoreArguments:
+    score_scan_recursive: bool = field(default=True, metadata={"help": "recursively scan out_dir for result.json"})
+    score_result_glob: str = field(default="**/result.json", metadata={"help": "glob pattern for result files in score mode"})
+    score_output_name: str = field(default="score.json", metadata={"help": "output score json file name"})
+    score_progress_bar: bool = field(default=True, metadata={"help": "show progress bar while scoring samples"})
+    score_resume: bool = field(default=True, metadata={"help": "resume scoring from score tmp/final files when available"})
+    score_save_freq: int = field(default=20, metadata={"help": "flush frequency for score resume tmp file"})
+    score_dump_failures: bool = field(default=False, metadata={"help": "dump failed/unmatched samples into score_failures.json"})
+    score_debug: bool = field(default=False, metadata={"help": "write matcher trace into score outputs"})
+    matching_order: str = field(default="exact,template", metadata={"help": "matcher chain order, comma-separated"})
+    matching_stop_on_first: bool = field(default=True, metadata={"help": "stop matcher chain once one matcher succeeds"})
+
+    score_gt_field: str = field(default="answer", metadata={"help": "field name for ground-truth in result sample"})
+    score_pred_field: str = field(default="messages[-1].response", metadata={"help": "field path for prediction in result sample"})
+    score_type_field: Optional[str] = field(default=None, metadata={"help": "optional field name for question type"})
+    score_force_question_type: str = field(default="auto", metadata={"help": "force question type: auto|mcq|open"})
+
+    judge_provider: Optional[str] = field(default=None, metadata={"help": "llm judge provider: openai|azure_openai"})
+    judge_model: Optional[str] = field(default=None, metadata={"help": "llm judge model/deployment name"})
+    judge_max_retry: int = field(default=2, metadata={"help": "llm judge max retry count"})
+    judge_temperature: float = field(default=0.0, metadata={"help": "llm judge generation temperature"})
+    judge_concurrency: int = field(default=1, metadata={"help": "reserved for llm judge concurrency control"})
+    judge_include_reason: bool = field(default=False, metadata={"help": "include llm judge reason in output"})
+
+
+ARGUMENT_DATACLASSES = (ModelArguments, DataArguments, InferenceArguments, ExperimentArguments, ScoreArguments)
+INFER_ARGUMENT_DATACLASSES = (ModelArguments, DataArguments, InferenceArguments, ExperimentArguments)
+SCORE_ARGUMENT_DATACLASSES = (ScoreRuntimeArguments, ScoreArguments)
 
 
 BOOL_DEFAULTS = {
@@ -100,9 +136,8 @@ BOOL_DEFAULTS = {
     )
 }
 
-def parse_args():
-    parser = argparse.ArgumentParser()
-    for dc in ARGUMENT_DATACLASSES:
+def _add_dataclass_arguments(parser, dataclasses):
+    for dc in dataclasses:
         for f in fields(dc):
             tp = f.type
             type_args = getattr(tp, '__args__', None)
@@ -129,8 +164,24 @@ def parse_args():
                 parser.add_argument(f"--{cli_name}", f"--{f.name}",
                                     dest=f.name, type=tp,
                                     default=f.default, help=help_text)
-    return parser.parse_args()
 
+
+def parse_args(mode: str = "auto"):
+    mode = (mode or "auto").strip().lower()
+    if mode == "auto":
+        script_name = os.path.basename(sys.argv[0])
+        mode = "score" if script_name == "score.py" else "infer"
+
+    if mode == "infer":
+        dataclasses = INFER_ARGUMENT_DATACLASSES
+    elif mode == "score":
+        dataclasses = SCORE_ARGUMENT_DATACLASSES
+    else:
+        raise ValueError(f"Unsupported parse mode: {mode}. Expected infer|score|auto.")
+
+    parser = argparse.ArgumentParser()
+    _add_dataclass_arguments(parser, dataclasses)
+    return parser.parse_args()
 def parse_model_kwargs(args, default_kwargs=None):
     default_kwargs = default_kwargs or {}
     model_kwargs = {}
