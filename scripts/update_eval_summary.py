@@ -55,6 +55,15 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional run names to include, for example ckpt200_qwen25vl3b.",
     )
+    parser.add_argument(
+        "--html",
+        nargs="?",
+        const="",
+        default=None,
+        metavar="PATH",
+        help="Also write a self-contained HTML report with CSV data embedded (no server needed). "
+             "Omit PATH to default to eval_summary_static.html next to the CSV.",
+    )
     return parser.parse_args()
 
 
@@ -92,7 +101,7 @@ def run_and_dataset(root: Path, result_path: Path) -> tuple[str, str]:
     rel = result_path.relative_to(root)
     parts = rel.parts
     if len(parts) >= 3 and parts[-1] == "result.json":
-        return parts[0], parts[-2]
+        return "/".join(parts[:-2]), parts[-2]
     if len(parts) == 2 and parts[-1] == "result.json":
         return parts[0], parts[0]
     return result_path.parent.name, result_path.parent.name

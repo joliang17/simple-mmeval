@@ -174,3 +174,7 @@ cython_debug/
 .pypirc
 mydata
 .tmp/
+
+work_dirs/*
+
+*.csv
