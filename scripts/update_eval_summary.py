@@ -6,10 +6,8 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import math
-import re
+import sys
 from pathlib import Path
-from typing import Any
 
 
 FIELDNAMES = [
@@ -48,6 +46,16 @@ def parse_args() -> argparse.Namespace:
         "--include-examples",
         action="store_true",
         help="Include work_dirs/examples results.",
+    )
+    parser.add_argument(
+        "--score-output-name",
+        default="score.json",
+        help="Score JSON file name next to each result.json. Defaults to score.json.",
+    )
+    parser.add_argument(
+        "--strict-scores",
+        action="store_true",
+        help="Fail if any discovered result.json is missing the requested score file.",
     )
     parser.add_argument(
         "--only",
@@ -107,149 +115,51 @@ def run_and_dataset(root: Path, result_path: Path) -> tuple[str, str]:
     return result_path.parent.name, result_path.parent.name
 
 
-def response_text(sample: dict[str, Any]) -> str:
-    if "response" in sample:
-        value = sample["response"]
-    else:
-        messages = sample.get("messages") or []
-        value = messages[-1].get("response", "") if messages else ""
-
-    if isinstance(value, list):
-        return "\n".join(str(item) for item in value)
-    return str(value)
-
-
-def valid_option_letters(sample: dict[str, Any]) -> list[str]:
-    letters = []
-    for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-        if letter in sample and sample[letter] not in (None, ""):
-            letters.append(letter)
-    return letters
-
-
-def ground_truth(sample: dict[str, Any]) -> tuple[str | None, str]:
-    if sample.get("answer_option") not in (None, ""):
-        return str(sample["answer_option"]).strip().upper(), "choice"
-
-    answer = sample.get("answer")
-    if answer is None:
-        return None, "unknown"
-
-    answer_text = str(answer).strip()
-    letters = valid_option_letters(sample)
-    if len(answer_text) == 1 and answer_text.upper() in letters:
-        return answer_text.upper(), "choice"
-
-    normalized_answer = normalize_text(answer_text)
-    for letter in letters:
-        if normalize_text(str(sample.get(letter, ""))) == normalized_answer:
-            return letter, "choice"
-
-    return answer_text, "free_form"
-
-
-def predicted_choice(text: str, sample: dict[str, Any]) -> str | None:
-    letters = valid_option_letters(sample)
-    if not letters:
-        return None
-    letter_class = "".join(re.escape(letter) for letter in letters)
-
-    patterns = [
-        rf"(?i)(?:final\s+answer|answer|option|choice)\s*(?:is|:|-)?\s*\(?([{letter_class}])\)?\b",
-        rf"\(([{letter_class}])\)",
-        rf"\b([{letter_class}])\s*[\.\)]",
-        rf"\b([{letter_class}])\b",
-    ]
-    for pattern in patterns:
-        matches = re.findall(pattern, text)
-        if matches:
-            return matches[-1].upper()
-
-    normalized_response = normalize_text(text)
-    for letter in letters:
-        option_text = normalize_text(str(sample.get(letter, "")))
-        if option_text and option_text in normalized_response:
-            return letter
-    return None
-
-
-def normalize_text(text: str) -> str:
-    text = text.lower().strip()
-    text = re.sub(r"[^a-z0-9.+-]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def numeric_value(text: str) -> float | None:
-    matches = re.findall(r"[-+]?(?:\d+\.\d+|\d+|\.\d+)(?:[eE][-+]?\d+)?", text)
-    if not matches:
-        return None
+def format_accuracy(value: object) -> str:
+    if value in (None, ""):
+        return ""
     try:
-        return float(matches[-1])
-    except ValueError:
-        return None
+        return f"{float(value):.6f}"
+    except (TypeError, ValueError):
+        return str(value)
 
 
-def numeric_tolerance(answer: str) -> float:
-    answer = answer.strip()
-    if "." in answer:
-        decimals = len(answer.split(".", 1)[1])
-        return 0.5 * (10 ** -decimals) + 1e-12
-    return 1e-12
+def format_count(value: object) -> str:
+    if value in (None, ""):
+        return ""
+    try:
+        return str(int(value))
+    except (TypeError, ValueError):
+        return str(value)
 
 
-def is_correct(sample: dict[str, Any]) -> tuple[bool | None, bool, str]:
-    text = response_text(sample)
-    answered = bool(text.strip())
-    gt, kind = ground_truth(sample)
-    if gt is None:
-        return None, answered, "unknown"
+def summarize_score(root: Path, result_path: Path, score_output_name: str) -> dict[str, str]:
+    score_path = result_path.with_name(score_output_name)
+    with score_path.open() as f:
+        payload = json.load(f)
 
-    if kind == "choice":
-        pred = predicted_choice(text, sample)
-        if pred is None:
-            return False, answered, "choice"
-        return pred == gt, answered, "choice"
-
-    gt_num = numeric_value(str(gt))
-    pred_num = numeric_value(text)
-    if gt_num is not None and pred_num is not None:
-        return math.isclose(pred_num, gt_num, rel_tol=0.0, abs_tol=numeric_tolerance(str(gt))), answered, "numeric"
-
-    return normalize_text(str(gt)) in normalize_text(text), answered, "free_form"
-
-
-def summarize_result(root: Path, result_path: Path) -> dict[str, str]:
-    with result_path.open() as f:
-        samples = json.load(f)
+    summary = payload.get("summary") or {}
+    config = payload.get("config") or {}
+    total = summary.get("total", "")
+    invalid = summary.get("invalid", 0)
+    answered = ""
+    if total not in (None, ""):
+        try:
+            answered = str(int(total) - int(invalid or 0))
+        except (TypeError, ValueError):
+            answered = format_count(total)
 
     run, dataset = run_and_dataset(root, result_path)
-    answered = 0
-    correct = 0
-    scorable = 0
-    scoring_modes: set[str] = set()
-
-    for sample in samples:
-        ok, has_answer, mode = is_correct(sample)
-        if has_answer:
-            answered += 1
-        scoring_modes.add(mode)
-        if ok is None:
-            continue
-        scorable += 1
-        if ok:
-            correct += 1
-
-    accuracy = "" if scorable == 0 else f"{correct / scorable:.6f}"
     return {
         "run": run,
         "dataset": dataset,
-        "samples": str(len(samples)),
-        "answered": str(answered),
-        "correct": str(correct) if scorable else "",
-        "accuracy": accuracy,
-        "scoring": "+".join(sorted(scoring_modes)),
+        "samples": format_count(total),
+        "answered": answered,
+        "correct": format_count(summary.get("correct", "")),
+        "accuracy": format_accuracy(summary.get("accuracy", "")),
+        "scoring": str(config.get("matching_order", "")),
         "result_path": str(result_path),
-        "updated_at": str(int(result_path.stat().st_mtime)),
+        "updated_at": str(int(score_path.stat().st_mtime)),
     }
 
 
@@ -261,9 +171,26 @@ def main() -> None:
 
     rows = load_existing(out, args.delimiter)
     result_paths = discover_results(root, args.include_examples, only)
+    missing_scores = []
+    updated_count = 0
     for result_path in result_paths:
-        row = summarize_result(root, result_path)
+        score_path = result_path.with_name(args.score_output_name)
+        if not score_path.exists():
+            missing_scores.append(score_path)
+            print(f"WARNING: missing score file, skipping: {score_path}", file=sys.stderr)
+            continue
+
+        row = summarize_score(root, result_path, args.score_output_name)
         rows[(row["run"], row["dataset"])] = row
+        updated_count += 1
+
+    if args.strict_scores and missing_scores:
+        print(
+            f"ERROR: {len(missing_scores)} score file(s) missing for --score-output-name "
+            f"{args.score_output_name}",
+            file=sys.stderr,
+        )
+        raise SystemExit(1)
 
     ordered = sorted(rows.values(), key=lambda row: (row["run"], row["dataset"]))
     with out.open("w", newline="") as f:
@@ -271,7 +198,7 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(ordered)
 
-    print(f"Updated {out} with {len(result_paths)} result file(s); total rows: {len(ordered)}")
+    print(f"Updated {out} with {updated_count} score file(s); total rows: {len(ordered)}")
 
 
 if __name__ == "__main__":
