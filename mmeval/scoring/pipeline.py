@@ -248,6 +248,11 @@ def score_result_file(result_file: str, args) -> Dict[str, Any]:
             "score_type_field": args.score_type_field,
             "score_force_question_type": args.score_force_question_type,
             "judge_include_reason": args.judge_include_reason,
+            "judge_provider": args.judge_provider,
+            "judge_model": args.judge_model,
+            "judge_max_retry": args.judge_max_retry,
+            "judge_max_tokens": args.judge_max_tokens,
+            "judge_temperature": args.judge_temperature,
             "score_progress_bar": args.score_progress_bar,
             "score_resume": args.score_resume,
             "score_save_freq": args.score_save_freq,
@@ -274,4 +279,3 @@ def score_result_file(result_file: str, args) -> Dict[str, Any]:
         "summary": summary,
         "resumed_count": resumed_count,
     }
-

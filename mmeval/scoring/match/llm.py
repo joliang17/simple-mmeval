@@ -2,10 +2,15 @@ import json
 import os
 import re
 import time
+import uuid
 from typing import Any, Dict
 
 from mmeval.scoring.match.base import BaseMatcher, MatchResult
 from mmeval.scoring.schema import normalize_text
+
+
+BYTE_AZURE_ENDPOINT = "https://aidp-i18ntt-sg.byteintl.net/api/modelhub/online/v2/crawl"
+BYTE_AZURE_MODEL = "gpt-5.4-mini-2026-03-17"
 
 
 class LLMJudgeMatcher(BaseMatcher):
@@ -15,6 +20,7 @@ class LLMJudgeMatcher(BaseMatcher):
         self.provider = (args.judge_provider or "openai").strip().lower()
         self.model = args.judge_model
         self.max_retry = max(1, int(args.judge_max_retry))
+        self.max_tokens = max(1, int(getattr(args, "judge_max_tokens", 500)))
         self.temperature = float(args.judge_temperature)
         self.include_reason = bool(args.judge_include_reason)
         self.client = self._build_client()
@@ -27,16 +33,27 @@ class LLMJudgeMatcher(BaseMatcher):
         except Exception as exc:
             raise RuntimeError("openai package is required for llm-as-judge matcher.") from exc
 
-        if self.provider == "azure_openai":
-            key = os.getenv("AZURE_OPENAI_KEY")
-            endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
-            if not key or not endpoint:
-                raise ValueError("AZURE_OPENAI_KEY and AZURE_OPENAI_ENDPOINT are required for azure_openai judge.")
-            self.model = os.getenv("AZURE_OPENAI_DEPLOYNAME", self.model)
+        if self.provider in {"azure_openai", "azure_gpt", "byte_azure_openai"}:
+            key = os.getenv("AZURE_GPT_API_KEY") or os.getenv("AZURE_OPENAI_KEY")
+            endpoint = (
+                os.getenv("AZURE_GPT_ENDPOINT")
+                or os.getenv("AZURE_OPENAI_ENDPOINT")
+                or BYTE_AZURE_ENDPOINT
+            )
+            if not key:
+                raise ValueError("AZURE_GPT_API_KEY is required for azure_openai judge.")
+            self.model = (
+                os.getenv("AZURE_GPT_MODEL")
+                or os.getenv("AZURE_OPENAI_DEPLOYNAME")
+                or self.model
+                or BYTE_AZURE_MODEL
+            )
+            logid = os.getenv("AZURE_GPT_LOGID") or os.getenv("TT_LOGID") or f"simple-mmeval-{uuid.uuid4().hex}"
             return AzureOpenAI(
                 api_key=key,
                 azure_endpoint=endpoint,
-                api_version="2024-02-15-preview",
+                api_version=os.getenv("AZURE_GPT_API_VERSION", "2024-02-01"),
+                default_headers={"X-TT-LOGID": logid},
             )
 
         key = os.getenv("OPENAI_API_KEY")
@@ -58,7 +75,7 @@ class LLMJudgeMatcher(BaseMatcher):
         prompt = self._build_prompt(question_type, question, pred, gt, context)
         messages = [
             {"role": "system", "content": "You are a strict evaluator for VLM outputs."},
-            {"role": "user", "content": prompt},
+            {"role": "user", "content": [{"type": "text", "text": prompt}]},
         ]
 
         parsed = self._call_with_retry(messages)
@@ -98,7 +115,9 @@ class LLMJudgeMatcher(BaseMatcher):
                 resp = self.client.chat.completions.create(
                     model=self.model,
                     messages=messages,
+                    max_tokens=self.max_tokens,
                     temperature=self.temperature,
+                    stream=False,
                 )
                 text = resp.choices[0].message.content or ""
                 parsed = self._parse_response(text)
@@ -141,4 +160,3 @@ class LLMJudgeMatcher(BaseMatcher):
                 value = 0
         reason = obj.get("reason", "")
         return {"is_correct": 1 if value == 1 else 0, "reason": str(reason)}
-

@@ -43,6 +43,9 @@ class ModelArguments:
     repetition_penalty: Optional[float] = field(default=None, metadata={"help": "The parameter for repetition penalty. 1.0 means no penalty."})
     length_penalty: Optional[float] = field(default=None, metadata={"help": "Exponential penalty to the length that is used with beam-based generation."})
 
+    # model-specific chat template controls
+    enable_thinking: Optional[bool] = field(default=None, metadata={"help": "Pass enable_thinking to model chat templates that support it, such as Qwen3-VL."})
+
 @dataclass
 class DataArguments:
     dataset: Optional[str] = field(default=None,
@@ -110,9 +113,10 @@ class ScoreArguments:
     score_type_field: Optional[str] = field(default=None, metadata={"help": "optional field name for question type"})
     score_force_question_type: str = field(default="auto", metadata={"help": "force question type: auto|mcq|open"})
 
-    judge_provider: Optional[str] = field(default=None, metadata={"help": "llm judge provider: openai|azure_openai"})
+    judge_provider: Optional[str] = field(default=None, metadata={"help": "llm judge provider: openai|azure_openai|azure_gpt"})
     judge_model: Optional[str] = field(default=None, metadata={"help": "llm judge model/deployment name"})
     judge_max_retry: int = field(default=2, metadata={"help": "llm judge max retry count"})
+    judge_max_tokens: int = field(default=500, metadata={"help": "llm judge max response tokens"})
     judge_temperature: float = field(default=0.0, metadata={"help": "llm judge generation temperature"})
     judge_concurrency: int = field(default=1, metadata={"help": "reserved for llm judge concurrency control"})
     judge_include_reason: bool = field(default=False, metadata={"help": "include llm judge reason in output"})
@@ -257,4 +261,3 @@ def filter_gen_kwargs(gen_kwargs, api_method, mapping=None):
         warnings.warn(f"Unsupported generation parameters will be ignored: {unsupported_kwargs}")
 
     return filtered_kwargs
-

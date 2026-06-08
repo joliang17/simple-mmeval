@@ -98,7 +98,14 @@ class TaskRunner(Task):
         user_message = self.parse_input(message)
         
         text = self.processor.apply_chat_template(
-            user_message, tokenize=False, add_generation_prompt=True
+            user_message,
+            tokenize=False,
+            add_generation_prompt=True,
+            **(
+                {"enable_thinking": self.args.enable_thinking}
+                if self.args.enable_thinking is not None
+                else {}
+            ),
         )
 
         images, videos, video_kwargs = process_vision_info(
@@ -133,5 +140,4 @@ if __name__ == "__main__":
     args = parse_args()
     model_evaluator = TaskRunner(args)
     model_evaluator.inference_dataset()
-
 

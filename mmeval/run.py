@@ -33,6 +33,8 @@ def get_series_from_model_path(model_name_or_path: str):
             return "qwenvl2"
         if model_type == "qwen2_5_vl" or "Qwen2_5_VLForConditionalGeneration" in architectures:
             return "qwenvl2d5"
+        if model_type == "qwen3_vl" or any("Qwen3VL" in arch for arch in architectures):
+            return "qwen3_vl"
 
     raise ValueError(f"Model {model_name_or_path} not found in registry.")
     
