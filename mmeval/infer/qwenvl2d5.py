@@ -1,5 +1,6 @@
 import re
 import copy
+import os
 
 import torch
 import numpy as np
@@ -10,6 +11,9 @@ from mmeval.infer.task import Task
 from mmeval.utils import constants
 from mmeval.utils.argparser import parse_args, parse_model_kwargs, parse_gen_kwargs
 from mmeval.utils.scorer import IncrementalLMScorer, target_tokens
+
+if os.getenv("MMEVAL_DISABLE_CUDNN", "").lower() in {"1", "true", "yes"}:
+    torch.backends.cudnn.enabled = False
 
 SYSTEM_PROMPT = (
     "You are a helpful assistant. When the user asks a question, your response must include two parts: "

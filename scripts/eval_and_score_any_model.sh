@@ -28,8 +28,14 @@ Environment overrides:
   PARALLEL_PER_TASK=auto GPU count / GPU_PER_PARALLEL
   SCORE_PARALLEL_PER_TASK=8
   GPU_PER_PARALLEL=1
+  USE_VLLM=true|false
   ENABLE_THINKING=true|false
   MAX_NEW_TOKENS=1024
+  TEMPERATURE=0.7
+  REPETITION_PENALTY=1.0
+  PRESENCE_PENALTY=1.5
+  TOP_P=0.8
+  TOP_K=20
   SAMPLE_NUM=20
   SCORE_OUTPUT_NAME=score_llm_only.json
   MATCHING_ORDER=llm
@@ -104,6 +110,16 @@ run_cmd() {
 
 MODEL_NAME="$(resolve_model_name "${MODEL_INPUT}")"
 
+if [[ "${MODEL_INPUT}" == "qwen3vl_4b" || "${MODEL_INPUT}" == "qwen3vl4b" || "$(basename "${MODEL_NAME%/}")" == "Qwen3-VL-4B-Instruct" ]]; then
+  USE_VLLM="${USE_VLLM:-true}"
+  TEMPERATURE="${TEMPERATURE:-0.7}"
+  MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-16384}"
+  REPETITION_PENALTY="${REPETITION_PENALTY:-1.0}"
+  PRESENCE_PENALTY="${PRESENCE_PENALTY:-1.5}"
+  TOP_P="${TOP_P:-0.8}"
+  TOP_K="${TOP_K:-20}"
+fi
+
 if [[ -z "${OUT_ROOT}" ]]; then
   run_key="$(make_run_key "${MODEL_NAME}")"
   OUT_ROOT="${ROOT_DIR}/work_dirs/${run_key}_llm_eval_$(date -u +%Y%m%d_%H%M%S)"
@@ -121,6 +137,13 @@ echo "  MODEL_INPUT=${MODEL_INPUT}"
 echo "  MODEL_NAME=${MODEL_NAME}"
 echo "  DATASETS=${DATASET_NAME}"
 echo "  OUT_ROOT=${OUT_ROOT}"
+echo "  USE_VLLM=${USE_VLLM:-}"
+echo "  TEMPERATURE=${TEMPERATURE:-}"
+echo "  MAX_NEW_TOKENS=${MAX_NEW_TOKENS:-}"
+echo "  REPETITION_PENALTY=${REPETITION_PENALTY:-}"
+echo "  PRESENCE_PENALTY=${PRESENCE_PENALTY:-}"
+echo "  TOP_P=${TOP_P:-}"
+echo "  TOP_K=${TOP_K:-}"
 echo "  SCORE_OUTPUT_NAME=${SCORE_OUTPUT_NAME}"
 echo "  MATCHING_ORDER=${MATCHING_ORDER}"
 echo "  SCORE_PARALLEL_PER_TASK=${SCORE_PARALLEL_PER_TASK}"
@@ -132,6 +155,13 @@ echo
 run_cmd env \
   PROJECT_ROOT="${PROJECT_ROOT}" \
   OUT_ROOT="${OUT_ROOT}" \
+  USE_VLLM="${USE_VLLM:-}" \
+  TEMPERATURE="${TEMPERATURE:-}" \
+  MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-}" \
+  REPETITION_PENALTY="${REPETITION_PENALTY:-}" \
+  PRESENCE_PENALTY="${PRESENCE_PENALTY:-}" \
+  TOP_P="${TOP_P:-}" \
+  TOP_K="${TOP_K:-}" \
   scripts/eval_model.sh "${MODEL_NAME}" "${DATASET_NAME}" "${OUT_ROOT}"
 
 run_cmd env \

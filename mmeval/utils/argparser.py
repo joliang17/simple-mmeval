@@ -17,6 +17,7 @@ class ModelArguments:
     # parameters for model inference
     dtype: Optional[str] = field(default=None, metadata={"help": "Override the default torch.dtype and load the model under a specific dtype."})
     device_map: Optional[str] = field(default=None, metadata={"help": "A map that specifies where each submodule should go."})
+    use_vllm: bool = field(default=False, metadata={"help": "Use vLLM for supported local model inference."})
     
     # parameters that control the length of the output
     max_length: Optional[int] = field(default=None, metadata={"help": "The maximum length the generated tokens can have."})
@@ -41,6 +42,7 @@ class ModelArguments:
     min_p: Optional[float] = field(default=None, metadata={"help": "Minimum token probability, which will be scaled by the probability of the most likely token."})
     diversity_penalty: Optional[float] = field(default=None, metadata={"help": "This value is subtracted from a beam’s score if it generates a token same as any beam from other group at a particular time."})
     repetition_penalty: Optional[float] = field(default=None, metadata={"help": "The parameter for repetition penalty. 1.0 means no penalty."})
+    presence_penalty: Optional[float] = field(default=None, metadata={"help": "Presence penalty applied during generation when supported."})
     length_penalty: Optional[float] = field(default=None, metadata={"help": "Exponential penalty to the length that is used with beam-based generation."})
 
     # model-specific chat template controls
@@ -212,7 +214,7 @@ def parse_gen_kwargs(args, default_kwargs=None):
         "do_sample", "num_beams",
         "use_cache", "cache_implementation",
         "temperature", "top_k", "top_p", "min_p",
-        "diversity_penalty", "repetition_penalty", "length_penalty",
+        "diversity_penalty", "repetition_penalty", "presence_penalty", "length_penalty",
     ):
         value = getattr(args, key, None)
         if value is None:

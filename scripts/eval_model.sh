@@ -18,8 +18,14 @@ Environment overrides:
   OUT_ROOT=work_dirs/my_run
   PARALLEL_PER_TASK=auto GPU count / GPU_PER_PARALLEL
   GPU_PER_PARALLEL=1
+  USE_VLLM=true|false
   ENABLE_THINKING=true|false
   MAX_NEW_TOKENS=1024
+  TEMPERATURE=0.7
+  REPETITION_PENALTY=1.0
+  PRESENCE_PENALTY=1.5
+  TOP_P=0.8
+  TOP_K=20
   SAMPLE_NUM=20
 EOF
 }
@@ -48,8 +54,14 @@ GPU_PER_PARALLEL="${GPU_PER_PARALLEL:-1}"
 RUN_SETUP="${RUN_SETUP:-true}"
 RUN_GPU_SM="${RUN_GPU_SM:-true}"
 
+USE_VLLM="${USE_VLLM:-}"
 ENABLE_THINKING="${ENABLE_THINKING:-}"
 MAX_NEW_TOKENS="${MAX_NEW_TOKENS:-}"
+TEMPERATURE="${TEMPERATURE:-}"
+REPETITION_PENALTY="${REPETITION_PENALTY:-}"
+PRESENCE_PENALTY="${PRESENCE_PENALTY:-}"
+TOP_P="${TOP_P:-}"
+TOP_K="${TOP_K:-}"
 SAMPLE_NUM="${SAMPLE_NUM:-}"
 
 if [[ -z "${OUT_ROOT}" ]]; then
@@ -134,6 +146,20 @@ mkdir -p "${OUT_ROOT}" "${HF_HOME}" "${HF_HUB_CACHE}" "${HF_DATASETS_CACHE}" "${
 read -r -a datasets <<< "${DATASET_NAME}"
 
 extra_args=()
+if [[ -n "${USE_VLLM}" ]]; then
+  case "${USE_VLLM}" in
+    true|True|TRUE|1|yes|Yes|YES)
+      extra_args+=(--use_vllm)
+      ;;
+    false|False|FALSE|0|no|No|NO)
+      ;;
+    *)
+      echo "USE_VLLM must be true or false, got: ${USE_VLLM}" >&2
+      exit 2
+      ;;
+  esac
+fi
+
 if [[ -n "${ENABLE_THINKING}" ]]; then
   case "${ENABLE_THINKING}" in
     true|True|TRUE|1|yes|Yes|YES)
@@ -151,6 +177,26 @@ fi
 
 if [[ -n "${MAX_NEW_TOKENS}" ]]; then
   extra_args+=(--max_new_tokens "${MAX_NEW_TOKENS}")
+fi
+
+if [[ -n "${TEMPERATURE}" ]]; then
+  extra_args+=(--temperature "${TEMPERATURE}")
+fi
+
+if [[ -n "${REPETITION_PENALTY}" ]]; then
+  extra_args+=(--repetition_penalty "${REPETITION_PENALTY}")
+fi
+
+if [[ -n "${PRESENCE_PENALTY}" ]]; then
+  extra_args+=(--presence_penalty "${PRESENCE_PENALTY}")
+fi
+
+if [[ -n "${TOP_P}" ]]; then
+  extra_args+=(--top_p "${TOP_P}")
+fi
+
+if [[ -n "${TOP_K}" ]]; then
+  extra_args+=(--top_k "${TOP_K}")
 fi
 
 if [[ -n "${SAMPLE_NUM}" ]]; then

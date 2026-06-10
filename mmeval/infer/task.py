@@ -35,9 +35,6 @@ class Task:
         incomplete_count = -1  # Sentinel: -1 means loop never ran
         try:
             for retry_count_dataset in range(1, self.max_retry + 1):
-                # Shared retry limit for this dataset pass (reset each pass)
-                retry_limit = self.max_retry_sample
-                
                 # Create progress bar for samples
                 for sample in tqdm.tqdm(
                     self.dataset,
@@ -57,7 +54,9 @@ class Task:
                     if self.res_handler.in_cache(sample["eval-id"]):
                         continue
                     
-                    # Retry loop with shared limit
+                    # Retry loop with a per-sample limit. A shared counter makes
+                    # one backend failure cause every later sample to be skipped.
+                    retry_limit = self.max_retry_sample
                     while True:
                         try:
                             ret = self.run_sample(sample)
